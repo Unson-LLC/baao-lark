@@ -2,13 +2,15 @@
 
 > 一行要約：4本柱で「最新の理解→合意形成→実装→成果公開」までを一気通貫で提供します。
 
-**対象**：BASIC/PRIME会員・協業パートナー・初めて来た方
+**このREADMEは統合版です。個別プログラム詳細は[OVERVIEW.md](OVERVIEW.md)を参照してください。**
+
+**対象**：BASIC/ACTIVE/PRIME会員・協業パートナー・初めて来た方
 
 **何が手に入る**：各プログラムの内容・成果物・参加方法・料金の目安
 
-**CTA**：[Events & Visits｜今月のイベント](../events/README.md)｜[Join & Contact｜参加・連絡](#連絡先)
+**CTA**：[プログラム概要](OVERVIEW.md)｜[Events & Visits｜今月のイベント](../events/README.md)｜[Join & Contact｜参加・連絡](#連絡先)
 
-**責任者**：世話人（Community Manager）｜**更新**：2025/09/27
+**責任者**：世話人（Community Manager）｜**更新**：2025/10/05
 
 ---
 

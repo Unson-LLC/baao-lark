@@ -1,174 +1,187 @@
-# BAAO 実戦AI道場｜BAAO Dojo for Practical AI
+# BAAO 実戦AI道場｜ドキュメント管理
 
-**一行要約**：和の現場知とAIで、四半期で成果に着地する実戦シンクタンクです。
+**BAAO Dojo for Practical AI - Documentation Repository**
 
-**対象**：初めて来た方・BASIC/PRIME会員・協業パートナー
+このリポジトリは、BAAO実戦AI道場のドキュメント、運営資料、Lark実装計画を管理します。
 
-**何が手に入る**：3分で全体像、参加の選択肢、直近のイベント、相談窓口
-
-**責任者**：世話人（Community Manager）｜**更新**：2025/09/27
-
----
-
-## 📚 ドキュメント構成
-
-- [About｜BAAO実戦AI道場について](./docs/ABOUT.md) - 団体の正体・考え方・倫理
-- [プログラム一覧](./docs/programs/README.md) - BASIC/PRIME/RECIPES/BOOST
-- [FieldWorks フレームワーク](./docs/fieldworks/README.md) - 流派×勝ち筋×型
-- [ガバナンス・ポリシー](./docs/governance/README.md) - 守秘・公開・COI
-- [FAQ・よくある質問](./docs/FAQ.md)
+**プラットフォーム**: Lark（飛書/Feishu）
+**運営方針**: ドライブ中心、Base（多次元表）活用
+**更新日**: 2025/10/05
 
 ---
 
-## 🎯 私たちは何者か
+## 📁 ディレクトリ構造
 
-流派（業界）× 勝ち筋（KPIテーマ）× 型（方法）でAI導入を設計し、**90日で可視ROI**を出します。
-
-- **使命**：提言で終わらない実装
-- **提供体系**：稽古場 BASIC / 師範会 PRIME / 型録 RECIPES / 立合い BOOST
-- **公開主義**：ケースは Fact-check → クールダウン → 公開が原則
-
-> 🎥 90秒動画「What we do in 90 days」をここに埋め込んでください（YouTube/ファイル可）
-
----
-
-## ⚡ まずは3分で把握（道場を3枚で）
-
-1. **1枚目｜全体像**：4本柱と成果までの導線
-2. **2枚目｜FieldWorks**：`流派 × 勝ち筋 × 型` のマトリクス
-3. **3枚目｜参加方法**：BASIC/PRIME/BOOSTの違いと次の一歩
-
-> 📎 3枚スライド（PDF/画像）を [resources](./docs/resources/) に配置
-
----
-
-## 🚀 参加の三択（あなたの状況に合わせて）
-
-- ✅ **最新を追いたい・仲間を見つけたい** → [稽古場 BASIC](./docs/programs/README.md#1-稽古場-basicai-weekly) に参加
-- ✅ **意思決定を早めたい・現場を見たい** → [師範会 PRIME](./docs/programs/README.md#2-師範会-primeexecutive-community) を相談
-- ✅ **四半期で数字を出したい** → [立合い BOOST](./docs/programs/README.md#4-立合い-boostquarter-projects) を見積
+```
+baao-lark/
+├── docs/                      # 公開・会員向けドキュメント（→ Wiki）
+│   ├── ABOUT.md              # BAAOとは
+│   ├── FAQ.md                # よくある質問
+│   ├── programs/             # プログラム詳細（BASIC/ACTIVE/PRIME/CONSULT/RECIPES/BOOST）
+│   ├── fieldworks/           # 流派×勝ち筋×型フレームワーク
+│   ├── people/               # 師範会・現場責任者・専門師範
+│   ├── events/               # イベント・現場見学
+│   ├── cases/                # 公開ケース
+│   └── governance/           # ガバナンス・ポリシー
+│
+└── docs/internal/            # 運営内部資料（→ ドライブ）
+    ├── LARK_FINAL_PLAN.md          # 【最新】Lark実装計画
+    ├── LARK_CONTENT_STRATEGY.md    # 【重要】Wiki/ドライブ/Base使い分け戦略
+    ├── OPERATIONS_HANDBOOK.md       # 運営ハンドブック
+    ├── CASHFLOW_SIMULATION.md       # キャッシュフローシミュレーション
+    └── archive/                     # 過去の調査資料
+```
 
 ---
 
-## 📅 90日ロードマップ（何ができるか）
+## 🚀 Lark構成
 
-| Week | アクション | 成果物 |
-|------|-----------|--------|
-| **Week 1** | 目標とKPI確定（勝ち筋の選定） | KPIダッシュボード |
-| **Week 2–3** | 設計（型の選定、データ連結、ガバナンス確認） | 設計書・アーキテクチャ図 |
-| **Week 4–7** | 実装（小さく作って回す、P95リードタイム短縮） | MVP・プロトタイプ |
-| **Week 8** | 成果測定と横展開案（ケース草案を作成） | 導入レポート・ROI測定 |
+### Wiki（公開ナレッジベース）
 
-**成果例KPI**：コスト削減、リードタイム短縮、エラー率低減、売上寄与（¥換算）
+**公開・会員向けドキュメント = Wiki管理**（手動更新、検索性・体系性重視）
 
----
+```
+📚 BAAO実戦AI道場 Wiki
+├── 📖 01_About｜BAAOとは
+├── 📖 02_Programs｜プログラム
+├── 📖 03_FieldWorks｜流派×勝ち筋×型
+├── 📖 04_People｜師範会・現場責任者
+├── 📖 05_Events｜イベント・見学
+└── 📖 06_Cases｜公開ケース
+```
 
-## 📋 プログラム早見表
+### Base（多次元表）
 
-### 継続課金プログラム
+**構造化データ = Base管理**（MCP対応、検索・自動化）
 
-| プログラム | こういう方へ | 料金（税抜） | 次の一歩 |
-|-----------|-------------|------------|---------|
-| **稽古場 BASIC｜AI Weekly** | 最新と実務解説を毎週追いたい | 月2,980円 / 年29,800円 | [BASICへ参加](./docs/programs/README.md#1-稽古場-basicai-weekly) |
-| **稽古場 ACTIVE｜Weekly + Archive** | BASIC＋過去アーカイブ全文検索 | 月9,800円 / 年98,000円 | [ACTIVEへ参加](./docs/programs/README.md#15-稽古場-activeweekly--archive) |
-| **師範会 PRIME｜Executive Community** | 先行事例・現場見学・意思決定を加速 + **全サービス20%割引** | 年220,000円 | [PRIMEを相談](./docs/programs/README.md#2-師範会-primeexecutive-community) |
+- **会員管理Base**: members, payments, event_registrations
+- **RECIPESベース**: recipes, cases
+- **イベント管理Base**: events
 
-### 都度課金サービス（PRIME会員は20%割引）
+### ドライブ（運営・動的ファイル）
 
-| サービス | こういう方へ | 通常価格 | PRIME会員価格 | 次の一歩 |
-|---------|-------------|---------|--------------|---------|
-| **CONSULT｜クイック** | まずは気軽に相談したい | 15万円 | 12万円 | [クイック相談予約](./docs/programs/README.md#35-consultクイック相談) |
-| **CONSULT｜スタンダード** | 稟議書の根拠を固めたい | 35万円 | 28万円 | [スタンダード相談予約](./docs/programs/README.md#36-consultスタンダード) |
-| **CONSULT｜ディープダイブ** | 設計の8割を固めたい | 80万円 | 64万円 | [ディープダイブ相談予約](./docs/programs/README.md#37-consultディープダイブ) |
-| **型録 RECIPES｜Playbooks** | そのまま配れる手順書が欲しい | 100–150万円/本 | 80–120万円/本 | [RECIPESの資料請求](./docs/programs/README.md#3-型録-recipesplaybooks) |
-| **立合い BOOST｜Quarter Projects** | 4〜8週で可視ROIを出したい | 400–800万円 | 320–640万円 | [BOOSTを見積](./docs/programs/README.md#4-立合い-boostquarter-projects) |
+**運営資料・MCP生成物 = ドライブ管理**（API操作可能）
 
-> **特典**：CONSULT実施後3ヶ月以内にBOOSTを契約した場合、CONSULT料金を全額差し引きます。
+```
+📁 BAAO運営ドライブ
+├── 📂 運営内部資料（Internal）
+├── 📂 RECIPES詳細（PDF・スクリプト）
+├── 📂 一時ドキュメント（MCP生成）
+└── 📂 アーカイブ
+```
 
----
+### グループチャット
 
-## 🏗️ FieldWorks｜流派×勝ち筋×型 のしくみ
-
-- **流派（Field）**＝業界の現場（例：医療、製造、金融、公共、小売、メディア）
-- **勝ち筋（Mission）**＝四半期のKPIテーマ（Cost-Down / Speed-Up / Quality-Up / Growth-Up）
-- **型（Practice）**＝方法（GenAI Apps / Data & Integration / Ops Automation / Safety & Legal / Change & Enablement / Design & DX Writing）
-
-**役割の原則**：
-- **現場責任者（Field Director）**＝A責任・各Field 1名
-- **専門師範（Senior Fellow）**＝監修・RECIPES執筆・品質担保
-- **実装会社**＝実装実行（Fellow/Senior Fellowの会社、BAAO提携、クライアント推薦、既存SIer等）
-
-詳細は [FieldWorks フレームワーク](./docs/fieldworks/README.md) を参照
+- **全体**: announcements, office-hours, introductions
+- **BASIC会員**: 3チャット
+- **ACTIVE会員**: 4チャット（流派別含む）
+- **PRIME会員**: 3チャット
+- **運営**: 2チャット
 
 ---
 
-## 📆 今月のイベント
+## 📝 ドキュメント状況
 
-> 🗓️ Notionカレンダー or 外部イベントURLをここに埋め込み
+### ✅ Wikiへ移行済み（手動）
 
-- **BASICライブ**（日時／登壇者／申込リンク）
-- **PRIMEクローズド会**（日時／アジェンダ／相談リンク）
-- **現場見学**（日時／見学先／応募リンク）
+1. BAAOとは（`docs/ABOUT.md`）→ Wiki: 01_About
+2. よくある質問（`docs/FAQ.md`）→ Wiki: 01_About
+3. ガバナンス・ポリシー（`docs/governance/README.md`）→ Wiki: 01_About
+4. 役割一覧（`docs/people/README.md`）→ Wiki: 04_People
+5. プログラム概要（`docs/programs/README.md`）→ Wiki: 02_Programs
 
----
+### 📋 Wiki移行待ち（手動）
 
-## 👥 People（主要メンバー）
+6. FieldWorks概要（`docs/fieldworks/README.md`）→ Wiki: 03_FieldWorks
+7. イベント運営ガイド（`docs/events/README.md`）→ Wiki: 05_Events
+8. ケース公開プロセス（`docs/cases/README.md`）→ Wiki: 06_Cases
 
-- **師範会（Council）**／**名義師範（Named Chair）**
-- **現場責任者（Field Directors）**：6流派のA責任（各Field 1名）
-- **専門師範（Senior Fellows）**／**師範（Fellows）**
+### 📂 ドライブ移行待ち（手動）
 
-> 各カードに Appointment# と 検証QR を表示（肩書きの検証先URLを設定）
-
----
-
-## ❓ よくある質問（FAQ）
-
-**Q. 相談だけしてもよいですか？**
-> はい。まずはBASICのライブかPRIMEのゲスト参加（1回）をご案内します。
-
-**Q. 非公開案件でもケース公開は必要ですか？**
-> 匿名または要素分解での公開を基本にしています（事前合意）。
-
-**Q. 既存ベンダーとの競合になりませんか？**
-> 現場のA責任は流派側に固定、既存体制とバッティングしない設計です。
-
-**Q. 料金レンジは？**
-> 継続課金：BASIC 月2,980円、ACTIVE 月9,800円、PRIME 年220,000円（全サービス20%割引特典付）
-> 都度課金：CONSULT 15–80万円、RECIPES 100–150万円/本、BOOST 400–800万円（すべてPRIME会員は20%オフ）
-> 詳細はご相談ください。
-
-[FAQ詳細はこちら](./docs/FAQ.md)
+9. 運営ハンドブック（`docs/internal/OPERATIONS_HANDBOOK.md`）→ ドライブ: Internal
+10. キャッシュフローシミュレーション（`docs/internal/CASHFLOW_SIMULATION.md`）→ ドライブ: Internal
 
 ---
 
-## 📜 ポリシーの要点
+## 🔧 技術スタック
 
-- **守秘**：PRIMEや見学は Chatham House Rule
-- **公開**：Fact-check → 30分クールダウン → 公開
-- **COI**：名義師範（Named Chair）は発言・編集に不干渉。COIは明記
-
-詳細は [Governance（外部要約）](./docs/governance/README.md) をご覧ください
-
----
-
-## 📩 連絡・相談
-
-- **お問い合わせ**：フォーム（リンク）／メール（アドレス）
-- **協業・取材**：窓口（リンク）
-- **相談予約**：カレンダー（リンク）
+| カテゴリ | ツール | 用途 |
+|---------|-------|------|
+| **プラットフォーム** | Lark | チャット・ドキュメント・Base・カレンダー・ビデオ会議 |
+| **会員管理** | Lark Base | 会員情報、決済履歴、イベント参加記録 |
+| **決済** | Stripe | サブスクリプション課金 |
+| **MCP統合** | Claude Desktop | AI Agent経由の自動化 |
+| **メール** | SendGrid | 通知・リマインダー |
+| **連携** | Zapier/Make | Webhook連携 |
 
 ---
 
-## 🎯 次の一歩（3クリックで到達）
+## 📊 会員階層
 
-1. **このページ** → 2) [**Programs**](./docs/programs/README.md) → 3) **BASIC参加／PRIME相談／BOOST見積**
-
-> 迷ったら 世話人（Community Manager） へメンションしてください
+| 会員層 | 月額 | 年額 | アクセス範囲 |
+|-------|------|------|------------|
+| **BASIC** | ¥2,980 | ¥29,800 | 基本コンテンツ、Weekly |
+| **ACTIVE** | ¥9,800 | ¥98,000 | 流派別チャット、月次イベント、過去アーカイブ |
+| **PRIME** | - | ¥220,000 | 全コンテンツ、現場見学、師範会、全サービス20%割引 |
 
 ---
 
-### 付記：表記ルール
+## 🛠️ 実装ロードマップ
 
-- 公式文書は英名（例：Field Director）
-- 外向きページは **公式名｜雅称**（例：**Field Director｜現場師範**）で併記
+### Phase 1: Lark基盤構築（Week 1）
+- [x] Bot作成・権限設定完了
+- [x] 既存5ドキュメントインポート完了
+- [ ] ドライブフォルダ構造構築（8フォルダ）
+- [ ] 残り5ドキュメントインポート
+
+### Phase 2: 会員管理フロー（Week 2）
+- [ ] Base（多次元表）構築（会員・RECIPES・イベント）
+- [ ] グループチャット作成（15個）
+- [ ] Stripe Webhook連携
+
+### Phase 3: MCP統合（Week 3）
+- [ ] カスタムMCPツール実装（5ツール）
+- [ ] Claude Desktop統合テスト
+
+### Phase 4: 運用開始（Week 4〜）
+- [ ] βテスト（内部10名）
+- [ ] 正式オープン
+
+---
+
+## 📚 重要ドキュメント
+
+### 最新実装計画
+- **[Lark最終実装計画](docs/internal/LARK_FINAL_PLAN.md)** - 最新の構成・ロードマップ
+- **[Larkコンテンツ管理戦略](docs/internal/LARK_CONTENT_STRATEGY.md)** - 【重要】Wiki/ドライブ/Base使い分け
+
+### 組織・ガバナンス
+- **[BAAOとは](docs/ABOUT.md)** - 団体概要、ミッション、提供モデル
+- **[ガバナンス・ポリシー](docs/governance/README.md)** - 守秘、公開、COI、倫理
+
+### プログラム
+- **[プログラム一覧](docs/programs/README.md)** - BASIC/ACTIVE/PRIME/CONSULT/RECIPES/BOOST
+- **[FieldWorks](docs/fieldworks/README.md)** - 流派×勝ち筋×型フレームワーク
+
+### 運営
+- **[運営ハンドブック](docs/internal/OPERATIONS_HANDBOOK.md)** - 日次・週次・月次・四半期タスク
+- **[財務シミュレーション](docs/internal/CASHFLOW_SIMULATION.md)** - Year 1-3キャッシュフロー
+
+---
+
+## 🔗 関連リンク
+
+- **Lark Workspace**: [hjprobt9yo74.jp.larksuite.com](https://hjprobt9yo74.jp.larksuite.com)
+- **Bot App ID**: `cli_a86bb5a982b85e1b`
+- **Wiki Space ID**: `7557443138508295701`
+
+---
+
+## 📞 問い合わせ
+
+- **事務局（世話人）**: TBD
+- **技術担当**: k.sato@unson.jp
+
+---
+
+**最終更新**: 2025/10/05
