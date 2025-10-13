@@ -155,7 +155,9 @@ Safety & Legal（型）でガバナンス・契約・監査観点を標準化。
 - **2025 Q4**：**実戦AI道場**を始動。FieldWorks設計と4本柱を正式採択。
 - **以降**：四半期ごとにケースと年鑑を更新（公開可否に応じて匿名化・要素分解）。
 
-> 直近の活動は [Events & Visits｜イベント・見学](./events/README.md) と [Cases & Playbooks｜公開ケース](./cases/README.md) をご覧ください。
+> **イベント・現場見学**: [Events & Visits｜イベント・見学](./events/README.md)
+>
+> **公開ケース**: [Cases & Playbooks｜公開ケース](./cases/README.md)
 
 ---
 

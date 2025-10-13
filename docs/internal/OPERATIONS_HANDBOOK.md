@@ -274,9 +274,9 @@ graph TD
     end
 
     subgraph "【層3】ブランド・専門家層<br/>都度報酬△ 名誉◎"
-        FieldChair[Field Chair<br/>流派師範<br/>各Field 1名<br/>IP 10点/年]
-        SeniorFellow[Senior Fellow<br/>専門師範<br/>各Field最大2名<br/>IP 8点/年]
         Fellow[Fellow<br/>師範<br/>IP 5点/年]
+        SeniorFellow[Senior Fellow<br/>専門師範<br/>各Field最大2名<br/>IP 8点/年]
+        FieldChair[Field Chair<br/>流派師範<br/>各Field 1名<br/>IP 10点/年]
     end
 
     subgraph "支援層（スタッフ）"
@@ -285,23 +285,30 @@ graph TD
         ProgramGM[Program GM]
     end
 
-    Council -.方針決定.-> FieldDirector
+    Council -.任命・監査.-> FieldDirector
 
     FieldChair -.対外代表.-> FieldDirector
-    FieldDirector -->|A責任<br/>金85%| Project[案件<br/>💰]
+    FieldDirector -->|A責任<br/>金85%| Project[実務案件<br/>BOOST/RECIPES/CONSULT<br/>💰]
     Catalyst -->|紹介<br/>金15%| Project
 
-    SeniorFellow -.監修・登壇・実装<br/>COGS＋都度報酬.-> Project
-    Fellow -.監修・登壇・実装<br/>COGS＋都度報酬.-> Project
-    FieldChair -.対外活動<br/>都度報酬.-> Project
+    SeniorFellow -.実装<br/>COGS.-> Project
+    Fellow -.実装<br/>COGS.-> Project
+
+    SeniorFellow -->|監修・登壇<br/>RECIPES執筆| ExpertPool[専門家活動<br/>都度報酬<br/>💰]
+    Fellow -->|監修・登壇<br/>ケース貢献| ExpertPool
+    FieldChair -->|対外活動<br/>講演| ExpertPool
 
     CaseEditor -->|品質管理| Project
-    CommunityManager -.運営支援.-> PRIME[PRIME会員]
-    ProgramGM -.全体設計.-> Council
+    CommunityManager -.運営支援.-> Members[PRIME/ACTIVE/BASIC会員]
+    Council -.方針提示.-> ProgramGM
+    ProgramGM -.運営設計.-> FieldChair
+    ProgramGM -.運営設計.-> SeniorFellow
+    ProgramGM -.運営設計.-> Fellow
 
     style FieldDirector fill:#ff6b6b,stroke:#c92a2a,color:#fff
     style Council fill:#4c6ef5,stroke:#364fc7,color:#fff
     style Project fill:#51cf66,stroke:#2f9e44,color:#fff
+    style ExpertPool fill:#51cf66,stroke:#2f9e44,color:#fff
     style FieldChair fill:#fab005,stroke:#f59f00,color:#fff
     style SeniorFellow fill:#fab005,stroke:#f59f00,color:#fff
 ```
@@ -321,6 +328,86 @@ graph TD
 案件 → Expert Pool: 都度報酬（登壇・監修・助言）
 会員費 → PF 18%（運営費）
 ```
+
+---
+
+### 1-0-2. 金の流れ図（Money Flow Chart）
+
+```mermaid
+graph LR
+    subgraph "収入源"
+        Client[クライアント企業]
+        Members[会員<br/>PRIME/ACTIVE/BASIC]
+    end
+
+    subgraph "実務案件（BOOST/RECIPES/CONSULT）"
+        Client -->|GCV契約額| BAAO[BAAO]
+        BAAO -->|COGS| ImplCo[実装会社<br/>Fellow/Senior Fellowの会社<br/>or 外部委託]
+        BAAO -->|NSR = GCV - COGS| Revenue[純収益NSR]
+        Revenue -->|PF 18%| Platform[運営費PF]
+        Revenue -->|CP 82%| ContributorPool[CP分配プール]
+
+        ContributorPool -->|85%<br/>Lead: 70%<br/>Delegated: 30%| FD[Field Director]
+        ContributorPool -->|55%<br/>Delegated案件のみ| FellowExec[実務担当Fellow/Senior Fellow]
+        ContributorPool -->|15%| Cat[Catalyst]
+    end
+
+    subgraph "専門家活動（Expert Pool）"
+        Platform -->|Expert Pool予算| ExpertBudget[都度報酬予算]
+        ExpertBudget -->|監修料<br/>30-50万/案件| SFSupervise[Senior Fellow監修]
+        ExpertBudget -->|登壇料<br/>3-5万/回| SFSpeak[Senior Fellow/Fellow登壇]
+        ExpertBudget -->|RECIPES執筆<br/>40-60万/本| SFRecipe[Senior Fellow執筆]
+        ExpertBudget -->|対外講演<br/>都度| FCSpeak[Field Chair対外活動]
+    end
+
+    subgraph "会員収益"
+        Members -->|サブスク/年会費| MemberRevenue[会員収益]
+        MemberRevenue -->|100%| Platform
+    end
+
+    subgraph "無報酬層"
+        Council[Council Member<br/>師範会]
+        NamedChair[Named Chair<br/>名義師範]
+    end
+
+    style Client fill:#e3f2fd,stroke:#1976d2
+    style Members fill:#e3f2fd,stroke:#1976d2
+    style BAAO fill:#fff3e0,stroke:#f57c00
+    style Platform fill:#f3e5f5,stroke:#7b1fa2
+    style FD fill:#ff6b6b,stroke:#c92a2a,color:#fff
+    style FellowExec fill:#fab005,stroke:#f59f00
+    style Cat fill:#51cf66,stroke:#2f9e44
+    style Council fill:#e3f2fd,stroke:#1976d2
+    style ImplCo fill:#e8f5e9,stroke:#388e3c
+```
+
+**金の流れの説明：**
+
+1. **実務案件収益（P評価）**
+   - クライアント → GCV契約額
+   - COGS（実装外注費）を差し引き
+   - NSR（純収益）= GCV - COGS
+   - PF 18%：運営費
+   - CP 82%：分配プール
+     - Field Director: 85%（Lead案件70%、Delegated案件30%）
+     - 実務Fellow/Senior Fellow: 55%（Delegated案件のみ）
+     - Catalyst: 15%
+
+2. **専門家活動収益（Expert Pool）**
+   - PF 18%の一部から捻出
+   - 監修料: 30-50万円/案件（Senior Fellow）
+   - 登壇料: 3-5万円/回（Senior Fellow/Fellow）
+   - RECIPES執筆: 40-60万円/本（Senior Fellow）
+   - 対外講演: 都度報酬（Field Chair）
+
+3. **会員収益**
+   - PRIME/ACTIVE/BASIC会員のサブスク・年会費
+   - 100%が運営費（PF）として計上
+   - 案件分配なし
+
+4. **無報酬層**
+   - Council Member（師範会）: 金なし、名誉・権限のみ
+   - Named Chair（名義師範）: 金なし、スポンサー名義使用
 
 **RACI構造**:
 - **A（Accountable・最終責任）**: Field Director
@@ -1668,6 +1755,25 @@ Appointment #FW-YYYY-###
 ---
 
 ## 10) テンプレ集
+
+### 10-0. 提供モデルのテンプレート
+
+BAAOの4本柱（提供モデル）について、それぞれの運用テンプレートを用意しています。
+
+| 提供モデル | テンプレートファイル | 用途 |
+|----------|------------------|------|
+| **BASIC｜AI Weekly** | [BASIC_AI_WEEKLY_TEMPLATE.md](../templates/BASIC_AI_WEEKLY_TEMPLATE.md) | 毎週のアップデート＋Q&A。実務者が"次に何をするか"まで分かる軽量学習 |
+| **PRIME｜Executive Community** | [PRIME_EXECUTIVE_COMMUNITY_TEMPLATE.md](../templates/PRIME_EXECUTIVE_COMMUNITY_TEMPLATE.md) | 未公開ケースの分解、現場見学、ピアレビューで意思決定を加速 |
+| **RECIPES｜Playbooks** | [RECIPES_PLAYBOOKS_TEMPLATE.md](../templates/RECIPES_PLAYBOOKS_TEMPLATE.md) | 業務別の導入手順書（PDF＋スクリプト）。失敗例とコストまで記載 |
+| **BOOST｜Quarter Projects** | [BOOST_QUARTER_PROJECTS_TEMPLATE.md](../templates/BOOST_QUARTER_PROJECTS_TEMPLATE.md) | 4〜8週の短期実装でKPIを可視化し、横展開案まで提示 |
+
+**使い方**:
+1. 新規案件・活動開始時に、該当するテンプレートをコピー
+2. プロジェクト固有の情報を記入
+3. 週次・月次で更新し、進捗を記録
+4. 完了時に成果をケース化・RECIPES化
+
+---
 
 ### 10-1. SOW（要約雛形）
 
