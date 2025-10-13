@@ -25,9 +25,46 @@
 
 ---
 
+## Appointment#（任命番号）とは
+
+**Appointment#**は、BAAOが発行する公式の任命番号です。各メンバーの役職・任期・検証URLが紐づいており、外部に対して「この人は本当にBAAOのメンバーか」を証明するために使用します。
+
+**特徴**:
+- **通し番号**: FW-YYYY-### 形式（例: FW-2025-001）
+- **検証URL**: 任命番号をQRコードまたはURLで検証可能
+- **任期管理**: 任期終了後は自動的に"Expired"表示
+- **透明性**: Yearbookに掲載し、公開記録として保存
+
+**使用例**:
+- 名刺に記載（QRコード付き）
+- 講演・メディア取材時の肩書き証明
+- 外部パートナーとの信頼構築
+
+---
+
 ## 師範会（Council）
 
 > 「道場の方針と信頼の顔」。就任は推薦制、任期1年、Appointment#と検証URLを付与します。
+
+### 役割
+- **方針決定**: BAAOの戦略・ガバナンス・予算承認
+- **Field Director任命**: 各Fieldの現場責任者の任命・監査
+- **品質監督**: ケース公開・RECIPES執筆の最終承認
+- **対外代表**: 業界団体・メディアでのBAAO代表
+
+### ベネフィット
+**唯物的**:
+- ✅ BAAO公式盾（就任時に授与）
+- ✅ 専用名刺デザイン（金箔ロゴ入り）
+- ✅ 就任講演会を無料で実施（PRIMEコミュニティで30分枠）
+
+**名誉・特権**:
+- ✅ 先行閲覧72h（全ケース・RECIPES）
+- ✅ Green Room招待（PRIME会合の特別枠）
+- ✅ Yearbook掲載（年次報告書に顔写真・実績掲載）
+- ✅ 帯同権（外部イベントへBAAOメンバーを同伴可能）
+
+### メンバー一覧
 
 | 氏名（JP / EN） | 役割（公式名｜雅称） | 所属・肩書 | Appointment# | 任期（満了） | 検証URL | 先行トピック（3件） |
 |----------------|-------------------|-----------|--------------|-------------|---------|-------------------|
@@ -43,20 +80,68 @@
 
 > 「A責任・顧客窓口・KPI設定」。流派（業界）ごとに1名のみ配置。案件は必ず現場責任者が最終責任を負います。
 
+### 役割
+- **A責任**: 案件の最終責任者（Lead/Delegated問わず）
+- **顧客窓口**: 見積・契約・報告の一次窓口
+- **KPI設計**: Before測定、目標設定、After測定の責任者
+- **監修・実装アサイン**: Field内のSenior Fellow/Fellowを指名
+- **横展開提案**: 案件完了後の他部署・他拠点への展開計画作成
+
+### ベネフィット
+**唯物的**:
+- ✅ 案件分配金（Lead案件: CP 70%、Delegated案件: CP 30%）
+- ✅ 専用名刺デザイン（BAAO公式ロゴ入り）
+- ✅ Field専用メールアドレス（例: healthcare@baao.jp）
+
+**名誉・特権**:
+- ✅ Field代表として対外活動（業界カンファレンス登壇優先権）
+- ✅ Executive Desk優先（PRIME会合で個別相談枠）
+- ✅ 先行閲覧72h
+
+### メンバー一覧
+
 | 流派（Field） | 氏名（JP / EN） | 役割（公式名｜雅称） | A責任範囲（ひと言） | Appointment# | 任期（満了） | 検証URL | 連絡 |
 |--------------|----------------|-------------------|-------------------|--------------|-------------|---------|------|
 | Healthcare | （氏名） | Field Director｜現場責任者 | 医療・介護の導入案件全般 | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ | ＜Email/Link＞ |
-| Manufacturing | 佐藤 圭吾（例） | Field Director｜現場責任者 | 製造のコスト/リードタイム改善 | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ | ＜Email/Link＞ |
-| Finance | （氏名） | Field Director｜現場責任者 | 金融・保険の適用と統制 | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ | ＜Email/Link＞ |
-| Public | （氏名） | Field Director｜現場責任者 | 自治体・教育・公益連携 | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ | ＜Email/Link＞ |
-| Retail & CX | （氏名） | Field Director｜現場責任者 | 接客・EC・コンタクトセンター | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ | ＜Email/Link＞ |
-| Media & IP | （氏名） | Field Director｜現場責任者 | メディア運用・権利管理 | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ | ＜Email/Link＞ |
+| Manufacturing | 佐藤 圭吾（例） | Field Director｜現場責任者 | 製造の導入案件全般 | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ | ＜Email/Link＞ |
+| Finance | （氏名） | Field Director｜現場責任者 | 金融・保険の導入案件全般 | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ | ＜Email/Link＞ |
+| Public / Government | （氏名） | Field Director｜現場責任者 | 自治体・教育・公益連携の導入案件全般 | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ | ＜Email/Link＞ |
+| Retail & CX | （氏名） | Field Director｜現場責任者 | 接客・EC・コンタクトセンターの導入案件全般 | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ | ＜Email/Link＞ |
+| Media & IP | （氏名） | Field Director｜現場責任者 | メディア運用・権利管理の導入案件全般 | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ | ＜Email/Link＞ |
+| Communications & Consulting | （氏名） | Field Director｜現場責任者 | 通信・コンサルティング業界の導入案件全般 | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ | ＜Email/Link＞ |
 
 ---
 
 ## 専門師範（Senior Fellows）
 
 > 「監修・RECIPES執筆・品質担保」。各Fieldに最大2名まで配置。案件監修とRECIPES執筆を担当します。
+
+### 役割
+- **週次レビュー**: BOOST案件の進捗・品質確認（週1回×6-8回）
+- **RECIPES執筆**: 業務別の実装手順書を執筆（年1-2本）
+- **技術助言**: Issue発生時の技術的助言・解決策提示
+- **品質検証**: 納品前の品質検証（チェックリスト完遂確認）
+
+### ベネフィット
+**唯物的**:
+- ✅ Expert Pool報酬（BOOST監修: 30-50万円、RECIPES執筆: 40-60万円）
+- ✅ Delegated案件実務担当時: CP 55%
+- ✅ 専用名刺デザイン
+
+**名誉・特権**:
+- ✅ 先行閲覧72h
+- ✅ 帯同権（外部イベントへBAAOメンバーを同伴可能）
+- ✅ Yearbook掲載
+
+### 専門領域の単位
+**事業セグメント（Field）× 技術（Practice）の掛け算**で専門領域を定義。
+
+例:
+- Healthcare × GenAI Apps: 医療問診AIの専門家
+- Manufacturing × Computer Vision: 製造品質検査AIの専門家
+- Finance × Data & Integration: 金融リスク分析AIの専門家
+
+### メンバー一覧
 
 | Field | 氏名（JP / EN） | 役割（公式名｜雅称） | 専門領域（例） | Appointment# | 任期（満了） | 検証URL |
 |-------|----------------|-------------------|---------------|--------------|-------------|---------|
@@ -88,6 +173,55 @@
 | （氏名） | Named Senior Fellow on Medical AI | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ |
 | （追加予定） | — | — | — | — |
 
+---
+
+## 名義師範（Named Chair）
+
+> 特定分野で名前を冠する名誉職。名義を貸すのみで、個別の発言・編集には関与しません。
+
+### 役割
+
+**定義**：
+- 名義を貸すのみで、個別の発言・編集には関与しない
+- スポンサー企業等との関係を明記
+- 肩書きの検証先URLを提供
+
+**例**：
+- 「[氏名] Chair on AI Safety」
+- 「[氏名] Chair on Healthcare AI」
+
+### 責任範囲
+
+- 名義使用の承認
+- COI（利益相反）の開示
+- スポンサー企業等の明記
+
+### ベネフィット
+
+**唯物的**:
+- ✅ BAAO公式盾（就任時に授与）
+- ✅ 専用名刺デザイン（プラチナ箔ロゴ入り）
+- ✅ 検証QRコード付き肩書き
+
+**無形的**:
+- ✅ 名義使用権（「[氏名] Chair on [領域]」）
+- ✅ 対外的な信頼性・権威性
+
+### Appointment# 形式
+
+```
+NC-[YYYY]-[連番3桁]
+例: NC-2025-001
+```
+
+### 現在のNamed Chairs
+
+| 氏名（JP / EN） | 名義領域 | Appointment# | 就任日 | 検証URL |
+|----------------|---------|--------------|--------|---------|
+| （募集中） | — | — | — | — |
+
+---
+
 ### Council Member（師範会）昇格パス
 
 > Senior FellowからCouncil Memberへの昇格ルートを明示します。
@@ -115,11 +249,39 @@
 
 > 「監修・ケース貢献・登壇」。Field制限なし。案件監修やケース公開に貢献します。
 
+### 役割
+- **案件実務**: Delegated案件の実務担当（Field Directorから指名）
+- **ケース貢献**: 自社案件をBAAOブランド化（C評価）
+- **登壇**: BASIC講演、外部イベント登壇
+- **監修補助**: 小規模案件の監修（CONSULT等）
+
+### ベネフィット
+**唯物的**:
+- ✅ Delegated案件実務担当時: CP 55%
+- ✅ Expert Pool報酬（登壇: 3-5万円、ケース監修: 5-10万円）
+- ✅ 専用名刺デザイン
+
+**名誉・特権**:
+- ✅ 先行閲覧72h
+- ✅ Yearbook掲載
+- ✅ BAAO公式メンバーとして外部活動可能
+
+### 専門領域の単位
+**技術（Practice）または業務領域（横断的スキル）**で専門領域を定義。
+
+例:
+- **技術特化**: GenAI Apps（プロンプト設計）、Data & Integration（RAG）、Ops Automation（ワークフロー設計）
+- **業務領域特化**: Business Analysis（業務分析・KPI設計）、Strategy & Planning（経営戦略・ROI設計）、Change Management（組織変革）
+
+### メンバー一覧
+
 | 氏名（JP / EN） | 役割（公式名｜雅称） | 専門領域（例） | Appointment# | 任期（満了） | 検証URL |
 |----------------|-------------------|---------------|--------------|-------------|---------|
 | （氏名） | Fellow｜師範 | GenAI Apps・プロンプト設計 | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ |
-| （氏名） | Fellow｜師範 | データパイプライン・RAG | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ |
-| （氏名） | Fellow｜師範 | 業務自動化・ワークフロー設計 | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ |
+| （氏名） | Fellow｜師範 | Data & Integration・RAG | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ |
+| （氏名） | Fellow｜師範 | Ops Automation・ワークフロー設計 | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ |
+| （氏名） | Fellow｜師範 | Business Analysis・業務分析・KPI設計 | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ |
+| （氏名） | Fellow｜師範 | Strategy & Planning・経営戦略・ROI設計 | FW-2025-0XX | 20YY/MM/DD | ＜検証URL＞ |
 
 ### Fellow Grade制度（キャリアラダー）
 
@@ -238,7 +400,7 @@ Impact Points + 案件実績 + 監修実績を集計
 
 **その他貢献**:
 - 見学主催：+2点
-- 登壇：+1点
+- 登壇：+3点（BASIC講演、外部イベント等、執筆と同等のコスト）
 - BOOST達成：+2点（未達：−1点）
 
 ### 更新要件
