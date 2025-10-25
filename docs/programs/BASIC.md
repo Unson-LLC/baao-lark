@@ -73,7 +73,7 @@
 
 ## CTA
 
-[BASICへ参加](#)｜[Events & Visits｜次回ライブ](../events/README.md)
+[BASICへ参加（決済）](https://buy.stripe.com/4gM6oHg9o29DaDQ4W96wE00)｜[Events & Visits｜次回ライブ](../events/README.md)
 
 **責任者**：世話人（Community Manager）
 
