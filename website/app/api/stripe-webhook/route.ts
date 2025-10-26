@@ -56,7 +56,7 @@ export async function POST(request: NextRequest) {
       }
 
       // Resendでウェルカムメールを送信
-      const fromEmail = process.env.RESEND_FROM_EMAIL || "BAAO実戦AI道場 <info@baao.or.jp>";
+      const fromEmail = process.env.RESEND_FROM_EMAIL || "BAAO AI Dojo <info@baao.or.jp>";
 
       try {
         console.log("Sending welcome email to:", customerEmail);
