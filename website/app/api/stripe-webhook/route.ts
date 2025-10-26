@@ -43,11 +43,12 @@ export async function POST(request: NextRequest) {
       console.log("Checkout session completed:", {
         sessionId: session.id,
         customerEmail: session.customer_email,
+        customerDetailsEmail: session.customer_details?.email,
         subscriptionId: session.subscription,
       });
 
-      // 顧客のメールアドレスを取得
-      const customerEmail = session.customer_email;
+      // 顧客のメールアドレスを取得（customer_emailまたはcustomer_details.emailから）
+      const customerEmail = session.customer_email || session.customer_details?.email;
 
       if (!customerEmail) {
         console.warn("No customer email in checkout session");
