@@ -24,12 +24,18 @@ baao-lark/
 │   ├── cases/                # 公開ケース
 │   └── governance/           # ガバナンス・ポリシー
 │
-└── docs/internal/            # 運営内部資料（→ ドライブ）
-    ├── LARK_FINAL_PLAN.md          # 【最新】Lark実装計画
-    ├── LARK_CONTENT_STRATEGY.md    # 【重要】Wiki/ドライブ/Base使い分け戦略
-    ├── OPERATIONS_HANDBOOK.md       # 運営ハンドブック
-    ├── CASHFLOW_SIMULATION.md       # キャッシュフローシミュレーション
-    └── archive/                     # 過去の調査資料
+├── docs/internal/            # 運営内部資料（→ ドライブ）
+│   ├── LARK_FINAL_PLAN.md          # 【最新】Lark実装計画
+│   ├── LARK_CONTENT_STRATEGY.md    # 【重要】Wiki/ドライブ/Base使い分け戦略
+│   ├── OPERATIONS_HANDBOOK.md       # 運営ハンドブック
+│   ├── CASHFLOW_SIMULATION.md       # キャッシュフローシミュレーション
+│   └── archive/                     # 過去の調査資料
+│
+└── website/                  # BASIC会員向けLP（Next.js）
+    ├── app/                  # Next.js App Router
+    ├── components/           # Reactコンポーネント
+    ├── public/               # 静的ファイル
+    └── README.md             # LP詳細ドキュメント
 ```
 
 ---
@@ -108,6 +114,7 @@ baao-lark/
 | カテゴリ | ツール | 用途 |
 |---------|-------|------|
 | **プラットフォーム** | Lark | チャット・ドキュメント・Base・カレンダー・ビデオ会議 |
+| **Webサイト** | Next.js 16 + TypeScript + Tailwind CSS | BASIC会員向けLP（`website/`） |
 | **会員管理** | Lark Base | 会員情報、決済履歴、イベント参加記録 |
 | **決済** | Stripe | サブスクリプション課金 |
 | **MCP統合** | Claude Desktop | AI Agent経由の自動化 |
