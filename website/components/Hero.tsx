@@ -11,7 +11,7 @@ export default function Hero() {
           </div>
 
           {/* Catchcopy - パターンA: 共感×驚き */}
-          <h2 className="heading-xl mb-6 max-w-4xl">
+          <h2 className="heading-xl mb-6 max-w-4xl break-keep">
             ChatGPT、触ったけど使えない。
             <br />
             <span className="text-primary">その理由、30分で分かります。</span>
@@ -62,7 +62,7 @@ export default function Hero() {
 
           {/* Sub Text */}
           <p className="text-sm text-text-light">
-            初月無料・今週のライブから参加可能
+            7日間無料・今週のライブから参加可能
           </p>
         </div>
       </div>

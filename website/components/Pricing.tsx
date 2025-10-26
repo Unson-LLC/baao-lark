@@ -62,7 +62,7 @@ export default function Pricing() {
                 rel="noopener noreferrer"
                 className="btn-primary text-lg w-full block"
               >
-                今すぐ参加（初月無料）
+                今すぐ参加（7日間無料）
               </a>
             </div>
 
@@ -107,7 +107,7 @@ export default function Pricing() {
               【期間限定】先着100名様
             </p>
             <p className="text-text-light">
-              今なら初月無料キャンペーン実施中
+              今なら7日間無料キャンペーン実施中
               <br />
               （2025年12月末まで）
             </p>

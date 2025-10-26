@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "BAAO 実戦AI道場 | AI Weekly - 週30分で最新AIを使いこなす",
   description:
-    "ChatGPT触ったけど使えない？週30分のライブで、最新動向から実務活用まで体系的に学べます。プロンプト集、業界別事例、Q&Aで実務で使える知識が手に入ります。月2,980円・初月無料。",
+    "ChatGPT触ったけど使えない？週30分のライブで、最新動向から実務活用まで体系的に学べます。プロンプト集、業界別事例、Q&Aで実務で使える知識が手に入ります。月2,980円・7日間無料。",
   keywords: [
     "AI",
     "ChatGPT",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "BAAO 実戦AI道場 | 週30分で最新AIを使いこなす",
     description:
-      "ChatGPT触ったけど使えない？体系的に学べるAI Weekly。プロンプト集、業界別事例付き。月2,980円・初月無料。",
+      "ChatGPT触ったけど使えない？体系的に学べるAI Weekly。プロンプト集、業界別事例付き。月2,980円・7日間無料。",
     type: "website",
     locale: "ja_JP",
   },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "BAAO 実戦AI道場 | 週30分で最新AIを使いこなす",
     description:
-      "ChatGPT触ったけど使えない？体系的に学べるAI Weekly。月2,980円・初月無料。",
+      "ChatGPT触ったけど使えない？体系的に学べるAI Weekly。月2,980円・7日間無料。",
   },
 };
 

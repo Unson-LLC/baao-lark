@@ -48,7 +48,7 @@ export default function FinalCTA() {
               今すぐ参加（月2,980円）
             </a>
             <p className="text-sm text-text-light">
-              初月無料・今週のライブから参加可能
+              7日間無料・今週のライブから参加可能
             </p>
           </div>
 
