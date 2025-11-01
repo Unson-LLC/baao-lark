@@ -1,29 +1,29 @@
-import Hero from "@/components/Hero";
-import Empathy from "@/components/Empathy";
-import Benefits from "@/components/Benefits";
-import Testimonials from "@/components/Testimonials";
-import HowItWorks from "@/components/HowItWorks";
-import Curriculum from "@/components/Curriculum";
-import Pricing from "@/components/Pricing";
-import FAQ from "@/components/FAQ";
-import NewsletterForm from "@/components/NewsletterForm";
-import FinalCTA from "@/components/FinalCTA";
-import Footer from "@/components/Footer";
+import HeroSection from "@/components/home/HeroSection";
+import FreeLiveSection from "@/components/home/FreeLiveSection";
+import SampleVideosVoices from "@/components/home/SampleVideosVoices";
+import PathToMastery from "@/components/home/PathToMastery";
+import ProgramSnapshot from "@/components/home/ProgramSnapshot";
+import FieldWorksOverview from "@/components/home/FieldWorksOverview";
+import CommunityFellows from "@/components/home/CommunityFellows";
+import CasesHighlights from "@/components/home/CasesHighlights";
+import EventsUpdates from "@/components/home/EventsUpdates";
+import FAQPreview from "@/components/home/FAQPreview";
+import CTABand from "@/components/home/CTABand";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Hero />
-      <Empathy />
-      <Benefits />
-      <Testimonials />
-      <HowItWorks />
-      <Curriculum />
-      <Pricing />
-      <FAQ />
-      <NewsletterForm />
-      <FinalCTA />
-      <Footer />
-    </main>
+    <div className="bg-[#F9F6F0]">
+      <HeroSection />
+      <FreeLiveSection />
+      <SampleVideosVoices />
+      <PathToMastery />
+      <ProgramSnapshot />
+      <FieldWorksOverview />
+      <CommunityFellows />
+      <CasesHighlights />
+      <EventsUpdates />
+      <FAQPreview />
+      <CTABand />
+    </div>
   );
 }
