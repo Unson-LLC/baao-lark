@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const agenda = [
   {
@@ -17,80 +18,86 @@ const agenda = [
 
 export default function FreeLiveSection() {
   return (
-    <section id="free-live" className="bg-white py-16 md:py-20">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 md:px-6 lg:grid-cols-[1.1fr_0.9fr]">
-        <div className="space-y-6">
-          <span className="text-sm font-semibold uppercase tracking-wide text-[#C47E3B]">
-            Weekly Free Dojo Live
-          </span>
-          <h2 className="font-serif text-3xl text-[#1D1A15] sm:text-4xl">
-            無料の稽古ライブで、
-            <br className="hidden sm:block" />
-            道場の空気を感じる。
-          </h2>
-          <p className="text-lg leading-relaxed text-[#4B4135]">
-            毎週木曜日夜に開催。最新ケースの分解、実装実況、質疑応答までを60分で凝縮します。登録するとオープンチャット（LINE）に招待され、開催前後のアップデートも受け取れます。
-          </p>
-          <div className="space-y-4 rounded-2xl border border-[#D8CFC3] bg-[#F9F6F0] p-6">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-[#2F4C6E]">
-              稽古の流れ
-            </h3>
-            <ul className="space-y-3 text-sm text-[#4B4135]">
-              {agenda.map((item) => (
-                <li key={item.title}>
-                  <p className="font-semibold text-[#1D1A15]">{item.title}</p>
-                  <p>{item.description}</p>
-                </li>
-              ))}
-            </ul>
-            <div className="rounded-xl border border-[#D8CFC3] bg-white px-4 py-3 text-sm text-[#4B4135]">
-              <p className="font-semibold text-[#1D1A15]">参加に必要なもの</p>
-              <ul className="mt-2 space-y-1">
-                <li>・メールアドレス（参加URL送付）</li>
-                <li>・LINEまたはメールでの通知受信</li>
-                <li>・Zoom / YouTube Live 視聴環境</li>
+    <section id="free-live" className="ink-bleed relative overflow-hidden bg-white">
+      {/* 明確な左右50/50分割レイアウト */}
+      <div className="flex min-h-[600px] flex-col lg:flex-row">
+        {/* 左側: テキストエリア（50%） */}
+        <div className="relative flex flex-1 flex-col justify-center border-r border-[#D8CFC3]/30 bg-washi px-8 py-20 md:px-16 md:py-32 lg:px-20">
+          <div className="mx-auto max-w-2xl space-y-8">
+            <span className="text-sm font-semibold uppercase tracking-wide text-[#C47E3B]">
+              Weekly Free Dojo Live
+            </span>
+            <h2 className="font-serif text-3xl leading-tight text-[#1D1A15] sm:text-4xl lg:text-5xl">
+              無料の稽古ライブで、
+              <br />
+              道場の空気を感じる。
+            </h2>
+            <p className="text-lg leading-relaxed text-[#4B4135]">
+              毎週木曜日夜に開催。最新ケースの分解、実装実況、質疑応答までを60分で凝縮します。登録するとオープンチャット（LINE）に招待され、開催前後のアップデートも受け取れます。
+            </p>
+            <div className="space-y-4 rounded-2xl border border-[#D8CFC3] bg-white/80 p-6 shadow-sm">
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-bamboo">
+                稽古の流れ
+              </h3>
+              <ul className="space-y-3 text-sm text-[#4B4135]">
+                {agenda.map((item) => (
+                  <li key={item.title}>
+                    <p className="font-semibold text-[#1D1A15]">{item.title}</p>
+                    <p>{item.description}</p>
+                  </li>
+                ))}
               </ul>
+            </div>
+
+            <div className="rounded-2xl border border-[#D8CFC3] bg-white/80 p-6 shadow-sm">
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-bamboo">
+                参加方法
+              </h3>
+              <ol className="mt-4 space-y-4 text-sm text-[#4B4135]">
+                <li>
+                  <span className="font-semibold text-[#1D1A15]">1. フォーム登録</span>
+                  <p>メールアドレス・興味領域・参加目的を入力。</p>
+                </li>
+                <li>
+                  <span className="font-semibold text-[#1D1A15]">2. オープンチャットへ招待</span>
+                  <p>LINEのオープンチャットでリマインドと補足資料を共有。</p>
+                </li>
+                <li>
+                  <span className="font-semibold text-[#1D1A15]">3. 当日アクセス</span>
+                  <p>開始1時間前に視聴URLとスライドを配信。</p>
+                </li>
+              </ol>
+              <div className="mt-6 flex flex-col gap-3">
+                <Link
+                  href="/join#free-live"
+                  className="flex items-center justify-center rounded-full bg-vermillion px-6 py-3 text-sm font-semibold text-[#1D1A15] transition hover:bg-vermillion-dark shadow-lg"
+                >
+                  無料稽古に登録する
+                </Link>
+                <Link
+                  href="/resources#events"
+                  className="flex items-center justify-center rounded-full border border-bamboo px-6 py-3 text-sm font-semibold text-bamboo transition hover:bg-bamboo/10"
+                >
+                  オープンチャットの案内を見る
+                </Link>
+                <p className="text-xs text-[#4B4135]">
+                  オープンチャットは匿名参加可。利用規約に同意した上でご参加ください。
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="space-y-6">
-          <div className="rounded-3xl border border-[#D8CFC3] bg-white p-6 shadow-[0_12px_24px_rgba(29,26,21,0.08)]">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-[#2F4C6E]">
-              参加方法
-            </h3>
-            <ol className="mt-4 space-y-4 text-sm text-[#4B4135]">
-              <li>
-                <span className="font-semibold text-[#1D1A15]">1. フォーム登録</span>
-                <p>メールアドレス・興味領域・参加目的を入力。</p>
-              </li>
-              <li>
-                <span className="font-semibold text-[#1D1A15]">2. オープンチャットへ招待</span>
-                <p>LINEのオープンチャットでリマインドと補足資料を共有。</p>
-              </li>
-              <li>
-                <span className="font-semibold text-[#1D1A15]">3. 当日アクセス</span>
-                <p>開始1時間前に視聴URLとスライドを配信。</p>
-              </li>
-            </ol>
-            <div className="mt-6 flex flex-col gap-3">
-              <Link
-                href="/join#free-live"
-                className="flex items-center justify-center rounded-full bg-[#2F4C6E] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#4E6E92]"
-              >
-                無料稽古に登録する
-              </Link>
-              <Link
-                href="/resources#events"
-                className="flex items-center justify-center rounded-full border border-[#2F4C6E] px-6 py-3 text-sm font-semibold text-[#2F4C6E] transition hover:bg-[#2F4C6E]/10"
-              >
-                オープンチャットの案内を見る
-              </Link>
-              <p className="text-xs text-[#4B4135]">
-                オープンチャットは匿名参加可。利用規約に同意した上でご参加ください。
-              </p>
-            </div>
-          </div>
+        {/* 右側: 画像エリア（50%） */}
+        <div className="relative flex flex-1 overflow-hidden lg:min-h-[600px]">
+          <Image
+            src="/images/free-live/side.png"
+            alt="無料の稽古ライブの雰囲気"
+            fill
+            priority
+            className="object-cover object-center image-sepia"
+            sizes="50vw"
+          />
         </div>
       </div>
     </section>

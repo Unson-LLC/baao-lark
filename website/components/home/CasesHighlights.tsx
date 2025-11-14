@@ -43,7 +43,7 @@ const kpis = [
 
 export default function CasesHighlights() {
   return (
-    <section id="cases" className="bg-[#F9F6F0] py-16 md:py-20">
+    <section id="cases" className="ink-bleed bg-[#F9F6F0] py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-serif text-3xl text-[#1D1A15] sm:text-4xl">
@@ -54,14 +54,26 @@ export default function CasesHighlights() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {cases.map((item) => {
             const fellow = fellowMap.get(item.fellowId);
             return (
               <div
                 key={item.title}
-                className="flex h-full flex-col rounded-3xl border border-[#D8CFC3] bg-white p-6 shadow-[0_12px_24px_rgba(29,26,21,0.06)]"
+                className="relative flex h-full flex-col overflow-hidden rounded-3xl border-2 border-[#D8CFC3] bg-white p-6 shadow-[0_12px_24px_rgba(29,26,21,0.06)]"
+                style={{
+                  borderImage: 'linear-gradient(135deg, rgba(44, 44, 44, 0.6) 0%, rgba(44, 44, 44, 0.3) 50%, rgba(44, 44, 44, 0.6) 100%) 1',
+                }}
               >
+                {/* カード背景に和紙テクスチャ（淡く） */}
+                <div
+                  className="pointer-events-none absolute inset-0 opacity-15"
+                  style={{
+                    backgroundImage: "url(/images/cases/washi.png)",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                />
                 <p className="text-xs font-semibold uppercase tracking-wide text-[#C47E3B]">
                   {item.field}
                 </p>
@@ -70,23 +82,27 @@ export default function CasesHighlights() {
                 <ul className="mt-4 space-y-2 text-sm text-[#4B4135]">
                   {item.metrics.map((metric) => (
                     <li key={metric} className="flex items-start gap-2">
-                      <span className="mt-1 h-2 w-2 rounded-full bg-[#2F4C6E]" />
+                      <span className="mt-1 h-2 w-2 rounded-full bg-bamboo" />
                       <span>{metric}</span>
                     </li>
                   ))}
                 </ul>
                 <p className="mt-4 text-xs text-[#4B4135]">{item.secrecy}</p>
                 {fellow && (
-                  <div className="mt-4 flex items-center gap-3 rounded-2xl bg-[#F9F6F0] px-4 py-3">
-                  <div className="h-10 w-10 overflow-hidden rounded-full border border-[#D8CFC3]">
-                    <Image
-                      src={fellow.avatar}
-                      alt={fellow.name}
-                      width={40}
-                      height={40}
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
+                  <div className="mt-4 flex items-center gap-3 rounded-2xl bg-[#F9F6F0]/90 px-4 py-3">
+                    {/* 円形の和風装飾つきアバター */}
+                    <div className="relative h-10 w-10">
+                      <div className="absolute inset-0 rounded-full bg-[conic-gradient(from_0deg,_#C47E3B_0deg,_#F3E7D3_120deg,_#C47E3B_240deg,_#F3E7D3_360deg)] opacity-30" />
+                      <div className="absolute left-1 top-1 h-8 w-8 overflow-hidden rounded-full border border-[#D8CFC3] bg-white">
+                        <Image
+                          src={fellow.avatar}
+                          alt={fellow.name}
+                          width={32}
+                          height={32}
+                          className="h-full w-full object-cover"
+                        />
+                      </div>
+                    </div>
                     <div className="text-xs text-[#4B4135]">
                       <p className="font-semibold text-[#1D1A15]">{fellow.name}</p>
                       <p>{fellow.appointment}</p>
@@ -96,7 +112,7 @@ export default function CasesHighlights() {
                 <div className="mt-auto flex items-center justify-between pt-6">
                   <a
                     href="/success-stories"
-                    className="text-sm font-semibold text-[#2F4C6E] hover:text-[#4E6E92]"
+                    className="text-sm font-semibold text-bamboo hover:text-bamboo-light"
                   >
                     ケースの詳細を見る →
                   </a>
@@ -114,14 +130,14 @@ export default function CasesHighlights() {
           })}
         </div>
 
-        <div className="mt-12 grid gap-4 rounded-3xl border border-[#D8CFC3] bg-white p-6 shadow-sm md:grid-cols-4">
+        <div className="mt-12 grid gap-6 rounded-2xl border-2 border-dojo-gold/30 bg-white p-8 shadow-lg md:grid-cols-4">
           {kpis.map((kpi) => (
-            <div key={kpi.name} className="rounded-2xl bg-[#F9F6F0] p-5">
-              <p className="text-xs font-semibold uppercase tracking-wide text-[#2F4C6E]">
+            <div key={kpi.name} className="rounded-xl bg-white border-2 border-dojo-green/20 p-6 hover:border-dojo-gold/50 transition-all">
+              <p className="text-xs font-bold uppercase tracking-wider text-dojo-green">
                 {kpi.name}
               </p>
-              <p className="mt-2 font-serif text-2xl text-[#1D1A15]">{kpi.value}</p>
-              <p className="mt-1 text-xs text-[#4B4135]">{kpi.note}</p>
+              <p className="mt-3 font-brush text-3xl text-dojo-gold">{kpi.value}</p>
+              <p className="mt-2 text-xs text-ink-light">{kpi.note}</p>
             </div>
           ))}
         </div>
@@ -129,13 +145,13 @@ export default function CasesHighlights() {
         <div className="mt-8 flex flex-col items-center justify-center gap-3 text-center text-sm text-[#4B4135] md:flex-row">
           <a
             href="/success-stories"
-            className="rounded-full bg-[#2F4C6E] px-6 py-3 text-white transition hover:bg-[#4E6E92]"
+            className="rounded-full bg-vermillion px-6 py-3 text-white transition hover:bg-vermillion-dark shadow-lg"
           >
             ケース一覧を見る
           </a>
           <a
             href="/success-stories#yearbook"
-            className="rounded-full border border-[#2F4C6E] px-6 py-3 text-[#2F4C6E] transition hover:bg-[#2F4C6E]/10"
+            className="rounded-full border border-bamboo px-6 py-3 text-bamboo transition hover:bg-bamboo/10"
           >
             Yearbook 2025 をダウンロード
           </a>

@@ -2,17 +2,17 @@ const faqs = [
   {
     question: "無料ライブは誰でも参加できますか？",
     answer:
-      "メールアドレスと興味領域を登録すれば無料で参加できます。オープンチャットでリマインドと補足資料を配信します。",
+      "はい、メールアドレスと興味領域を登録すれば誰でも無料で参加できます。オープンチャットでリマインドと補足資料を配信します。",
   },
   {
-    question: "アーカイブや資料はいつ閲覧できますか？",
+    question: "月謝プランとBOOST・PRIMEの違いは？",
     answer:
-      "月謝プラン（BASIC/ACTIVE）に加入すると即時閲覧可能です。過去のライブも全文検索できます。",
+      "月謝プラン（BASIC/ACTIVE）は学習重視で、アーカイブやノートへのアクセスが中心です。BOOST・PRIMEは実案件での伴走支援で、四半期で成果を出すことを目指します。",
   },
   {
-    question: "企業名や成果は公開しないといけませんか？",
+    question: "導入までにどれくらいの期間が必要ですか？",
     answer:
-      "守秘レベル1〜3から選択できます。Level 1は匿名公開、Level 2は要素分解、Level 3は実名公開です。",
+      "無料稽古は即日参加可能です。月謝プランは登録後すぐ利用開始できます。BOOST・PRIMEは初回相談から1〜2週間でキックオフ可能です。",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function FAQPreview() {
         <div className="mt-6 text-center">
           <a
             href="/resources/faq"
-            className="inline-flex items-center text-sm font-semibold text-[#2F4C6E] hover:text-[#4E6E92]"
+            className="inline-flex items-center text-sm font-semibold text-bamboo hover:text-bamboo-light"
           >
             FAQをもっと読む →
           </a>

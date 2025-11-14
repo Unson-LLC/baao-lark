@@ -1,36 +1,49 @@
-const events = [
+const events: Array<{
+  title: string;
+  date: string;
+  location: string;
+  tag: string;
+  link?: string;
+  isPlaceholder?: boolean;
+}> = [
   {
-    title: "Open Dojo Visit｜製造ライン見学",
-    date: "2025/11/22",
-    location: "愛知県 豊田市",
-    tag: "現場見学",
+    title: "Weekly Dojo Live",
+    date: "毎週木曜日 20:00-21:00",
+    location: "Zoom / YouTube Live",
+    tag: "無料稽古",
+    isPlaceholder: true,
   },
   {
-    title: "PRIME Roundtable｜自治体AI導入のリアル",
-    date: "2025/12/02",
-    location: "オンライン / BAAO Slack Green Room",
-    tag: "PRIME",
+    title: "現場見学・ワークショップ",
+    date: "順次公開予定",
+    location: "詳細は後日発表",
+    tag: "今後公開",
+    isPlaceholder: true,
   },
   {
-    title: "Workshop｜Vibe Codingハンズオン拡張版",
-    date: "2025/12/14",
-    location: "東京・日本橋",
-    tag: "ワークショップ",
+    title: "PRIME Roundtable",
+    date: "順次公開予定",
+    location: "詳細は後日発表",
+    tag: "今後公開",
+    isPlaceholder: true,
   },
 ];
 
 const articles = [
   {
-    title: "製造現場でのQuality-Up実装チェックリスト",
-    link: "/resources/blog/quality-up-checklist",
+    title: "製造現場でのAI導入ケース",
+    link: "#",
+    isPlaceholder: true,
   },
   {
-    title: "自治体PoCで失敗しないための守秘レベル設計",
-    link: "/resources/blog/public-poc-secrecy",
+    title: "自治体・公共分野での実装事例",
+    link: "#",
+    isPlaceholder: true,
   },
   {
-    title: "Impact Pointsでフェローが成長する仕組み",
-    link: "/resources/blog/impact-points-overview",
+    title: "AI道場の学習体系と成長の仕組み",
+    link: "#",
+    isPlaceholder: true,
   },
 ];
 
@@ -43,56 +56,54 @@ export default function EventsUpdates() {
             今月の稽古・現場見学・イベント。
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-[#4B4135]">
-            無料ライブのほか、流派別の現場見学、PRIME Roundtable など、リアルな場で学べる機会を用意しています。
+            無料ライブのほか、業界別の現場見学、PRIME Roundtable など、リアルな場で学べる機会を用意しています。
           </p>
           <div className="mt-8 grid gap-4">
             {events.map((event) => (
               <div
                 key={event.title}
-                className="rounded-3xl border border-[#D8CFC3] bg-[#F9F6F0] p-5 shadow-sm"
+                className={`rounded-3xl border border-[#D8CFC3] bg-[#F9F6F0] p-5 shadow-sm ${event.isPlaceholder ? 'opacity-75' : ''}`}
               >
                 <div className="flex items-center justify-between text-xs text-[#4B4135]">
-                  <span className="rounded-full bg-[#2F4C6E]/10 px-3 py-1 font-semibold text-[#2F4C6E]">
+                  <span className={`rounded-full px-3 py-1 font-semibold ${event.isPlaceholder ? 'bg-[#D8CFC3]/20 text-[#4B4135]' : 'bg-bamboo/10 text-bamboo'}`}>
                     {event.tag}
                   </span>
                   <span>{event.date}</span>
                 </div>
                 <h3 className="mt-3 font-semibold text-[#1D1A15]">{event.title}</h3>
                 <p className="mt-2 text-sm text-[#4B4135]">{event.location}</p>
-                <a
-                  href="/resources#events"
-                  className="mt-4 inline-flex items-center text-sm font-semibold text-[#2F4C6E] hover:text-[#4E6E92]"
-                >
-                  申し込む →
-                </a>
+                {!event.isPlaceholder && (
+                  <a
+                    href={event.link || "/resources#events"}
+                    target={event.link ? "_blank" : undefined}
+                    rel={event.link ? "noopener noreferrer" : undefined}
+                    className="mt-4 inline-flex items-center text-sm font-semibold text-bamboo hover:text-bamboo-light"
+                  >
+                    申し込む →
+                  </a>
+                )}
               </div>
             ))}
           </div>
         </div>
 
         <div className="rounded-3xl border border-[#D8CFC3] bg-[#FDFBF6] p-6 shadow-sm">
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-[#2F4C6E]">
+          <h3 className="text-sm font-semibold uppercase tracking-wide text-bamboo">
             コラム & 更新情報
           </h3>
           <ul className="mt-4 space-y-4 text-sm text-[#4B4135]">
             {articles.map((article) => (
-              <li key={article.title} className="rounded-2xl border border-[#D8CFC3] bg-white/80 p-4">
-                <a
-                  href="/resources#blog"
-                  className="font-semibold text-[#1D1A15] hover:text-[#2F4C6E]"
-                >
+              <li key={article.title} className="rounded-2xl border border-[#D8CFC3] bg-white/80 p-4 opacity-75">
+                <div className="font-semibold text-[#1D1A15]">
                   {article.title}
-                </a>
-                <p className="mt-2 text-xs text-[#4B4135]">Resources / Blog</p>
+                </div>
+                <p className="mt-2 text-xs text-[#4B4135]">準備中</p>
               </li>
             ))}
           </ul>
-          <a
-            href="/resources#blog"
-            className="mt-4 inline-flex items-center text-sm font-semibold text-[#2F4C6E] hover:text-[#4E6E92]"
-          >
-            最新記事をすべて見る →
-          </a>
+          <p className="mt-4 text-sm text-[#4B4135]">
+            ケーススタディやコラムを順次公開予定です。
+          </p>
         </div>
       </div>
     </section>

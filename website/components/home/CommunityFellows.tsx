@@ -1,34 +1,15 @@
-const grades = [
-  { name: "Fellow I", requirements: "Impact Points 5点/年、案件2件実務", benefit: "アサイン優先度：中／先行閲覧72h" },
-  { name: "Fellow II", requirements: "Impact Points 8点/年、ケース公開1件", benefit: "小規模案件の監修権／報酬55%" },
-  { name: "Fellow III", requirements: "Impact Points 12点/年、監修1件以上", benefit: "中規模案件監修／RECIPES共著30%" },
-  { name: "Senior Fellow", requirements: "Impact Points 15点/年、RECIPES執筆1本", benefit: "Named Senior Fellow推薦／Green Room" },
-];
-
-const perks = [
-  { title: "先行閲覧 72h", description: "RECIPESドラフトやケースレビューを72時間先に閲覧し、フィードバックでポイント獲得。" },
-  { title: "Green Room", description: "PRIME会合前後の非公開セッション。Field Director／Senior Fellowとの打ち合わせ枠。" },
-  { title: "案件報酬", description: "Delegated案件：55%分配。監修：10-30万円／案件規模に応じて。" },
-];
-
-const showcase = [
+const fellows = [
+  {
+    name: "山本 力弥",
+    role: "BAAO代表理事 / AI戦略コンサルタント",
+    expertise: "製造・通信業のサプライチェーン改革、サービスロボット事業開発。経産省AI原則実践ガバナンス・ガイドライン策定参画。",
+    background: "慶應義塾大学理工学部管理工学科卒。外資コンサル、大手通信会社を経て、「AI技術の民主化」を掲げBAAOを設立。",
+  },
   {
     name: "佐藤 圭吾",
-    role: "Field Director｜製造",
-    appointment: "FW-2025-010",
-    expertise: "Quality-Up / Ops Automation",
-  },
-  {
-    name: "森本 真央",
-    role: "Senior Fellow｜ヘルスケア",
-    appointment: "FW-2025-021",
-    expertise: "GenAI Apps / Safety & Legal",
-  },
-  {
-    name: "小川 未来",
-    role: "Fellow III｜公共",
-    appointment: "FW-2025-035",
-    expertise: "Change & Enablement",
+    role: "BAAO理事 / 生成AIエキスパート",
+    expertise: "生成AIプロダクト開発、企業のAIトランスフォーメーション支援。NTTコミュニケーションズ生成AIエキスパート。",
+    background: "2024年9月に雲孫LLC設立。AI利活用指針の策定や倫理ガイドラインの普及に注力。",
   },
 ];
 
@@ -38,85 +19,59 @@ export default function CommunityFellows() {
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-serif text-3xl text-[#1D1A15] sm:text-4xl">
-            実装知を磨く師範と門下生。
+            経験豊富な師範が、<br />
+            実装をサポート。
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-[#4B4135]">
-            道場はオープンチャットからSlackへ、そしてFieldWorksへ。師範（Fellow）はImpact Pointsで評価され、役割と報酬がクリアです。
+            AI道場には、各業界で実績を持つ師範（Fellow）が在籍。
+            実装の支援から、ケーススタディの共有まで、実践的な知見を提供します。
           </p>
         </div>
 
-        <div className="mt-12 grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="space-y-6">
-            <div className="rounded-3xl border border-[#D8CFC3] bg-[#FDFBF6] p-6 shadow-sm">
-              <h3 className="text-sm font-semibold uppercase tracking-wide text-[#2F4C6E]">
-                Grade & Impact Points
-              </h3>
-              <ul className="mt-4 space-y-4 text-sm text-[#4B4135]">
-                {grades.map((grade) => (
-                  <li key={grade.name}>
-                    <p className="font-semibold text-[#1D1A15]">{grade.name}</p>
-                    <p>{grade.requirements}</p>
-                    <p className="text-xs text-[#2F4C6E]">{grade.benefit}</p>
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="/community#fellow"
-                className="mt-4 inline-flex items-center text-sm font-semibold text-[#2F4C6E] hover:text-[#4E6E92]"
-              >
-                師範として応募する →
-              </a>
-            </div>
-
-            <div className="rounded-3xl border border-[#D8CFC3] bg-white p-6 shadow-sm">
-              <h3 className="text-sm font-semibold uppercase tracking-wide text-[#2F4C6E]">
-                特典と報酬
-              </h3>
-              <div className="mt-4 grid gap-4 md:grid-cols-3">
-                {perks.map((perk) => (
-                  <div key={perk.title} className="rounded-2xl border border-[#D8CFC3] bg-[#F9F6F0] p-4 text-sm">
-                    <p className="font-semibold text-[#1D1A15]">{perk.title}</p>
-                    <p className="mt-2 text-[#4B4135]">{perk.description}</p>
-                  </div>
-                ))}
-              </div>
-              <a
-                href="/join#fellow-assign"
-                className="mt-4 inline-flex items-center text-sm font-semibold text-[#2F4C6E] hover:text-[#4E6E92]"
-              >
-                案件相談フォームへ →
-              </a>
-            </div>
-          </div>
-
-          <div className="rounded-3xl border border-[#D8CFC3] bg-[#F9F6F0] p-6 shadow-sm">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-[#2F4C6E]">
-              Field Director / Senior Fellow Showcase
+        <div className="mt-12">
+          <div className="rounded-3xl border border-[#D8CFC3] bg-[#F9F6F0] p-8 shadow-sm">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-bamboo">
+              在籍する師範（一部）
             </h3>
-            <div className="mt-4 space-y-4">
-              {showcase.map((person) => (
-                <div key={person.name} className="rounded-2xl border border-[#D8CFC3] bg-white/80 p-4 backdrop-blur">
-                  <p className="text-sm font-semibold text-[#1D1A15]">{person.name}</p>
-                  <p className="text-xs text-[#4B4135]">{person.role}</p>
-                  <div className="mt-2 flex items-center justify-between text-xs text-[#4B4135]">
-                    <span>Appointment# {person.appointment}</span>
-                    <span>{person.expertise}</span>
+            <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {fellows.map((fellow) => (
+                <div key={fellow.name} className="rounded-2xl border border-[#D8CFC3] bg-white/80 p-6 backdrop-blur">
+                  <p className="font-semibold text-[#1D1A15]">{fellow.name}</p>
+                  <p className="mt-1 text-sm text-bamboo">{fellow.role}</p>
+                  <div className="mt-4 space-y-3 text-xs text-[#4B4135]">
+                    <div>
+                      <p className="font-semibold text-[#1D1A15]">専門領域</p>
+                      <p className="mt-1">{fellow.expertise}</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-[#1D1A15]">経歴</p>
+                      <p className="mt-1">{fellow.background}</p>
+                    </div>
                   </div>
                 </div>
               ))}
+              <div className="rounded-2xl border border-dashed border-[#D8CFC3] bg-white/40 p-6 backdrop-blur flex items-center justify-center">
+                <p className="text-sm font-semibold text-[#4B4135]">and more...</p>
+              </div>
             </div>
-            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+            <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               <a
                 href="/join#fellow"
-                className="flex items-center justify-center rounded-full bg-[#2F4C6E] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#4E6E92]"
+                className="flex items-center justify-center rounded-full bg-vermillion px-6 py-3 text-sm font-semibold text-white transition hover:bg-vermillion-dark shadow-lg"
               >
                 師範として参画する
               </a>
               <a
-                href="/join#media"
-                className="flex items-center justify-center rounded-full border border-[#2F4C6E] px-6 py-3 text-sm font-semibold text-[#2F4C6E] transition hover:bg-[#2F4C6E]/10"
+                href="/join#enterprise"
+                className="flex items-center justify-center rounded-full border border-bamboo px-6 py-3 text-sm font-semibold text-bamboo transition hover:bg-bamboo/10"
               >
-                メディア・連携の相談
+                企業向け導入相談
+              </a>
+              <a
+                href="/community"
+                className="flex items-center justify-center rounded-full border border-[#D8CFC3] px-6 py-3 text-sm font-semibold text-[#4B4135] transition hover:bg-[#F9F6F0]"
+              >
+                コミュニティについて
               </a>
             </div>
           </div>

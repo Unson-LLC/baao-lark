@@ -45,22 +45,43 @@ const programs = [
 
 export default function ProgramSnapshot() {
   return (
-    <section id="programs" className="bg-white py-16 md:py-20">
-      <div className="mx-auto max-w-6xl px-4 md:px-6">
+    <section id="programs" className="ink-bleed relative overflow-hidden bg-white py-16 md:py-20">
+      {/* セクション全体に和紙テクスチャ（低不透明度・リピート） */}
+      <div
+        className="pointer-events-none absolute inset-0 opacity-30"
+        style={{
+          backgroundImage: "url(/images/programs/washi.png)",
+          backgroundRepeat: "repeat",
+          backgroundSize: "600px 600px",
+        }}
+      />
+      <div className="relative mx-auto max-w-6xl px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-serif text-3xl text-[#1D1A15] sm:text-4xl">
             無料稽古から伴走まで。
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-[#4B4135]">
-            まずは無料で道場に触れ、その後は月謝プランで学び、伴走プログラムで成果を出す。各フェーズで提供する価値と価格を明確にしました。
+            まずは無料で道場に触れ、その後は月謝プランで学び、伴走プログラムで成果を出す。
           </p>
         </div>
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {programs.map((program) => (
             <div
               key={program.name}
-              className="flex h-full flex-col rounded-3xl border border-[#D8CFC3] bg-[#FDFBF6] p-6 shadow-[0_12px_24px_rgba(29,26,21,0.06)]"
+              className="relative flex h-full flex-col overflow-hidden rounded-3xl border-2 border-[#D8CFC3] bg-[#FDFBF6]/90 p-6 shadow-[0_12px_24px_rgba(29,26,21,0.06)]"
+              style={{
+                borderImage: 'linear-gradient(135deg, rgba(44, 44, 44, 0.6) 0%, rgba(44, 44, 44, 0.3) 50%, rgba(44, 44, 44, 0.6) 100%) 1',
+              }}
             >
+              {/* 各カードにも薄い模様を追加 */}
+              <div
+                className="pointer-events-none absolute inset-0 opacity-15"
+                style={{
+                  backgroundImage: "url(/images/programs/washi.png)",
+                  backgroundRepeat: "repeat",
+                  backgroundSize: "500px 500px",
+                }}
+              />
               <div>
                 <h3 className="font-serif text-xl text-[#1D1A15]">{program.name}</h3>
                 <p className="mt-2 text-sm text-[#4B4135]">{program.description}</p>
@@ -69,14 +90,14 @@ export default function ProgramSnapshot() {
               <ul className="mt-6 space-y-2 text-sm text-[#4B4135]">
                 {program.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-2">
-                    <span className="mt-1 h-2 w-2 rounded-full bg-[#2F4C6E]" />
+                    <span className="mt-1 h-2 w-2 rounded-full bg-bamboo" />
                     <span>{feature}</span>
                   </li>
                 ))}
               </ul>
               <a
                 href={program.href}
-                className="mt-auto inline-flex items-center pt-6 text-sm font-semibold text-[#2F4C6E] hover:text-[#4E6E92]"
+                className="mt-auto inline-flex items-center pt-6 text-sm font-semibold text-bamboo hover:text-bamboo-light"
               >
                 詳細を見る →
               </a>

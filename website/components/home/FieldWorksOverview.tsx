@@ -5,10 +5,23 @@ const matrix = [
   { field: "金融", mission: "Growth-Up", practice: "Data & Integration", case: "与信評価の自動化" },
 ];
 
+import Image from "next/image";
+
 export default function FieldWorksOverview() {
   return (
-    <section id="methods" className="bg-[#F9F6F0] py-16 md:py-20">
-      <div className="mx-auto max-w-6xl px-4 md:px-6">
+    <section id="methods" className="relative overflow-hidden bg-[#F9F6F0] py-16 md:py-20">
+      {/* 背景に梁・柱の構造美（淡く） */}
+      <div className="pointer-events-none absolute inset-0 opacity-20">
+        <Image
+          src="/images/fieldworks/framework.png"
+          alt="構造的なフレームワークのイメージ"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#F9F6F0]/80 via-[#F9F6F0]/70 to-[#F9F6F0]/80" />
+      </div>
+      <div className="relative mx-auto max-w-6xl px-4 md:px-6">
         <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-start">
           <div className="space-y-6">
             <span className="text-sm font-semibold uppercase tracking-wide text-[#C47E3B]">
@@ -21,7 +34,7 @@ export default function FieldWorksOverview() {
               すべての案件は「流派（Field）」「勝ち筋（Mission）」「型（Practice）」の軸で組み立て、責任者（Field Director）と師範（Fellow）がRACIで動きます。だからこそ、誰が実装しても品質が揃い、公開しても再現できるのです。
             </p>
             <div className="rounded-2xl border border-[#D8CFC3] bg-white p-6 shadow-sm">
-              <h3 className="text-sm font-semibold uppercase tracking-wide text-[#2F4C6E]">
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-bamboo">
                 役割（RACI）簡易マップ
               </h3>
               <ul className="mt-4 space-y-2 text-sm text-[#4B4135]">
@@ -40,14 +53,14 @@ export default function FieldWorksOverview() {
               </ul>
               <a
                 href="/methods"
-                className="mt-4 inline-flex items-center text-sm font-semibold text-[#2F4C6E] hover:text-[#4E6E92]"
+                className="mt-4 inline-flex items-center text-sm font-semibold text-bamboo hover:text-bamboo-light"
               >
                 FieldWorksの詳細を見る →
               </a>
             </div>
           </div>
 
-          <div className="rounded-3xl border border-[#D8CFC3] bg-white shadow-[0_12px_24px_rgba(29,26,21,0.08)]">
+          <div className="relative overflow-hidden rounded-3xl border border-[#D8CFC3] bg-white shadow-[0_12px_24px_rgba(29,26,21,0.08)]">
             <div className="grid gap-px bg-[#D8CFC3] p-px">
               <div className="grid grid-cols-4 bg-white text-xs font-semibold uppercase tracking-wide text-[#4B4135]">
                 <div className="p-4">流派 (Field)</div>
@@ -66,7 +79,7 @@ export default function FieldWorksOverview() {
             </div>
             <div className="border-t border-[#D8CFC3] p-6 text-sm text-[#4B4135]">
               各ケースは、守秘レベルごとに公開・要素分解・匿名化を判断。伴走支援や横展開のご相談は{" "}
-              <a href="/join#enterprise" className="font-semibold text-[#2F4C6E] hover:text-[#4E6E92]">
+              <a href="/join#enterprise" className="font-semibold text-bamboo hover:text-bamboo-light">
                 Join#enterprise
               </a>{" "}
               から。

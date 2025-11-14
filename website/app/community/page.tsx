@@ -1,247 +1,204 @@
-const journey = [
+const benefits = [
   {
-    step: "STEP 1",
-    title: "無料稽古で空気を掴む",
-    description:
-      "木曜夜の無料ライブで最新ケースを体験。参加後アンケートで知りたい流派を申告すると、週次ノートと次回テーマが届きます。",
-    cta: { label: "無料稽古に参加", href: "/join#free-live" }
+    title: "実案件での経験が積める",
+    description: "BOOST・PRIMEプロジェクトに参加し、実際の企業案件で実装支援ができます。",
+    icon: "💼",
   },
   {
-    step: "STEP 2",
-    title: "月謝プランで定着させる",
-    description:
-      "BASIC / ACTIVE ではアーカイブ視聴とSlackでの質問、Field Director との月次レビューが受けられます。3ヶ月で成果を可視化。",
-    cta: { label: "月謝プランを相談", href: "/join#basic" }
+    title: "報酬と実績が得られる",
+    description: "案件への参画、登壇、記事執筆などの貢献に応じて報酬が支払われます。実績は公開ケースとして残ります。",
+    icon: "💰",
   },
   {
-    step: "STEP 3",
-    title: "Fellowとして案件に入る",
-    description:
-      "Impact Points を蓄積し、師範の推薦を得た方は Fellow エントリー可能。Field Director / Senior Fellow と共に案件へ。",
-    cta: { label: "Fellow応募", href: "/join#fellow" }
-  }
+    title: "専門家ネットワーク",
+    description: "各業界の実務家と交流し、最新の実装ノウハウを共有できます。",
+    icon: "🤝",
+  },
+  {
+    title: "優先的な情報アクセス",
+    description: "未公開のケーススタディや実装手順書を先行して閲覧できます。",
+    icon: "📚",
+  },
 ];
 
-const grades = [
+const howToJoin = [
   {
-    name: "Fellow Grade I",
-    focus: "得意領域の実装サポート",
-    requirements: ["Impact Points 3pt / 四半期", "BASIC / ACTIVE での継続参加"],
-    privileges: ["オープンチャット運営メンバー", "公開ケースの共著優先"]
+    step: "1",
+    title: "まずは無料稽古に参加",
+    description: "毎週木曜日の無料ライブで道場の雰囲気を体験してください。",
   },
   {
-    name: "Fellow Grade II",
-    focus: "案件リード・共著",
-    requirements: ["Impact Points 5pt / 四半期", "案件レビューへの参加（2件）"],
-    privileges: ["RECIPES 共著ロイヤリティ", "Green Room 参加"]
+    step: "2",
+    title: "月謝プランで実力をつける",
+    description: "BASIC/ACTIVEプランでアーカイブを見て、質問しながら学びます。",
   },
   {
-    name: "Fellow Grade III",
-    focus: "領域単位の監修",
-    requirements: ["Impact Points 7pt / 四半期", "Field Director からの推薦"],
-    privileges: ["活躍領域の命名権（Named Fellow）", "Yearbook 掲載"]
+    step: "3",
+    title: "師範として応募",
+    description: "一定の実績を積んだ後、師範として案件に参画できます。",
   },
-  {
-    name: "Senior Fellow",
-    focus: "品質監修・Council 参画",
-    requirements: ["Impact Points 9pt / 四半期", "BOOST / PRIME での監修実績"],
-    privileges: ["Council 席次", "Green Room での議決権", "ケース公開時の帯同"]
-  }
 ];
 
-const impactActions = [
-  { action: "無料稽古での登壇・モデレーション", points: "+3pt" },
-  { action: "案件レビュー（週次 同席）", points: "+2pt" },
-  { action: "RECIPES 共著投稿", points: "+4pt" },
-  { action: "CommunityでのQA回答（5件）", points: "+1pt" },
-  { action: "メディア取材帯同", points: "+2pt" }
-];
-
-const privileges = [
-  { title: "Green Room", detail: "月次で開催するクローズドセッション。未公開ケースのレビューとCouncil決議を共有。" },
-  { title: "72h先行閲覧", detail: "公開前のRECIPESやYearbook草稿を先行で確認し、フィードバックできる権限。" },
-  { title: "Impact Points Dashboard", detail: "個人の貢献履歴をリアルタイムで可視化。昇格やアサインに反映。" },
-  { title: "Delegated案件の優先指名", detail: "BOOST案件やPRIME相談での専門家アサインを優先的に受けられます。" }
-];
-
-const spotlight = [
+const currentFellows = [
   {
     name: "山本 力弥",
-    role: "Field Director｜製造 × Quality-Up",
-    message: "量産ラインとカルチャー変革を両立させることが使命。Impact Points を次の世代に還流させます。"
+    role: "BAAO代表理事 / AI戦略コンサルタント",
+    expertise: "製造・通信業のサプライチェーン改革、サービスロボット事業開発。経産省AI原則実践ガバナンス・ガイドライン策定参画。",
+    background: "慶應義塾大学理工学部管理工学科卒。外資コンサル、大手通信会社を経て、「AI技術の民主化」を掲げBAAOを設立。",
   },
   {
-    name: "吉見 貴光",
-    role: "Senior Fellow｜金融 × Growth-Up",
-    message: "営業・CX領域での生成AI活用を担当。YearbookではByline付きでケースを公開。"
+    name: "佐藤 圭吾",
+    role: "BAAO理事 / 生成AIエキスパート",
+    expertise: "生成AIプロダクト開発、企業のAIトランスフォーメーション支援。NTTコミュニケーションズ生成AIエキスパート。",
+    background: "2024年9月に雲孫LLC設立。AI利活用指針の策定や倫理ガイドラインの普及に注力。",
   },
-  {
-    name: "卯田 剛史",
-    role: "Community Catalyst",
-    message: "無料稽古から月謝プランへの導線づくりと、オープンチャットの雰囲気作りをリードしています。"
-  }
 ];
 
 export default function CommunityPage() {
   return (
-    <main className="min-h-screen bg-[#F9F6F0] text-[#1D1A15]">
-      <div className="mx-auto max-w-5xl px-4 py-16 md:px-6">
-        <header className="mb-12 space-y-4">
-          <span className="text-sm font-semibold uppercase tracking-wide text-[#C47E3B]">
-            Community & Fellows
-          </span>
-          <h1 className="font-serif text-4xl">専門家コミュニティとFellow制度</h1>
-          <p className="text-[#4B4135]">
-            実戦AI道場の核は「専門家コミュニティで実装知を磨き、四半期で成果を出し、公開して再現性を高める」こと。無料稽古から始まり、Impact Points を軸にFellowへ昇格していくステップを紹介します。
+    <div className="bg-[#F9F6F0] min-h-screen">
+      <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
+        <div className="text-center">
+          <h1 className="font-serif text-4xl font-bold text-[#1D1A15] sm:text-5xl">
+            師範として参画する
+          </h1>
+          <p className="mt-4 text-lg leading-relaxed text-[#4B4135]">
+            AI道場では、各業界で実績を持つ専門家を「師範」として迎え、
+            <br />
+            実装支援やケース公開、登壇などを通じて、コミュニティを支えていただいています。
           </p>
-          <div className="flex flex-wrap gap-3 text-sm">
-            <a
-              href="/fellows"
-              className="inline-flex items-center rounded-full bg-[#2F4C6E] px-5 py-2 font-semibold text-white transition hover:bg-[#4E6E92]"
-            >
-              師範ディレクトリを見る
-            </a>
-            <a
-              href="/resources#events"
-              className="inline-flex items-center rounded-full border border-[#2F4C6E] px-5 py-2 font-semibold text-[#2F4C6E] transition hover:bg-[#2F4C6E] hover:text-white"
-            >
-              Fellow向け説明会の予定を見る
-            </a>
-          </div>
-        </header>
+        </div>
 
-        <section id="community" className="rounded-3xl border border-[#D8CFC3] bg-white p-6 shadow-sm">
-          <h2 className="font-serif text-2xl text-[#1D1A15]">コミュニティのステップ</h2>
-          <p className="mt-3 text-sm text-[#4B4135]">
-            ペルソナごとのジャーニーに合わせ、「覗く → 継続する → 参画する」の3段階で導線を整えています。各ステップでアンケート／Impact Points が連動し、最適な次アクションを提案します。
-          </p>
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
-            {journey.map((item) => (
-              <div key={item.step} className="rounded-2xl bg-[#F9F6F0] p-4 text-sm text-[#4B4135]">
-                <p className="text-xs font-semibold uppercase tracking-wide text-[#2F4C6E]">
+        {/* 師範になるメリット */}
+        <div className="mt-16">
+          <h2 className="font-serif text-3xl text-[#1D1A15] text-center">
+            師範になるメリット
+          </h2>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {benefits.map((benefit) => (
+              <div
+                key={benefit.title}
+                className="rounded-3xl border border-[#D8CFC3] bg-white p-8 shadow-sm"
+              >
+                <div className="text-4xl">{benefit.icon}</div>
+                <h3 className="mt-4 font-semibold text-[#1D1A15]">{benefit.title}</h3>
+                <p className="mt-2 text-sm text-[#4B4135]">{benefit.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* 師範になるまでの流れ */}
+        <div className="mt-16">
+          <h2 className="font-serif text-3xl text-[#1D1A15] text-center">
+            師範になるまでの流れ
+          </h2>
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {howToJoin.map((item) => (
+              <div
+                key={item.step}
+                className="rounded-3xl border border-[#D8CFC3] bg-white p-6 shadow-sm"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-bamboo/10 text-lg font-bold text-bamboo">
                   {item.step}
-                </p>
-                <h3 className="mt-2 font-serif text-xl text-[#1D1A15]">{item.title}</h3>
-                <p className="mt-2 leading-relaxed">{item.description}</p>
-                <a href={item.cta.href} className="mt-3 inline-flex items-center text-xs font-semibold uppercase tracking-wide text-[#2F4C6E] underline">
-                  {item.cta.label}
-                </a>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section id="fellow" className="mt-12 rounded-3xl border border-[#D8CFC3] bg-white p-6 shadow-sm">
-          <h2 className="font-serif text-2xl text-[#1D1A15]">Fellow Grade & Impact Points</h2>
-          <p className="mt-3 text-sm text-[#4B4135]">
-            Impact Points は貢献行動をスコア化し、Fellow の昇格や案件アサインに利用します。下表は四半期ごとの基準です。詳細は Council や Field Director と面談時に共有します。
-          </p>
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
-            {grades.map((grade) => (
-              <div key={grade.name} className="rounded-2xl bg-[#F9F6F0] p-5 text-sm text-[#4B4135]">
-                <p className="text-xs font-semibold uppercase tracking-wide text-[#2F4C6E]">
-                  {grade.name}
-                </p>
-                <p className="mt-1 font-semibold text-[#1D1A15]">{grade.focus}</p>
-                <div className="mt-3">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-[#C47E3B]">昇格条件</p>
-                  <ul className="mt-2 space-y-1">
-                    {grade.requirements.map((req) => (
-                      <li key={req} className="flex items-start gap-2">
-                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-[#2F4C6E]" />
-                        <span>{req}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
-                <div className="mt-3">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-[#C47E3B]">特典</p>
-                  <ul className="mt-2 space-y-1">
-                    {grade.privileges.map((priv) => (
-                      <li key={priv} className="flex items-start gap-2">
-                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-[#C47E3B]" />
-                        <span>{priv}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <h3 className="mt-4 font-semibold text-[#1D1A15]">{item.title}</h3>
+                <p className="mt-2 text-sm text-[#4B4135]">{item.description}</p>
               </div>
             ))}
           </div>
-        </section>
+        </div>
 
-        <section id="impact" className="mt-12 rounded-3xl border border-[#D8CFC3] bg-white p-6 shadow-sm">
-          <h2 className="font-serif text-2xl text-[#1D1A15]">Impact Points の加点例</h2>
-          <p className="mt-3 text-sm text-[#4B4135]">
-            加点・減点ルールは Council が四半期ごとに見直し。行動ベースで透明性を担保することで、Fellow が自尊心を持って参画できる仕組みを整えています。
-          </p>
-          <ul className="mt-4 grid gap-4 md:grid-cols-2">
-            {impactActions.map((item) => (
-              <li key={item.action} className="rounded-2xl bg-[#F9F6F0] p-4 text-sm text-[#4B4135]">
-                <p className="font-semibold text-[#1D1A15]">{item.action}</p>
-                <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-[#2F4C6E]">{item.points}</p>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-4 text-xs text-[#4B4135]">
-            ※ 減点例：SLA 超過 -1pt、守秘違反 -3pt。Councilでのレビュー後、Slack Impact-Points チャンネルで公開します。
-          </p>
-        </section>
-
-        <section id="privileges" className="mt-12 rounded-3xl border border-[#D8CFC3] bg-white p-6 shadow-sm">
-          <h2 className="font-serif text-2xl text-[#1D1A15]">特権とリソース</h2>
-          <p className="mt-3 text-sm text-[#4B4135]">
-            Fellows は「Green Room」「72h先行閲覧」「Impact Points Dashboard」など、ブランドを高める仕組みを享受できます。Field Director / Senior Fellow は、Fellow の自尊心をくすぐる紹介導線を用意しています。
-          </p>
-          <div className="mt-4 grid gap-4 md:grid-cols-2">
-            {privileges.map((item) => (
-              <div key={item.title} className="rounded-2xl bg-[#F9F6F0] p-4 text-sm text-[#4B4135]">
-                <p className="font-semibold text-[#1D1A15]">{item.title}</p>
-                <p className="mt-1 leading-relaxed">{item.detail}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section id="showcase" className="mt-12 rounded-3xl border border-[#D8CFC3] bg-white p-6 shadow-sm">
-          <h2 className="font-serif text-2xl text-[#1D1A15]">Field Director & Senior Fellow Showcase</h2>
-          <p className="mt-3 text-sm text-[#4B4135]">
-            Council のメンバーは案件の成功体験とブランドを共有し、次の世代の Fellows を内部から勧誘します。名前・Appointment#の掲載は本人承諾のもとで行います。
-          </p>
-          <p className="mt-2 text-sm text-[#4B4135]">
-            さらに多くの師範プロフィールは <a href="/fellows" className="text-[#2F4C6E] underline">/fellows</a> にまとめています。案件の共著者や登壇予定も随時更新中です。
-          </p>
+        {/* 活動内容 */}
+        <div className="mt-16 rounded-3xl border border-[#D8CFC3] bg-white p-8 shadow-sm">
+          <h2 className="font-serif text-3xl text-[#1D1A15]">
+            師範の主な活動
+          </h2>
           <div className="mt-6 space-y-4">
-            {spotlight.map((person) => (
-              <article key={person.name} className="rounded-2xl bg-[#F9F6F0] p-5 text-sm text-[#4B4135]">
-                <p className="text-xs font-semibold uppercase tracking-wide text-[#2F4C6E]">{person.role}</p>
-                <h3 className="mt-1 font-serif text-xl text-[#1D1A15]">{person.name}</h3>
-                <p className="mt-2 leading-relaxed">{person.message}</p>
-              </article>
+            <div className="rounded-2xl border border-[#D8CFC3] bg-[#F9F6F0] p-6">
+              <h3 className="font-semibold text-[#1D1A15]">実装支援</h3>
+              <p className="mt-2 text-sm text-[#4B4135]">
+                企業のBOOST・PRIMEプロジェクトに参加し、AI導入の実装をサポートします。自分の専門領域を活かせます。
+              </p>
+            </div>
+            <div className="rounded-2xl border border-[#D8CFC3] bg-[#F9F6F0] p-6">
+              <h3 className="font-semibold text-[#1D1A15]">ケース公開への寄稿</h3>
+              <p className="mt-2 text-sm text-[#4B4135]">
+                プロジェクトの成果を実装事例として執筆・公開します。著者として名前が残り、実績になります。
+              </p>
+            </div>
+            <div className="rounded-2xl border border-[#D8CFC3] bg-[#F9F6F0] p-6">
+              <h3 className="font-semibold text-[#1D1A15]">Weekly Dojo Liveへの登壇</h3>
+              <p className="mt-2 text-sm text-[#4B4135]">
+                無料稽古での登壇や、専門領域の解説を行います。自分の知見を広く共有できます。
+              </p>
+            </div>
+            <div className="rounded-2xl border border-[#D8CFC3] bg-[#F9F6F0] p-6">
+              <h3 className="font-semibold text-[#1D1A15]">コミュニティでの質問対応</h3>
+              <p className="mt-2 text-sm text-[#4B4135]">
+                Larkコミュニティでの質問に答えたり、参加者の実装をレビューします。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 現在活躍中の師範 */}
+        <div className="mt-16">
+          <h2 className="font-serif text-3xl text-[#1D1A15] text-center">
+            現在活躍中の師範（一部）
+          </h2>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {currentFellows.map((fellow) => (
+              <div
+                key={fellow.name}
+                className="rounded-3xl border border-[#D8CFC3] bg-white p-8 shadow-sm"
+              >
+                <p className="font-semibold text-[#1D1A15] text-lg">{fellow.name}</p>
+                <p className="mt-1 text-sm text-bamboo">{fellow.role}</p>
+                <div className="mt-4 space-y-3 text-sm text-[#4B4135]">
+                  <div>
+                    <p className="font-semibold text-[#1D1A15]">専門領域</p>
+                    <p className="mt-1">{fellow.expertise}</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-[#1D1A15]">経歴</p>
+                    <p className="mt-1">{fellow.background}</p>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
-          <div className="mt-6 flex flex-wrap gap-3 text-sm">
+          <p className="mt-6 text-center text-sm text-[#4B4135]">
+            その他、製造・医療・公共・金融など各業界の専門家が師範として参画しています。
+          </p>
+        </div>
+
+        {/* 応募CTA */}
+        <div className="mt-16 rounded-3xl border-2 border-bamboo bg-white p-8 text-center shadow-lg">
+          <h3 className="font-serif text-2xl font-bold text-[#1D1A15]">
+            師範として参画してみませんか？
+          </h3>
+          <p className="mt-3 text-sm text-[#4B4135]">
+            まずは無料稽古に参加して、道場の雰囲気を確かめてください。
+            <br />
+            その後、月謝プランで実力をつけて、師範としての道を歩んでいただけます。
+          </p>
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
             <a
               href="/join#fellow"
-              className="inline-flex items-center rounded-full bg-[#2F4C6E] px-5 py-2 font-semibold text-white transition hover:bg-[#4E6E92]"
+              className="inline-flex items-center justify-center rounded-full bg-vermillion px-6 py-3 text-sm font-semibold text-[#1D1A15] transition hover:bg-vermillion-dark shadow-lg"
             >
-              Fellow として参画する
+              師範として応募する
             </a>
             <a
-              href="/join#fellow-assign"
-              className="inline-flex items-center rounded-full border border-[#2F4C6E] px-5 py-2 font-semibold text-[#2F4C6E] transition hover:bg-[#2F4C6E] hover:text-white"
+              href="/join#free-live"
+              className="inline-flex items-center justify-center rounded-full border border-bamboo px-6 py-3 text-sm font-semibold text-bamboo transition hover:bg-bamboo/10"
             >
-              案件へのアサインを希望する
-            </a>
-            <a
-              href="/join#media"
-              className="inline-flex items-center rounded-full border border-[#C47E3B] px-5 py-2 font-semibold text-[#C47E3B] transition hover:bg-[#C47E3B] hover:text-white"
-            >
-              メディア紹介の相談をする
+              まずは無料稽古に参加
             </a>
           </div>
-        </section>
+        </div>
       </div>
-    </main>
+    </div>
   );
 }

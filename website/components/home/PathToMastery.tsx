@@ -17,7 +17,7 @@ const steps = [
   {
     title: "成果公開・横展開",
     description: "ケース/Yearbookとして公開し、他部署・他社への横展開を支援。",
-    cta: { label: "公開ケースを見る", href: "/cases" },
+    cta: { label: "公開ケースを見る", href: "/success-stories" },
   },
 ];
 
@@ -29,9 +29,6 @@ export default function PathToMastery() {
           <h2 className="font-serif text-3xl text-[#1D1A15] sm:text-4xl">
             稽古 → 月謝 → 伴走 → 公開の道筋。
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-[#4B4135]">
-            どのペルソナも「無料で覗く」ことから始まり、徐々に伴走・公開へステップアップできる構造です。
-          </p>
         </div>
         <div className="relative mt-12 lg:flex lg:items-center lg:justify-between lg:gap-6">
           <div className="absolute left-8 top-12 hidden h-[2px] w-[calc(100%-4rem)] bg-[#D8CFC3] lg:block" />
@@ -39,7 +36,7 @@ export default function PathToMastery() {
             {steps.map((step, index) => (
               <div key={step.title} className="relative">
                 <div className="mb-4 flex items-center gap-3 lg:mb-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#2F4C6E] font-semibold text-white">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-bamboo font-semibold text-white">
                     {index + 1}
                   </div>
                   <h3 className="font-semibold text-[#1D1A15]">{step.title}</h3>
@@ -47,7 +44,7 @@ export default function PathToMastery() {
                 <p className="text-sm leading-relaxed text-[#4B4135]">{step.description}</p>
                 <a
                   href={step.cta.href}
-                  className="mt-4 inline-flex items-center text-sm font-semibold text-[#2F4C6E] hover:text-[#4E6E92]"
+                  className="mt-4 inline-flex items-center text-sm font-semibold text-bamboo hover:text-bamboo-light"
                 >
                   {step.cta.label} →
                 </a>

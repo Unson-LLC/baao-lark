@@ -23,7 +23,7 @@ const ctas = [
 
 export default function CTABand() {
   return (
-    <section className="bg-[#2F4C6E] py-14">
+    <section className="bg-bamboo py-14">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {ctas.map((cta) => (
@@ -35,9 +35,9 @@ export default function CTABand() {
               <p className="mt-3 text-sm text-white/80">{cta.description}</p>
               <Link
                 href={cta.href}
-                className={`mt-6 inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition ${
+                className={`mt-6 inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition shadow-lg ${
                   cta.primary
-                    ? "bg-white text-[#2F4C6E] hover:bg-white/90"
+                    ? "bg-vermillion text-white hover:bg-vermillion-dark"
                     : "border border-white/70 text-white hover:bg-white/10"
                 }`}
               >

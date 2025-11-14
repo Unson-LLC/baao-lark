@@ -2,30 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-/* BAAO Custom Styles */
+/* BAAO Dojo Custom Styles */
 @layer base {
   html {
     scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-background text-text;
+    @apply bg-washi text-ink;
   }
 }
 
 @layer components {
-  /* Button Styles */
+  /* Button Styles - 道場スタイル */
   .btn-primary {
-    @apply bg-primary hover:bg-primary-dark text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200;
+    @apply bg-dojo-gold hover:bg-dojo-gold-dark text-ink font-bold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl border-2 border-dojo-gold-dark;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+  }
+
+  .btn-primary:hover::before {
+    left: 100%;
   }
 
   .btn-secondary {
-    @apply bg-white hover:bg-background-dark text-primary border-2 border-primary font-bold py-3 px-6 rounded-lg transition-colors duration-200;
+    @apply bg-transparent hover:bg-dojo-green text-dojo-green hover:text-washi border-2 border-dojo-green font-bold py-3 px-8 rounded-lg transition-all duration-300;
   }
 
-  /* Section Styles */
+  .btn-accent {
+    @apply bg-dojo-indigo hover:bg-dojo-indigo-dark text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl;
+  }
+
+  /* Section Styles - 余白を多めに（禅の「間」の美学） */
   .section {
-    @apply py-16 md:py-24;
+    @apply py-20 md:py-32;
   }
 
   .container-custom {
@@ -47,5 +68,188 @@
 
   .heading-sm {
     @apply text-xl md:text-2xl font-bold;
+  }
+
+  /* 画像処理 - セピア・モノトーン調整 */
+  .image-sepia {
+    filter: sepia(20%) contrast(1.1) brightness(0.95);
+  }
+
+  .image-monochrome {
+    filter: grayscale(30%) contrast(1.1);
+  }
+
+  /* テクスチャー - 和紙の質感 */
+  .texture-washi {
+    background-image: url('/images/programs/washi.png');
+    background-repeat: repeat;
+    background-size: 600px 600px;
+    opacity: 0.15;
+  }
+
+  /* 墨のにじみエフェクト - セクション区切り（強化版） */
+  .ink-bleed {
+    position: relative;
+    padding-bottom: 3rem;
+  }
+
+  .ink-bleed::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 4px;
+    background: linear-gradient(to right,
+      transparent 0%,
+      rgba(47, 69, 56, 0.2) 10%,
+      rgba(47, 69, 56, 0.5) 30%,
+      rgba(47, 69, 56, 0.8) 50%,
+      rgba(47, 69, 56, 0.5) 70%,
+      rgba(47, 69, 56, 0.2) 90%,
+      transparent 100%);
+    border-radius: 50%;
+    filter: blur(2px);
+  }
+
+  /* セクション区切り - 金色の筆線 */
+  .gold-brush-divider {
+    position: relative;
+    padding-bottom: 3rem;
+  }
+
+  .gold-brush-divider::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 3px;
+    background: linear-gradient(to right,
+      transparent 0%,
+      rgba(212, 175, 55, 0.3) 20%,
+      rgba(212, 175, 55, 1) 50%,
+      rgba(212, 175, 55, 0.3) 80%,
+      transparent 100%);
+    border-radius: 50%;
+  }
+
+  /* 和風装飾 - 左上の角飾り */
+  .corner-decoration::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    @apply border-dojo-gold;
+  }
+
+  .corner-decoration::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    @apply border-dojo-gold;
+  }
+
+  /* 筆のストローク - カードのボーダー（道場カラー対応） */
+  .brush-border {
+    position: relative;
+    border: 2px solid transparent;
+    background-image:
+      linear-gradient(white, white),
+      linear-gradient(to bottom right,
+        rgba(47, 69, 56, 0.8) 0%,
+        rgba(212, 175, 55, 0.4) 50%,
+        rgba(47, 69, 56, 0.8) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+  }
+
+  .brush-border:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(47, 69, 56, 0.2);
+  }
+
+  /* 障子が開くアニメーション - カード */
+  .shoji-card {
+    @apply bg-white rounded-lg shadow-lg overflow-hidden;
+    position: relative;
+    transition: all 0.5s ease;
+  }
+
+  .shoji-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(47, 69, 56, 0.3);
+  }
+
+  .shoji-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.1) 50%, transparent 100%);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+  }
+
+  .shoji-card:hover::before {
+    transform: translateX(100%);
+  }
+
+  /* 和風の矢印 */
+  .arrow-japanese {
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background: currentColor;
+    position: relative;
+    margin-left: 8px;
+  }
+
+  .arrow-japanese::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  /* 和数字装飾 */
+  .japanese-number {
+    @apply font-brush text-dojo-gold;
+    font-size: 1.2em;
+    line-height: 1;
+  }
+
+  /* スクロール時の墨広がりエフェクト */
+  .scroll-ink-effect {
+    opacity: 0;
+    transform: scale(0.9);
+    filter: blur(8px);
+    transition: all 1s ease-out;
+  }
+
+  .scroll-ink-effect.visible {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
   }
 }

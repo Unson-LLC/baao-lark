@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, Noto_Serif_JP } from "next/font/google";
+import { Inter, Noto_Serif_JP, Yuji_Syuku } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const notoSerif = Noto_Serif_JP({ subsets: ["latin"], variable: "--font-noto-serif" });
+const notoSerif = Noto_Serif_JP({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-noto-serif" });
+const yujiBrush = Yuji_Syuku({ subsets: ["latin"], weight: ["400"], variable: "--font-yuji-brush" });
 
 export const metadata: Metadata = {
   title: "BAAO 実戦AI道場｜流派 × 勝ち筋 × 型で四半期で成果",
@@ -42,8 +43,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className={`${inter.variable} ${notoSerif.variable}`}>
-      <body className="bg-[#F9F6F0] text-[#1D1A15]">
+    <html lang="ja" className={`${inter.variable} ${notoSerif.variable} ${yujiBrush.variable}`}>
+      <body className="bg-washi text-ink">
         <div className="flex min-h-screen flex-col">
           <Header />
           <main className="flex-1">{children}</main>

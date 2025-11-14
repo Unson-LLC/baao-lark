@@ -5,26 +5,24 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const primaryNav = [
-  { label: "Home", href: "/" },
-  { label: "Programs & FieldWorks", href: "/programs" },
-  { label: "Success Stories", href: "/success-stories" },
-  { label: "Resources", href: "/resources" },
-  { label: "Join", href: "/join" },
+  { label: "道場について", href: "/" },
+  { label: "プログラム", href: "/programs" },
+  { label: "実装事例", href: "/success-stories" },
+  { label: "イベント・資料", href: "/resources" },
+  { label: "参加申込", href: "/join" },
 ];
 
 const personaNav = [
-  { label: "For Executives", href: "/executives" },
-  { label: "For DX Leads", href: "/dx-leads" },
-  { label: "For Operators", href: "/operators" },
-  { label: "For Fellows", href: "/fellows" },
+  { label: "参加を検討している方", href: "/for-you" },
+  { label: "師範として参画", href: "/community" },
 ];
 
 function NavItem({ href, label, isActive }: { href: string; label: string; isActive: boolean }) {
   return (
     <Link
       href={href}
-      className={`rounded-full px-4 py-2 text-sm font-semibold transition hover:bg-[#2F4C6E]/10 ${
-        isActive ? "text-[#2F4C6E]" : "text-[#1D1A15]"
+      className={`rounded-lg px-4 py-2 text-sm font-semibold transition hover:bg-dojo-green/10 ${
+        isActive ? "text-dojo-gold border-b-2 border-dojo-gold" : "text-ink"
       }`}
     >
       {label}
@@ -37,15 +35,19 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[#D8CFC3] bg-[#F9F6F0]/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b-2 border-dojo-green/20 bg-washi/95 backdrop-blur shadow-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-6">
-        <Link href="/" className="flex items-center gap-2">
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#2F4C6E]/90 font-serif text-lg text-white">
-            道
-          </span>
-          <div className="leading-tight text-[#1D1A15]">
-            <p className="font-serif text-lg">BAAO 実戦AI道場</p>
-            <p className="text-xs text-[#4B4135]">Dojo for Practical AI</p>
+        <Link href="/" className="flex items-center gap-3 group">
+          <div className="relative h-12 w-12">
+            <img
+              src="/logo.png"
+              alt="BAAO Dojo Logo"
+              className="h-full w-full object-contain transition-transform group-hover:scale-110"
+            />
+          </div>
+          <div className="leading-tight">
+            <p className="font-brush text-xl text-dojo-green">BAAO 実戦AI道場</p>
+            <p className="text-xs text-ink-light tracking-wide">Dojo for Practical AI</p>
           </div>
         </Link>
         <button
@@ -75,21 +77,21 @@ export default function Header() {
           </div>
           <Link
             href="/join#free-live"
-            className="rounded-full bg-[#2F4C6E] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#4E6E92]"
+            className="btn-primary text-sm"
           >
             無料稽古に参加
           </Link>
         </nav>
       </div>
       {menuOpen && (
-        <div className="border-t border-[#D8CFC3] bg-white/95 px-4 py-4 shadow-lg md:hidden">
+        <div className="border-t-2 border-dojo-green/20 bg-washi/95 px-4 py-4 shadow-lg md:hidden">
           <div className="flex flex-col gap-2">
             {primaryNav.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`rounded-xl px-3 py-2 text-sm font-semibold ${
-                  pathname === item.href ? "bg-[#2F4C6E]/10 text-[#2F4C6E]" : "text-[#1D1A15]"
+                className={`rounded-lg px-3 py-2 text-sm font-semibold transition ${
+                  pathname === item.href ? "bg-dojo-green/10 text-dojo-gold border-l-4 border-dojo-gold" : "text-ink hover:bg-dojo-green/5"
                 }`}
                 onClick={() => setMenuOpen(false)}
               >
@@ -97,15 +99,15 @@ export default function Header() {
               </Link>
             ))}
           </div>
-          <div className="mt-4 border-t border-[#D8CFC3] pt-4">
-            <p className="text-xs font-semibold uppercase tracking-wide text-[#C47E3B]">Persona</p>
+          <div className="mt-4 border-t border-dojo-green/20 pt-4">
+            <p className="text-xs font-bold uppercase tracking-wide text-dojo-gold">Persona</p>
             <div className="mt-2 flex flex-col gap-2">
               {personaNav.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`rounded-xl px-3 py-2 text-sm font-semibold ${
-                    pathname === item.href ? "bg-[#2F4C6E]/10 text-[#2F4C6E]" : "text-[#1D1A15]"
+                  className={`rounded-lg px-3 py-2 text-sm font-semibold transition ${
+                    pathname === item.href ? "bg-dojo-green/10 text-dojo-gold border-l-4 border-dojo-gold" : "text-ink hover:bg-dojo-green/5"
                   }`}
                   onClick={() => setMenuOpen(false)}
                 >
@@ -115,7 +117,7 @@ export default function Header() {
             </div>
             <Link
               href="/join#free-live"
-              className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-[#2F4C6E] px-4 py-3 text-sm font-semibold text-white"
+              className="btn-primary mt-4 inline-flex w-full items-center justify-center text-sm"
               onClick={() => setMenuOpen(false)}
             >
               無料稽古に参加
