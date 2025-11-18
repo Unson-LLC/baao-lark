@@ -1,12 +1,21 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY || "dummy_key_for_build");
 
 export async function POST(request: NextRequest) {
   try {
     const { email } = await request.json();
     console.log("Newsletter signup attempt for:", email);
+
+    // API Keyがない場合はエラーを返す
+    if (!process.env.RESEND_API_KEY) {
+      console.error("RESEND_API_KEY is not set");
+      return NextResponse.json(
+        { error: "メール送信機能が設定されていません。管理者にお問い合わせください。" },
+        { status: 503 }
+      );
+    }
 
     // メールアドレスのバリデーション
     if (!email || !email.includes("@")) {

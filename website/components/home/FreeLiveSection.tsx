@@ -1,18 +1,13 @@
-import Link from "next/link";
 import Image from "next/image";
 
 const agenda = [
   {
-    title: "前半 20分｜最新ケースダイジェスト",
-    description: "製造・ヘルスケア・公共の3流派から成功/失敗例を共有。四半期で成果化するポイントを分解。",
+    title: "前半 35分｜基礎編：今週押さえたいAIニュース",
+    description: "最新のAI動向やトレンドを分かりやすく解説。ビジネスへの影響や注目ポイントを共有します。",
   },
   {
-    title: "後半 30分｜実装ハンズオン実況",
-    description: "Vibe Codingを使ったハンズオン実況。月謝会員はそのままSlackで質問可能。",
-  },
-  {
-    title: "クイック相談 10分",
-    description: "PRIME/BOOSTを検討中の企業向けに個別の次アクションを案内。",
+    title: "後半 25分｜応用編：深掘りディスカッション",
+    description: "AI導入に役立つ実践的な知見を、会話を通じて深く掘り下げます。参加者と一緒に示唆を引き出していきます。",
   },
 ];
 
@@ -53,33 +48,18 @@ export default function FreeLiveSection() {
               <h3 className="text-sm font-semibold uppercase tracking-wide text-bamboo">
                 参加方法
               </h3>
-              <ol className="mt-4 space-y-4 text-sm text-[#4B4135]">
-                <li>
-                  <span className="font-semibold text-[#1D1A15]">1. フォーム登録</span>
-                  <p>メールアドレス・興味領域・参加目的を入力。</p>
-                </li>
-                <li>
-                  <span className="font-semibold text-[#1D1A15]">2. オープンチャットへ招待</span>
-                  <p>LINEのオープンチャットでリマインドと補足資料を共有。</p>
-                </li>
-                <li>
-                  <span className="font-semibold text-[#1D1A15]">3. 当日アクセス</span>
-                  <p>開始1時間前に視聴URLとスライドを配信。</p>
-                </li>
-              </ol>
+              <p className="mt-4 text-sm leading-relaxed text-[#4B4135]">
+                LINEのオープンチャットに参加するだけでOKです。開催日時になったら、視聴リンクとスライドがオープンチャットで共有されます。匿名での参加も可能です。
+              </p>
               <div className="mt-6 flex flex-col gap-3">
-                <Link
-                  href="/join#free-live"
+                <a
+                  href="https://line.me/ti/g2/Mb4gQI-33HfsA6V4gv_uFScufGZZIuqrp7q0_w?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center rounded-full bg-vermillion px-6 py-3 text-sm font-semibold text-[#1D1A15] transition hover:bg-vermillion-dark shadow-lg"
                 >
-                  無料稽古に登録する
-                </Link>
-                <Link
-                  href="/resources#events"
-                  className="flex items-center justify-center rounded-full border border-bamboo px-6 py-3 text-sm font-semibold text-bamboo transition hover:bg-bamboo/10"
-                >
-                  オープンチャットの案内を見る
-                </Link>
+                  LINEオープンチャットに参加する
+                </a>
                 <p className="text-xs text-[#4B4135]">
                   オープンチャットは匿名参加可。利用規約に同意した上でご参加ください。
                 </p>

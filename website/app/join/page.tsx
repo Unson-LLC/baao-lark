@@ -433,7 +433,7 @@ const formDefinitions: FormDefinition[] = [
     description: (
       <div className="space-y-3 text-sm text-[#4B4135]">
         <p>
-          Stripe 決済・Slack 招待は通常 1 営業日以内に発行します。導入背景や希望する開始時期を記入いただくと、最適なプランを Field Director
+          Stripe 決済・Lark 招待は通常 1 営業日以内に発行します。導入背景や希望する開始時期を記入いただくと、最適なプランを Field Director
           がおすすめします。
         </p>
       </div>
@@ -548,7 +548,7 @@ const formDefinitions: FormDefinition[] = [
             </select>
           </label>
           <label className="flex flex-col gap-2 text-sm text-[#4B4135]">
-            Slack / オープンチャット招待
+            Lark / オープンチャット招待
             <select
               name="community_invite"
               className="rounded-lg border border-[#D8CFC3] bg-white px-3 py-2 focus:border-[#2F4C6E] focus:outline-none focus:ring-2 focus:ring-[#2F4C6E]/20"
@@ -605,7 +605,7 @@ const formDefinitions: FormDefinition[] = [
         <ul className="space-y-1 list-disc list-inside">
           <li>応募後 3 営業日以内に担当 Field Director が面談日程をご連絡します。</li>
           <li>面談時に Impact Points の仮付与、参画可能な案件や登壇枠をご提案します。</li>
-          <li>合意後は Green Room / Slack へ招待し、最初の案件または登壇にアサインします。</li>
+          <li>合意後は Green Room / Lark へ招待し、最初の案件または登壇にアサインします。</li>
         </ul>
       </div>
     ),
@@ -734,7 +734,7 @@ const formDefinitions: FormDefinition[] = [
     heading: "案件相談（既存Fellow向け）",
     description: (
       <p className="text-sm text-[#4B4135]">
-        既にFellowの方が案件に参画したい場合はこちらからご連絡ください。Slackでの連絡と併用可能で、24時間以内に Field Director が稼働可否をご返信します。
+        既にFellowの方が案件に参画したい場合はこちらからご連絡ください。Larkでの連絡と併用可能で、24時間以内に Field Director が稼働可否をご返信します。
       </p>
     ),
     renderForm: (action, headingId) =>
@@ -1068,7 +1068,7 @@ export default function JoinPage() {
         <header className="mb-10">
           <h1 className="font-serif text-4xl">Join & Contact</h1>
           <p className="mt-4 text-[#4B4135]">
-            BAAO 実戦AI道場への参加・相談窓口です。無料稽古の登録から、企業向け伴走相談、Fellow 応募、メディア取材までこちらで受け付けています。送信後は担当よりメールまたはSlackでご連絡します。
+            BAAO 実戦AI道場への参加・相談窓口です。無料稽古の登録から、企業向け伴走相談、Fellow 応募、メディア取材までこちらで受け付けています。送信後は担当よりメールまたはLarkでご連絡します。
           </p>
           <ul className="mt-4 space-y-2 text-sm text-[#4B4135]">
             <li className="flex items-start gap-2">

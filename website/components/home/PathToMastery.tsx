@@ -6,7 +6,7 @@ const steps = [
   },
   {
     title: "月謝プラン（BASIC/ACTIVE）",
-    description: "アーカイブ・ノート・Slack相談・フィード別ダイジェストで理解を深める。",
+    description: "アーカイブ・ノート・Lark相談・フィード別ダイジェストで理解を深める。",
     cta: { label: "月謝プランを見る", href: "/programs#basic" },
   },
   {

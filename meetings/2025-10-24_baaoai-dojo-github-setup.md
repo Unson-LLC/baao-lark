@@ -429,5 +429,5 @@ Made with Tactiq ❤️ https://tactiq.io - get it for Google Meet and Zoom toda
 
   ---
 
-  *Generated automatically from Slack via n8n*
+  *Generated automatically from Lark via n8n*
   

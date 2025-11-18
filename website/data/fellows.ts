@@ -117,7 +117,7 @@ export const fellows: FellowProfile[] = [
     mission: "Cost-Down",
     practice: "Ops Automation",
     appointment: "Appointment# FW-2025-044",
-    bio: "中堅製造業のバックオフィス自動化を支援。Slack × Lark を活用した業務統合で、従業員の業務負荷を軽減している。",
+    bio: "中堅製造業のバックオフィス自動化を支援。Lark × Lark を活用した業務統合で、従業員の業務負荷を軽減している。",
     impactFocus: "Lark × 自動化ワークフローで現場の手戻りを削減",
     achievements: [
       "RPA と Lark を連携させた経費精算の自動化を実現",

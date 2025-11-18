@@ -39,7 +39,7 @@ const personas = [
     solutions: [
       {
         title: "月謝プラン（ACTIVE）",
-        description: "業界別の実装事例を全文検索でき、Flow別ダイジェストで最新の手法を学べます。Slackで師範に質問も可能。",
+        description: "業界別の実装事例を全文検索でき、Flow別ダイジェストで最新の手法を学べます。Larkで師範に質問も可能。",
         cta: "月謝プランを見る",
         href: "/programs#active",
       },
@@ -67,7 +67,7 @@ const personas = [
     solutions: [
       {
         title: "月謝プラン（BASIC）",
-        description: "ライブアーカイブと週次ノートで、実装の手順を学べます。Slackで質問しながら進められます。",
+        description: "ライブアーカイブと週次ノートで、実装の手順を学べます。Larkで質問しながら進められます。",
         cta: "月謝プランを見る",
         href: "/programs#basic",
       },

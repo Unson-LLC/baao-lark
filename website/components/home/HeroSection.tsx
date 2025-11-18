@@ -4,7 +4,7 @@ import Image from "next/image";
 const nextLive = {
   date:
     process.env.NEXT_PUBLIC_NEXT_LIVE_DATE ??
-    "毎週木曜 20:00-21:00",
+    "毎週木曜 19:30-20:30",
   topic:
     process.env.NEXT_PUBLIC_NEXT_LIVE_TOPIC ??
     "Weekly Dojo Live｜AIニュースと最新ケースの分解",
@@ -104,7 +104,7 @@ export default function HeroSection() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-dojo-gold mt-1">◆</span>
-                  Slack/PFで伴走レビュー
+                  Lark上で伴走レビュー
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-dojo-gold mt-1">◆</span>

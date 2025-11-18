@@ -156,7 +156,7 @@
    - CTA：`無料稽古から始める`（Join#free-live）。
 
 2. **コミュニティ紹介**
-   - 無料稽古→月謝→オープンチャット→Slackの流れ。
+   - 無料稽古→月謝→オープンチャット→Larkの流れ。
    - CTA：Join#basic。
 
 3. **Fellow Grade & Impact Points**

@@ -40,7 +40,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3 group">
           <div className="relative h-12 w-12">
             <img
-              src="/logo.png"
+              src="/images/logo.png"
               alt="BAAO Dojo Logo"
               className="h-full w-full object-contain transition-transform group-hover:scale-110"
             />

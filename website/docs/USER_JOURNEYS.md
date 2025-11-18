@@ -49,8 +49,8 @@ PoCで止まった経験があり、組織内で再現可能なロードマッ�
 |----------|----------------------|--------------|----------------|
 | 1 | Home - Hero / Free Liveセクション | 無料で何が得られるのか？参加ハードルは？ | どんな雰囲気か？自分でも続けられるか？ |
 | 2 | `/operators` - Hero & Before/After | 似た悩みのBefore/Afterは？時間削減できる？ | 月謝プランの具体内容は？ |
-| 3 | `/operators` - Program活用例 | BASIC/ACTIVEで何が出来る？Slack/アーカイブは？ | コミュニティは安全か？質問しやすいか？ |
-| 4 | `/operators` - Community & Voices | 参加者の声、オープンチャット／Slackの雰囲気 | 決済や解約、会社へ共有する際の注意は？ |
+| 3 | `/operators` - Program活用例 | BASIC/ACTIVEで何が出来る？Lark/アーカイブは？ | コミュニティは安全か？質問しやすいか？ |
+| 4 | `/operators` - Community & Voices | 参加者の声、オープンチャット／Larkの雰囲気 | 決済や解約、会社へ共有する際の注意は？ |
 | 5 | `/resources#events`／FAQ | 次の無料稽古／イベント、支払い方法、見逃しFAQ | 申し込み方法は？ |
 | 6 | `/join#free-live` → `/join#basic` | まず無料稽古登録 → 満足後に月謝申込 | コミュニティ招待はどう届く？ |
 
@@ -77,6 +77,6 @@ PoCで止まった経験があり、組織内で再現可能なロードマッ�
 
 - ペルソナLPは広告・メルマガ・オープンチャットから直接遷移する想定。フォーム送信時に `persona` / `campaign` パラメータを収集し、MAで動線の成果を計測する。
 - Homeのペルソナカードはアンケート結果を元に四半期ごとに文言を更新し、「次に浮かぶ疑問」を常にモニタリングする（`FEEDBACK_SUMMARY.md` と同期）。
-- Fellowsセクションで紹介する Field Director / Senior Fellow の情報は Slack #fellow-ops で更新手順を共有し、本人確認を必須にする。
+- Fellowsセクションで紹介する Field Director / Senior Fellow の情報は Lark #fellow-ops で更新手順を共有し、本人確認を必須にする。
 
 このジャーニー定義を `CONTENT_GUIDELINES.md`（コピー指針）と `WIREFRAMES.md`（構成）に反映させ、Next.js 実装時は各セクションをモジュール化して再利用する。

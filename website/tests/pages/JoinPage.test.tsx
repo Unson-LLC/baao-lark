@@ -106,7 +106,7 @@ describe("JoinPage tab navigation", () => {
     expect(within(form).getByLabelText("所属（会社名・部署）")).toBeInTheDocument();
     expect(within(form).getByLabelText("受講目的")).toBeInTheDocument();
     expect(within(form).getByLabelText("決済方法")).toBeInTheDocument();
-    expect(within(form).getByLabelText("Slack / オープンチャット招待")).toBeInTheDocument();
+    expect(within(form).getByLabelText("Lark / オープンチャット招待")).toBeInTheDocument();
   });
 
   it("links the active tab with the tabpanel for assistive tech", async () => {

@@ -38,7 +38,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <div className="relative h-16 w-16">
                 <img
-                  src="/logo.png"
+                  src="/images/logo.png"
                   alt="BAAO Dojo Logo"
                   className="h-full w-full object-contain"
                 />

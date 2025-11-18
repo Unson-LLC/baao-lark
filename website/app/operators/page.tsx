@@ -4,7 +4,7 @@ const beforeAfter = [
   {
     title: "週次レポート自動生成",
     before: "営業報告に3時間かかり、更新が追いつかない",
-    after: "稽古で共有したテンプレとSlack BOTで30分に短縮",
+    after: "稽古で共有したテンプレとLark BOTで30分に短縮",
   },
   {
     title: "問い合わせ対応の一次回答",
@@ -23,7 +23,7 @@ const programHighlights = [
     plan: "BASIC",
     features: [
       "週次ライブアーカイブと30分ノート",
-      "Slackで師範に質問、月次レビュー付き",
+      "Larkで師範に質問、月次レビュー付き",
       "流派×勝ち筋のフィードで自分の業界だけ追える",
     ],
     cta: { label: "BASICを相談する", href: "/join#basic" },
@@ -33,7 +33,7 @@ const programHighlights = [
     features: [
       "全文検索で過去の稽古を横断検索",
       "ドラフトRECIPESの先行閲覧",
-      "Flow別のショートカット動画とSlackまとめ",
+      "Flow別のショートカット動画とLarkまとめ",
     ],
     cta: { label: "ACTIVEを相談", href: "/join#basic" },
   },
@@ -45,7 +45,7 @@ const community = [
     description: "匿名で参加可。週次ライブの補足、最新リンク、メンバーの雑談をキャッチアップ。",
   },
   {
-    title: "Slackコミュニティ",
+    title: "Larkコミュニティ",
     description: "月謝メンバー限定で師範・Fellowが常駐。質問スレと成果報告スレを分けて運用。",
   },
   {
@@ -57,7 +57,7 @@ const community = [
 const faqs = [
   {
     question: "会社の経費で支払えますか？",
-    answer: "法人請求書に対応しています。フォームで決済方法を選び、Slackで担当者を共有してください。",
+    answer: "法人請求書に対応しています。フォームで決済方法を選び、Larkで担当者を共有してください。",
   },
   {
     question: "見逃したライブはどう視聴しますか？",
@@ -79,7 +79,7 @@ export default function OperatorsPage() {
             無料稽古で30分、月謝で残業30時間削減。実務に使える型をそのまま持ち帰れる。
           </h1>
           <p className="mt-4 max-w-3xl text-lg leading-relaxed text-[#4B4135]">
-            「忙しくて学習に時間を割けない」「生成AIを業務で使うイメージが湧かない」。そんな現場の方が、無料稽古で空気を掴み、月謝プランでアーカイブとSlackにアクセスし、今日の業務に活かすまでをサポートします。
+            「忙しくて学習に時間を割けない」「生成AIを業務で使うイメージが湧かない」。そんな現場の方が、無料稽古で空気を掴み、月謝プランでアーカイブとLarkにアクセスし、今日の業務に活かすまでをサポートします。
           </p>
           <p className="mt-4 text-sm text-[#4B4135]">もちろん相談だけでも歓迎です。</p>
           <div className="mt-8 flex flex-wrap gap-3 text-sm text-[#4B4135]">
@@ -188,7 +188,7 @@ export default function OperatorsPage() {
           <div className="rounded-3xl border border-[#D8CFC3] bg-white p-8 text-sm text-[#4B4135]">
             <h2 className="font-serif text-2xl text-[#1D1A15]">次のアクション</h2>
             <p className="mt-3">
-              まずは木曜夜の無料稽古に参加し、終わったらSlack招待とハイライトノートが届きます。時間がなくても30分ノートでキャッチアップ可能です。実務にすぐ使える資料を持ち帰りたい場合は月謝プランをご検討ください。
+              まずは木曜夜の無料稽古に参加し、終わったらLark招待とハイライトノートが届きます。時間がなくても30分ノートでキャッチアップ可能です。実務にすぐ使える資料を持ち帰りたい場合は月謝プランをご検討ください。
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link

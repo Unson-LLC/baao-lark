@@ -11,7 +11,7 @@
 | 企業向け相談（PRIME/BOOST） | Executives / DX Leads | 四半期内の伴走相談・ROI試算 | Home CTA、`/executives`、`/dx-leads`、Programs（PRIME/BOOST）、Success Stories、Join |
 | 資料ダウンロード（FieldWorks / プラン比較） | Executives / DX Leads | 稟議資料・社内共有 | `/executives`、`/dx-leads`、Programs、Resources/Downloads |
 | 体験会・現場見学予約 | DX Leads / Fellows | コミュニティ体験・案件想起 | Home Events、Resources/Events、`/fellows` |
-| BASIC月謝プラン申込 | Operators | アーカイブとSlackを活用した定着 | `/operators`、Programs（BASIC/ACTIVE）、Join |
+| BASIC月謝プラン申込 | Operators | アーカイブとLarkを活用した定着 | `/operators`、Programs（BASIC/ACTIVE）、Join |
 | ACTIVE月謝プラン申込 | DX Leads / Operators | 上位プラン（全文検索、ドラフト閲覧） | `/dx-leads`、Programs、Join |
 | PRIME相談 | Executives | クローズドコミュニティ・役員向け伴走 | `/executives`、Programs、Success Stories、Join |
 | BOOST見積 | DX Leads | KPI可視化プロジェクト見積 | `/dx-leads`、Programs、Success Stories、Join |
@@ -86,7 +86,7 @@
 - 希望プラン（BASIC / ACTIVE）
 - 決済方法（法人請求 / 個人決済 / 未定）
 - 社内共有予定（あり / なし）
-- Slack / オープンチャット招待可否（希望する / 一部のみ / 不要）
+- Lark / オープンチャット招待可否（希望する / 一部のみ / 不要）
 - メモ（任意）
 
 ### 2-4. Fellow応募
@@ -125,7 +125,7 @@
 |-----|--------------------|----------------|
 | 無料稽古 | 視聴URL、オープンチャット招待、次回テーマ、FAQ | 前日&当日リマインダ。終了後アンケート＋月謝案内 |
 | 企業相談 | 担当 Field Director のコメント、導入プロセス、関連ケース | 24h以内担当宣言 → 3営業日以内面談調整 |
-| 月謝プラン | 決済手順、Slack招待、アーカイブアクセス方法 | 即時ウェルカムメール、週次コンテンツ案内 |
+| 月謝プラン | 決済手順、Lark招待、アーカイブアクセス方法 | 即時ウェルカムメール、週次コンテンツ案内 |
 | Fellow応募 | 選考フロー、必要資料、Impact Pointsガイド | 3営業日以内面談案内、Impact Points仮登録 |
 | 案件相談 | Impact Points申請の案内、担当者の連絡先 | 48h以内にField Directorが稼働確認 |
 | メディア | ブランドアセットDL、広報連絡先 | 24h以内に担当が返信 |

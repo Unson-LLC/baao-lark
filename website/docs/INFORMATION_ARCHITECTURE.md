@@ -105,6 +105,6 @@
 - Homeの無料稽古情報・KPI・イベントは `OPERATIONS_PLAN.md` のSLAに従って更新。Heroの`nextLive`は環境変数。
 - Persona LPの課題コピーは `FEEDBACK_SUMMARY.md` の最新アンケートを参照し四半期ごとに更新。
 - CTAアンカーとフォーム項目は `CTA_AND_FORMS.md` をソース・オブ・トゥルースとし、変更時は Home / Persona LP / Join のリンクを同時に差し替える。
-- Fellows LP内の Field Director / Senior Showcase は `data/fellows.ts` の構造に合わせて掲載し、Appointment#の更新は Slack #fellow-ops にて承認を得る。
+- Fellows LP内の Field Director / Senior Showcase は `data/fellows.ts` の構造に合わせて掲載し、Appointment#の更新は Lark #fellow-ops にて承認を得る。
 
 この IA を `CONTENT_GUIDELINES.md`（コピー）と `WIREFRAMES.md`（ワイヤー）に同期し、Next.js 実装ではセクション単位のコンポーネント化を徹底する。

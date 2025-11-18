@@ -8,9 +8,9 @@ const programs = [
   },
   {
     name: "BASIC｜月謝プラン",
-    description: "ライブアーカイブとノート、Slack質問で実務の一歩を掴む。",
+    description: "アーカイブと週次ノート、Lark質問で実務の一歩を掴む。",
     price: "月謝プラン（詳細公開予定）",
-    features: ["ライブアーカイブ", "週次ノート", "Slackで質問"],
+    features: ["ライブアーカイブ", "週次ノート", "Larkで質問"],
     href: "/programs#basic",
   },
   {

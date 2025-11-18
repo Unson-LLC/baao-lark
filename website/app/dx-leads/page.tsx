@@ -9,11 +9,11 @@ const pains = [
 const roadmap = [
   {
     title: "Step 1｜無料稽古で空気を掴む",
-    description: "参加後アンケートで課題を申告すると、Slack招待と次の一手を提案。オープンチャットで横のつながりを形成。",
+    description: "参加後アンケートで課題を申告すると、Lark招待と次の一手を提案。オープンチャットで横のつながりを形成。",
   },
   {
     title: "Step 2｜月謝（BASIC / ACTIVE）で型を習得",
-    description: "アーカイブと週次ノートで情報を整理。Flow別ダイジェストで部門ごとの気づきを共有し、Slackで壁打ち。",
+    description: "アーカイブと週次ノートで情報を整理。Flow別ダイジェストで部門ごとの気づきを共有し、Larkで壁打ち。",
   },
   {
     title: "Step 3｜FieldWorksで導入フローをRACI化",
@@ -32,7 +32,7 @@ const resources = [
     href: "/resources#downloads",
   },
   {
-    title: "Slack運用ガイド",
+    title: "Lark運用ガイド",
     description: "無料会員から月謝・伴走へステップアップさせるためのメッセージテンプレ。",
     href: "/resources#downloads",
   },
@@ -53,8 +53,8 @@ const wins = [
     detail: "Change & Enablementの型を適用し、問い合わせ一次回答率82%へ。Yearbookで匿名公開。",
   },
   {
-    title: "社内Slack × Impact Pointsで導入スピード向上",
-    detail: "オープンチャット→Slack→伴走の導線を整備し、月謝からBOOSTまでの昇格率を19%に。",
+    title: "社内Lark × Impact Pointsで導入スピード向上",
+    detail: "オープンチャット→Lark→伴走の導線を整備し、月謝からBOOSTまでの昇格率を19%に。",
   },
 ];
 
@@ -169,7 +169,7 @@ export default function DxLeadsPage() {
           <div className="rounded-3xl border border-[#D8CFC3] bg-white p-8 text-sm text-[#4B4135]">
             <h2 className="font-serif text-2xl text-[#1D1A15]">次のアクション</h2>
             <p className="mt-3">
-              無料稽古に参加いただくと、Slackでの質問と稟議テンプレートをご案内します。そのまま月謝相談・伴走相談へ進む場合はフォームで希望内容を共有してください。24時間以内にCommunity Catalystが導線を整備します。
+              無料稽古に参加いただくと、Larkでの質問と稟議テンプレートをご案内します。そのまま月謝相談・伴走相談へ進む場合はフォームで希望内容を共有してください。24時間以内にCommunity Catalystが導線を整備します。
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link
