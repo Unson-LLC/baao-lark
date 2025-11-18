@@ -128,7 +128,7 @@ export default function CommunityPage() {
               </p>
             </div>
             <div className="rounded-2xl border border-[#D8CFC3] bg-[#F9F6F0] p-6">
-              <h3 className="font-semibold text-[#1D1A15]">Weekly Dojo Liveへの登壇</h3>
+              <h3 className="font-semibold text-[#1D1A15]">週次稽古への登壇</h3>
               <p className="mt-2 text-sm text-[#4B4135]">
                 無料稽古での登壇や、専門領域の解説を行います。自分の知見を広く共有できます。
               </p>

@@ -23,9 +23,6 @@ export default function CasesMethodology() {
       </div>
       <div className="relative mx-auto max-w-6xl px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="text-sm font-semibold uppercase tracking-wide text-[#C47E3B]">
-            Cases & Methodology
-          </span>
           <h2 className="mt-4 font-serif text-3xl text-[#1D1A15] sm:text-4xl">
             業界ごとの成功パターンを、<br />
             再現できる形で学ぶ。

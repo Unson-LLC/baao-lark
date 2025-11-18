@@ -7,7 +7,7 @@ const nextLive = {
     "毎週木曜 19:30-20:30",
   topic:
     process.env.NEXT_PUBLIC_NEXT_LIVE_TOPIC ??
-    "Weekly Dojo Live｜AIニュースと最新ケースの分解",
+    "週次稽古｜AIニュースと最新ケースの分解",
   mentor:
     process.env.NEXT_PUBLIC_NEXT_LIVE_MENTOR ??
     "佐藤 圭吾（BAAO理事 / 生成AIエキスパート）",
@@ -36,7 +36,7 @@ export default function HeroSection() {
           <div className="inline-flex items-center gap-2 rounded-lg bg-dojo-green/10 px-5 py-2 border border-dojo-gold/30">
             <span className="h-2 w-2 rounded-full bg-dojo-gold animate-pulse" />
             <span className="text-sm font-bold text-dojo-green tracking-wide">
-              実戦AI道場｜BAAO Dojo for Practical AI
+              実戦AI道場
             </span>
           </div>
           <h1 className="font-serif text-3xl font-bold leading-tight text-[#1D1A15] sm:text-4xl lg:text-5xl drop-shadow-sm">
@@ -48,13 +48,15 @@ export default function HeroSection() {
             道場の稽古は、毎週の無料ライブから始まります。月謝でアーカイブと伴走を受け、四半期で成果を可視化し、ケースとして公開。和の現場知と実装知で、組織のAI活用を定着させます。
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">
-            <Link
-              href="/join#free-live"
+            <a
+              href="https://line.me/ti/g2/Mb4gQI-33HfsA6V4gv_uFScufGZZIuqrp7q0_w?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary flex items-center justify-center group"
             >
               今週の稽古に参加する
               <span className="arrow-japanese" />
-            </Link>
+            </a>
             <Link
               href="/join#enterprise"
               className="btn-secondary flex items-center justify-center"

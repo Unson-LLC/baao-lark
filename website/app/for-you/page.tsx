@@ -44,7 +44,7 @@ const personas = [
         href: "/programs#active",
       },
       {
-        title: "Weekly Dojo Live",
+        title: "週次稽古",
         description: "毎週木曜日に最新ケースの分解と実装実況を配信。現場を巻き込む方法や、失敗事例から学べます。",
         cta: "無料稽古に登録",
         href: "/join#free-live",
@@ -72,7 +72,7 @@ const personas = [
         href: "/programs#basic",
       },
       {
-        title: "Weekly Dojo Live",
+        title: "週次稽古",
         description: "実装ハンズオン実況で、実際の画面を見ながら学べます。質疑応答の時間もあります。",
         cta: "無料稽古に登録",
         href: "/join#free-live",
@@ -170,7 +170,7 @@ export default function ForYouPage() {
             まずは無料稽古から始めましょう
           </h3>
           <p className="mt-3 text-sm text-[#4B4135]">
-            毎週木曜日 20:00-21:00 に開催している無料のライブ配信で、
+            毎週木曜日 19:30-20:30 に開催している無料のライブ配信で、
             <br />
             道場の雰囲気や実装の進め方を体験できます。
           </p>

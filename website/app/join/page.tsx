@@ -53,7 +53,7 @@ type FormDefinition = {
 const formDefinitions: FormDefinition[] = [
   {
     key: "freeLive",
-    label: "無料稽古",
+    label: "無料稽古（登録）",
     anchor: "#free-live",
     heading: "無料稽古ライブ登録",
     description: (
@@ -201,7 +201,7 @@ const formDefinitions: FormDefinition[] = [
   },
   {
     key: "corporate",
-    label: "企業相談",
+    label: "企業向け相談",
     anchor: "#enterprise",
     heading: "企業向け相談（PRIME / BOOST）",
     description: (
@@ -427,7 +427,7 @@ const formDefinitions: FormDefinition[] = [
   },
   {
     key: "monthly",
-    label: "月謝プラン",
+    label: "月謝プラン相談",
     anchor: "#basic",
     heading: "月謝プラン（BASIC / ACTIVE）への問い合わせ",
     description: (
@@ -729,7 +729,7 @@ const formDefinitions: FormDefinition[] = [
   },
   {
     key: "project",
-    label: "案件相談",
+    label: "案件相談（Fellow）",
     anchor: "#fellow-assign",
     heading: "案件相談（既存Fellow向け）",
     description: (
@@ -841,7 +841,7 @@ const formDefinitions: FormDefinition[] = [
   },
   {
     key: "media",
-    label: "メディア",
+    label: "メディア・協業",
     anchor: "#media",
     heading: "メディア・協業のご相談",
     description: (
@@ -956,7 +956,7 @@ const anchorByKey = formDefinitions.reduce<Record<FormKey, string>>((acc, def) =
   media: "#media",
 });
 
-export default function JoinPage() {
+export default function ContactPage() {
   const [activeKey, setActiveKey] = useState<FormKey>("freeLive");
   const tabRefs = useRef<Record<FormKey, HTMLButtonElement | null>>({
     freeLive: null,
@@ -1066,9 +1066,9 @@ export default function JoinPage() {
     <main className="min-h-screen bg-[#F9F6F0] text-[#1D1A15]">
       <div className="mx-auto max-w-4xl px-4 py-16 md:px-6">
         <header className="mb-10">
-          <h1 className="font-serif text-4xl">Join & Contact</h1>
+          <h1 className="font-serif text-4xl">お問い合わせ・各種受付</h1>
           <p className="mt-4 text-[#4B4135]">
-            BAAO 実戦AI道場への参加・相談窓口です。無料稽古の登録から、企業向け伴走相談、Fellow 応募、メディア取材までこちらで受け付けています。送信後は担当よりメールまたはLarkでご連絡します。
+            BAAO 実戦AI道場へのお問い合わせ窓口です。週次稽古の登録、企業向け伴走・評議会相談、月謝プランの導入、Fellow応募、メディア取材依頼までこちらで受け付けています。送信後は担当よりメールまたはLarkでご連絡します。
           </p>
           <ul className="mt-4 space-y-2 text-sm text-[#4B4135]">
             <li className="flex items-start gap-2">

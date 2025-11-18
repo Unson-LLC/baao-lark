@@ -59,7 +59,7 @@ export const fellows: FellowProfile[] = [
     impactFocus: "提案スピードと成約率を両立するデータ活用導線の設計",
     achievements: [
       "提案資料作成時間を 65% 削減、受注率 +14pt を実現",
-      "PRIME Roundtable での常任モデレーター",
+      "評議会議（ひょうぎかいぎ）での常任モデレーター",
       "RECIPES #FIN-08 共著『生成AIで提案スライドを半自動化する』",
     ],
     impactPoints: 16,

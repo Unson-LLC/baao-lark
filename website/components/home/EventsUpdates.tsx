@@ -7,8 +7,8 @@ const events: Array<{
   isPlaceholder?: boolean;
 }> = [
   {
-    title: "Weekly Dojo Live",
-    date: "毎週木曜日 20:00-21:00",
+    title: "週次稽古",
+    date: "毎週木曜日 19:30-20:30",
     location: "Zoom / YouTube Live",
     tag: "無料稽古",
     isPlaceholder: true,
@@ -21,7 +21,7 @@ const events: Array<{
     isPlaceholder: true,
   },
   {
-    title: "PRIME Roundtable",
+    title: "評議会議（ひょうぎかいぎ）",
     date: "順次公開予定",
     location: "詳細は後日発表",
     tag: "今後公開",
@@ -56,7 +56,7 @@ export default function EventsUpdates() {
             今月の稽古・現場見学・イベント。
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-[#4B4135]">
-            無料ライブのほか、業界別の現場見学、PRIME Roundtable など、リアルな場で学べる機会を用意しています。
+            無料ライブのほか、業界別の現場見学、評議会議（ひょうぎかいぎ）など、リアルな場で学べる機会を用意しています。
           </p>
           <div className="mt-8 grid gap-4">
             {events.map((event) => (

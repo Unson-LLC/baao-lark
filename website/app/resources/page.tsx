@@ -7,8 +7,8 @@ const events: Array<{
   isPlaceholder?: boolean;
 }> = [
   {
-    title: "Weekly Dojo Live",
-    date: "毎週木曜日 20:00-21:00",
+    title: "週次稽古",
+    date: "毎週木曜日 19:30-20:30",
     location: "Zoom / YouTube Live",
     tag: "無料稽古",
     link: "/join#free-live",
@@ -21,7 +21,7 @@ const events: Array<{
     isPlaceholder: true,
   },
   {
-    title: "PRIME Roundtable",
+    title: "評議会議（ひょうぎかいぎ）",
     date: "順次公開予定",
     location: "詳細は後日発表",
     tag: "今後公開",
@@ -64,7 +64,7 @@ const materials = [
     icon: "📊",
   },
   {
-    title: "Weekly Dojo Live アーカイブ",
+    title: "週次稽古アーカイブ",
     description: "過去のライブ配信をアーカイブで閲覧",
     status: "月謝プラン会員向け",
     icon: "🎥",
@@ -80,7 +80,7 @@ export default function ResourcesPage() {
             イベント・資料
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-[#4B4135]">
-            無料ライブのほか、業界別の現場見学、PRIME Roundtableなど、
+            無料ライブのほか、業界別の現場見学、評議会議（ひょうぎかいぎ）など、
             <br />
             リアルな場で学べる機会と、学習に役立つ資料を提供しています。
           </p>
@@ -93,7 +93,7 @@ export default function ResourcesPage() {
               今月の稽古・現場見学・イベント
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-[#4B4135]">
-              無料ライブのほか、業界別の現場見学、PRIME Roundtable など、リアルな場で学べる機会を用意しています。
+              無料ライブのほか、業界別の現場見学、評議会議（ひょうぎかいぎ）など、リアルな場で学べる機会を用意しています。
             </p>
             <div className="mt-8 grid gap-4">
               {events.map((event) => (
@@ -188,7 +188,7 @@ export default function ResourcesPage() {
             まずは無料稽古から
           </h3>
           <p className="mt-3 text-sm text-[#4B4135]">
-            毎週木曜日 20:00-21:00 に開催している無料のライブ配信に参加してみませんか？
+            毎週木曜日 19:30-20:30 に開催している無料のライブ配信に参加してみませんか？
           </p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
             <a

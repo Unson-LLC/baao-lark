@@ -54,14 +54,14 @@ export default function SampleVideosVoices() {
               <iframe
                 className="h-full w-full"
                 src="https://www.youtube.com/embed/0a2fe0sa08o?start=1"
-                title="Weekly Dojo Live｜AIニュース解説の一部"
+                title="週次稽古｜AIニュース解説の一部"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
             </div>
             <div className="mt-4 text-center">
               <p className="text-sm font-medium text-[#4B4135]">
-                Weekly Dojo Live｜AIニュース解説の一部
+                週次稽古｜AIニュース解説の一部
               </p>
             </div>
           </div>

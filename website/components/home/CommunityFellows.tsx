@@ -23,7 +23,7 @@ export default function CommunityFellows() {
             実装をサポート。
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-[#4B4135]">
-            AI道場には、各業界で実績を持つ師範（Fellow）が在籍。
+            AI道場には、各業界で実績を持つ師範が在籍。
             実装の支援から、ケーススタディの共有まで、実践的な知見を提供します。
           </p>
         </div>
@@ -57,7 +57,7 @@ export default function CommunityFellows() {
             <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               <a
                 href="/join#fellow"
-                className="flex items-center justify-center rounded-full bg-vermillion px-6 py-3 text-sm font-semibold text-white transition hover:bg-vermillion-dark shadow-lg"
+                className="flex items-center justify-center rounded-full bg-vermillion px-6 py-3 text-sm font-semibold text-[#1D1A15] transition hover:bg-vermillion-dark shadow-lg"
               >
                 師範として参画する
               </a>
@@ -71,7 +71,7 @@ export default function CommunityFellows() {
                 href="/community"
                 className="flex items-center justify-center rounded-full border border-[#D8CFC3] px-6 py-3 text-sm font-semibold text-[#4B4135] transition hover:bg-[#F9F6F0]"
               >
-                コミュニティについて
+                詳細を見る
               </a>
             </div>
           </div>

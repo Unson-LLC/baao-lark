@@ -5,23 +5,23 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const primaryNav = [
-  { label: "道場について", href: "/" },
-  { label: "プログラム", href: "/programs" },
-  { label: "実装事例", href: "/success-stories" },
+  { label: "稽古・伴走", href: "/programs" },
+  { label: "実装記録", href: "/success-stories" },
   { label: "イベント・資料", href: "/resources" },
-  { label: "参加申込", href: "/join" },
+  { label: "参加方法", href: "/join" },
+  { label: "FAQ", href: "/resources/faq" },
 ];
 
-const personaNav = [
-  { label: "参加を検討している方", href: "/for-you" },
-  { label: "師範として参画", href: "/community" },
+const guideNav = [
+  { label: "参加検討の方へ", href: "/for-you" },
+  { label: "師範コミュニティ", href: "/community" },
 ];
 
 function NavItem({ href, label, isActive }: { href: string; label: string; isActive: boolean }) {
   return (
     <Link
       href={href}
-      className={`rounded-lg px-4 py-2 text-sm font-semibold transition hover:bg-dojo-green/10 ${
+      className={`rounded-lg px-3 py-2 text-[13px] font-semibold transition hover:bg-dojo-green/10 whitespace-nowrap ${
         isActive ? "text-dojo-gold border-b-2 border-dojo-gold" : "text-ink"
       }`}
     >
@@ -45,10 +45,10 @@ export default function Header() {
               className="h-full w-full object-contain transition-transform group-hover:scale-110"
             />
           </div>
-          <div className="leading-tight">
-            <p className="font-brush text-xl text-dojo-green">BAAO 実戦AI道場</p>
-            <p className="text-xs text-ink-light tracking-wide">Dojo for Practical AI</p>
-          </div>
+          <p className="leading-tight text-dojo-green">
+            <span className="font-brush text-xl block">BAAO 実戦AI道場</span>
+            <span className="text-xs text-ink-light tracking-wide">四半期で成果を出すAI道場</span>
+          </p>
         </Link>
         <button
           type="button"
@@ -58,29 +58,18 @@ export default function Header() {
         >
           {menuOpen ? "閉じる" : "メニュー"}
         </button>
-        <nav className="hidden flex-1 items-center justify-end gap-6 md:flex">
-          <div className="flex items-center gap-2">
+        <nav className="hidden flex-1 items-center justify-between pl-4 md:flex">
+          <div className="flex flex-nowrap items-center gap-3 lg:gap-4 overflow-x-auto lg:overflow-visible">
             {primaryNav.map((item) => (
               <NavItem key={item.href} href={item.href} label={item.label} isActive={pathname === item.href} />
             ))}
           </div>
-          <div className="hidden h-6 w-px bg-[#D8CFC3] lg:block" aria-hidden="true" />
-          <div className="hidden items-center gap-2 lg:flex">
-            {personaNav.map((item) => (
-              <NavItem
-                key={item.href}
-                href={item.href}
-                label={item.label}
-                isActive={pathname === item.href}
-              />
+          <div className="hidden h-6 w-px bg-[#D8CFC3]/60 lg:block" aria-hidden="true" />
+          <div className="hidden items-center gap-3 lg:flex">
+            {guideNav.map((item) => (
+              <NavItem key={item.href} href={item.href} label={item.label} isActive={pathname === item.href} />
             ))}
           </div>
-          <Link
-            href="/join#free-live"
-            className="btn-primary text-sm"
-          >
-            無料稽古に参加
-          </Link>
         </nav>
       </div>
       {menuOpen && (
@@ -100,9 +89,9 @@ export default function Header() {
             ))}
           </div>
           <div className="mt-4 border-t border-dojo-green/20 pt-4">
-            <p className="text-xs font-bold uppercase tracking-wide text-dojo-gold">Persona</p>
+            <p className="text-xs font-bold uppercase tracking-wide text-dojo-gold">ご案内</p>
             <div className="mt-2 flex flex-col gap-2">
-              {personaNav.map((item) => (
+              {guideNav.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
@@ -115,13 +104,6 @@ export default function Header() {
                 </Link>
               ))}
             </div>
-            <Link
-              href="/join#free-live"
-              className="btn-primary mt-4 inline-flex w-full items-center justify-center text-sm"
-              onClick={() => setMenuOpen(false)}
-            >
-              無料稽古に参加
-            </Link>
           </div>
         </div>
       )}

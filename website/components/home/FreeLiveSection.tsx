@@ -19,9 +19,6 @@ export default function FreeLiveSection() {
         {/* 左側: テキストエリア（50%） */}
         <div className="relative flex flex-1 flex-col justify-center border-r border-[#D8CFC3]/30 bg-washi px-8 py-20 md:px-16 md:py-32 lg:px-20">
           <div className="mx-auto max-w-2xl space-y-8">
-            <span className="text-sm font-semibold uppercase tracking-wide text-[#C47E3B]">
-              Weekly Free Dojo Live
-            </span>
             <h2 className="font-serif text-3xl leading-tight text-[#1D1A15] sm:text-4xl lg:text-5xl">
               無料の稽古ライブで、
               <br />
