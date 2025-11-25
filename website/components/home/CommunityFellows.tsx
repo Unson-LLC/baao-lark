@@ -1,15 +1,26 @@
+import Image from "next/image";
+
 const fellows = [
   {
     name: "山本 力弥",
     role: "BAAO代表理事 / AI戦略コンサルタント",
     expertise: "製造・通信業のサプライチェーン改革、サービスロボット事業開発。経産省AI原則実践ガバナンス・ガイドライン策定参画。",
     background: "慶應義塾大学理工学部管理工学科卒。外資コンサル、大手通信会社を経て、「AI技術の民主化」を掲げBAAOを設立。",
+    image: "/images/yamamoto.webp",
   },
   {
     name: "佐藤 圭吾",
     role: "BAAO理事 / 生成AIエキスパート",
     expertise: "生成AIプロダクト開発、企業のAIトランスフォーメーション支援。NTTコミュニケーションズ生成AIエキスパート。",
     background: "2024年9月に雲孫LLC設立。AI利活用指針の策定や倫理ガイドラインの普及に注力。",
+    image: "/images/29F5TBtd_400x400.jpg",
+  },
+  {
+    name: "Hiromi Maeo",
+    role: "ブランドデザイナー / Lovable Ambassador",
+    expertise: "AI×ブランド設計×デザイン。企業の思想から「意味→構造→形」を導き響くブランドを設計。",
+    background: "DFA Silver、A' Design Silver受賞。Behance Featured。企業のAI活用におけるブランド戦略とデザインを支援。",
+    image: "/images/KkvKPBYp_400x400.jpg",
   },
 ];
 
@@ -36,8 +47,22 @@ export default function CommunityFellows() {
             <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {fellows.map((fellow) => (
                 <div key={fellow.name} className="rounded-2xl border border-[#D8CFC3] bg-white/80 p-6 backdrop-blur">
-                  <p className="font-semibold text-[#1D1A15]">{fellow.name}</p>
-                  <p className="mt-1 text-sm text-bamboo">{fellow.role}</p>
+                  <div className="flex items-start gap-3">
+                    {fellow.image && (
+                      <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full">
+                        <Image
+                          src={fellow.image}
+                          alt={fellow.name}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    )}
+                    <div className="flex-1">
+                      <p className="font-semibold text-[#1D1A15]">{fellow.name}</p>
+                      <p className="mt-1 text-sm text-bamboo">{fellow.role}</p>
+                    </div>
+                  </div>
                   <div className="mt-4 space-y-3 text-xs text-[#4B4135]">
                     <div>
                       <p className="font-semibold text-[#1D1A15]">専門領域</p>

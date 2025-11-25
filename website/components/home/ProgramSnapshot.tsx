@@ -21,7 +21,7 @@ const learningPrograms = [
     href: "/programs#basic",
   },
   {
-    name: "達人（たつじん）",
+    name: "書院生（しょいんせい）",
     description: "すべての知見を検索し、最新手法をいち早くキャッチアップ",
     price: "¥9,800 / 月",
     trial: "7日間無料",

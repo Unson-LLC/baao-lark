@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const programs = [
   {
     id: "free",
@@ -41,7 +43,7 @@ const programs = [
   },
   {
     id: "active",
-    name: "達人（たつじん）",
+    name: "書院生（しょいんせい）",
     subtitle: "月謝プラン+α",
     description:
       "修行者プランの内容に加えて、全文検索や業界別ダイジェストで必要な知見を即座に取り出せる上位プランです。",
@@ -55,7 +57,7 @@ const programs = [
       { label: "月謝", value: "¥9,800 / 月" },
       { label: "特典", value: "7日間無料お試し" },
     ],
-    cta: { label: "達人プランの申込フォームへ", href: "/join#active" },
+    cta: { label: "書院生プランの申込フォームへ", href: "/join#active" },
   },
   {
     id: "prime",
@@ -118,64 +120,119 @@ const programs = [
   },
 ];
 
+const programStages: Record<
+  string,
+  { label: string; className: string }
+> = {
+  free: { label: "STEP 0｜まずは体験", className: "text-[#C47E3B] border-[#C47E3B]/40 bg-[#C47E3B]/10" },
+  basic: { label: "STEP 1｜修行を深める", className: "text-dojo-green border-dojo-green/30 bg-dojo-green/10" },
+  active: { label: "STEP 2｜知見を引き出す", className: "text-dojo-indigo border-dojo-indigo/30 bg-dojo-indigo/10" },
+  prime: { label: "STEP 3｜経営コミュニティ", className: "text-[#B35A3F] border-[#B35A3F]/30 bg-[#B35A3F]/10" },
+  boost: { label: "STEP 4｜四半期伴走", className: "text-[#6B4A3B] border-[#6B4A3B]/30 bg-[#6B4A3B]/10" },
+  recipes: { label: "STEP 5｜秘伝書で横展開", className: "text-[#9B7A4F] border-[#9B7A4F]/30 bg-[#9B7A4F]/10" },
+};
+
 export default function ProgramsPage() {
   return (
     <main className="min-h-screen bg-[#F9F6F0] text-[#1D1A15]">
       <div className="mx-auto max-w-4xl px-4 py-16 md:px-6">
-        <header className="mb-12 space-y-4">
-          <span className="text-sm font-semibold tracking-wide text-bamboo">
-            道場プログラム
-          </span>
-          <h1 className="font-serif text-4xl">プログラム一覧</h1>
-          <p className="text-[#4B4135]">
-            AI道場は「無料で試す → 月謝で学ぶ → 伴走で成果を出す」というステップで構成されています。まずは無料の稽古から始めて、道場の雰囲気を確かめてください。
-          </p>
+        <header className="mb-12 grid gap-8 rounded-3xl border border-[#D8CFC3] bg-white/90 p-8 shadow-sm md:grid-cols-[1.05fr_0.95fr]">
+          <div className="space-y-4">
+            <span className="text-sm font-semibold tracking-wide text-bamboo">
+              稽古と伴随の道順
+            </span>
+            <h1 className="font-serif text-4xl">稽古と伴随の道順</h1>
+            <p className="text-[#4B4135]">
+              無料の週次稽古で空気を感じ、月謝プランで実装手順を身につけ、必要に応じて伴走・評議会で四半期の成果へつなげます。道場のプログラムは、段階ごとに必要な知見とサポートを受け取れる設計です。
+            </p>
+            <div className="grid gap-3 text-sm text-[#4B4135] sm:grid-cols-3">
+              {[
+                { title: "STEP 0", body: "無料稽古とオープンチャットで空気を掴む" },
+                { title: "STEP 1-2", body: "月謝でアーカイブと検索権を得て実装力を磨く" },
+                { title: "STEP 3+", body: "評議会・伴走・秘伝書で四半期の成果と横展開" },
+              ].map((item) => (
+                <div key={item.title} className="rounded-2xl border border-[#D8CFC3] bg-[#F9F6F0] p-3">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-bamboo">{item.title}</p>
+                  <p className="mt-2 leading-relaxed">{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="relative overflow-hidden rounded-2xl bg-[#1D1A15]/5">
+            <Image
+              src="/images/study.png"
+              alt="道場の稽古風景と学びの様子"
+              fill
+              sizes="(min-width: 768px) 45vw, 100vw"
+              className="object-cover"
+              priority
+            />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#1D1A15]/80 via-[#1D1A15]/20 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 p-6 text-sm text-white">
+              <p className="font-serif text-lg">流派 × 勝ち筋 × 型を揃える三段構え</p>
+              <ul className="mt-3 space-y-2 text-white/90">
+                <li>・週次稽古：60分で最新ケースを分解</li>
+                <li>・月謝プラン：アーカイブ＆検索で常設の学び場</li>
+                <li>・伴走/評議会：四半期でBefore/Afterを証明</li>
+              </ul>
+            </div>
+          </div>
         </header>
 
         <div className="space-y-10">
-          {programs.map((program) => (
-            <section
-              key={program.id}
-              id={program.id}
-              className="rounded-3xl border border-[#D8CFC3] bg-white p-6 shadow-sm"
-            >
-              <div className="flex items-baseline gap-3">
-                <h2 className="font-serif text-2xl text-[#1D1A15]">{program.name}</h2>
-                {program.subtitle && (
-                  <span className="text-xs font-semibold uppercase tracking-wide text-bamboo">
-                    {program.subtitle}
-                  </span>
-                )}
-              </div>
-              <p className="mt-3 text-sm text-[#4B4135]">{program.description}</p>
-              {program.meta && (
-                <dl className="mt-4 grid gap-4 text-sm text-[#4B4135] md:grid-cols-2 lg:grid-cols-4">
-                  {program.meta.map((item) => (
-                    <div key={item.label}>
-                      <dt className="font-semibold text-[#1D1A15]">{item.label}</dt>
-                      <dd className="mt-1 leading-relaxed">{item.value}</dd>
-                    </div>
-                  ))}
-                </dl>
-              )}
-              <ul className="mt-4 space-y-2 text-sm text-[#4B4135]">
-                {program.bulletPoints.map((point) => (
-                  <li key={point} className="flex items-start gap-2">
-                    <span className="mt-1 h-2 w-2 rounded-full bg-bamboo" />
-                    <span>{point}</span>
-                  </li>
-                ))}
-              </ul>
-              <a
-                href={program.cta.href}
-                target={program.id === "free" ? "_blank" : undefined}
-                rel={program.id === "free" ? "noopener noreferrer" : undefined}
-                className="mt-6 inline-flex items-center rounded-full bg-vermillion px-5 py-2 text-sm font-semibold text-[#1D1A15] transition hover:bg-vermillion-dark"
+          {programs.map((program) => {
+            const stage = programStages[program.id];
+            return (
+              <section
+                key={program.id}
+                id={program.id}
+                className="rounded-3xl border border-[#D8CFC3] bg-white p-6 shadow-sm"
               >
-                {program.cta.label}
-              </a>
-            </section>
-          ))}
+                <div className="flex flex-wrap items-baseline justify-between gap-3">
+                  <div className="flex items-baseline gap-3">
+                    <h2 className="font-serif text-2xl text-[#1D1A15]">{program.name}</h2>
+                    {program.subtitle && (
+                      <span className="text-xs font-semibold uppercase tracking-wide text-bamboo">
+                        {program.subtitle}
+                      </span>
+                    )}
+                  </div>
+                  {stage && (
+                    <span className={`rounded-full border px-3 py-1 text-xs font-semibold ${stage.className}`}>
+                      {stage.label}
+                    </span>
+                  )}
+                </div>
+                <p className="mt-3 text-sm text-[#4B4135]">{program.description}</p>
+                {program.meta && (
+                  <dl className="mt-4 grid gap-4 text-sm text-[#4B4135] md:grid-cols-2 lg:grid-cols-4">
+                    {program.meta.map((item) => (
+                      <div key={item.label}>
+                        <dt className="font-semibold text-[#1D1A15]">{item.label}</dt>
+                        <dd className="mt-1 leading-relaxed">{item.value}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                )}
+                <ul className="mt-4 space-y-2 text-sm text-[#4B4135]">
+                  {program.bulletPoints.map((point) => (
+                    <li key={point} className="flex items-start gap-2">
+                      <span className="mt-1 h-2 w-2 rounded-full bg-bamboo" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href={program.cta.href}
+                  target={program.id === "free" ? "_blank" : undefined}
+                  rel={program.id === "free" ? "noopener noreferrer" : undefined}
+                  className="mt-6 inline-flex items-center rounded-full bg-vermillion px-5 py-2 text-sm font-semibold text-[#1D1A15] transition hover:bg-vermillion-dark"
+                >
+                  {program.cta.label}
+                </a>
+              </section>
+            );
+          })}
         </div>
 
         <section className="mt-12 rounded-3xl border border-[#D8CFC3] bg-white p-6 shadow-sm text-sm text-[#4B4135]">

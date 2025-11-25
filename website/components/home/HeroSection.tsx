@@ -42,7 +42,7 @@ export default function HeroSection() {
           <h1 className="font-serif text-3xl font-bold leading-tight text-[#1D1A15] sm:text-4xl lg:text-5xl drop-shadow-sm">
             流派 × 勝ち筋 × 型で、
             <br />
-            <span className="text-dojo-gold">四半期で成果を出す。</span>
+            <span className="text-dojo-green">四半期で成果を出す。</span>
           </h1>
           <p className="max-w-2xl text-base leading-relaxed text-ink font-serif opacity-100">
             道場の稽古は、毎週の無料ライブから始まります。月謝でアーカイブと伴走を受け、四半期で成果を可視化し、ケースとして公開。和の現場知と実装知で、組織のAI活用を定着させます。
@@ -64,7 +64,7 @@ export default function HeroSection() {
               四半期で成果を相談する
             </Link>
             <Link
-              href="/fellows"
+              href="/community"
               className="flex items-center justify-center rounded-lg border-2 border-dojo-indigo px-6 py-3 text-dojo-indigo font-bold transition-all hover:bg-dojo-indigo hover:text-white"
             >
               師範として参画する

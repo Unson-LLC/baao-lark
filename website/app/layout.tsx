@@ -11,7 +11,7 @@ const yujiBrush = Yuji_Syuku({ subsets: ["latin"], weight: ["400"], variable: "-
 export const metadata: Metadata = {
   title: "BAAO 実戦AI道場｜流派 × 勝ち筋 × 型で四半期で成果",
   description:
-    "無料稽古で空気を掴み、月謝で定着し、Field Director と伴走して四半期で成果を公開する。Executives / DX Leads / Operators / Fellows のためのペルソナ別LPを備えた常設サイト。",
+    "無料稽古で空気を掴み、月謝で型を得て、師範が伴随して四半期で成果を公開する。役割別の稽古ガイドと師範コミュニティ案内を備えた常設サイト。",
   keywords: [
     "BAAO",
     "AI道場",
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "BAAO 実戦AI道場｜四半期で成果を証明",
     description:
-      "無料稽古 → 月謝 → 伴走 → 成果公開。Executives / DX Leads / Operators / Fellows のための情報を二層構造で提供します。",
+      "無料稽古 → 月謝 → 師範が伴随して → 成果公開。役割別の稽古ルートと師範コミュニティ情報を二層構造で提供します。",
     type: "website",
     locale: "ja_JP",
   },
   twitter: {
     card: "summary_large_image",
     title: "BAAO 実戦AI道場｜四半期で成果を証明",
-    description: "無料稽古から伴走まで一貫支援。ペルソナ別LPで疑問を解消。",
+    description: "無料稽古から師範の伴随まで一貫支援。役割別ガイドで疑問を解消。",
   },
 };
 

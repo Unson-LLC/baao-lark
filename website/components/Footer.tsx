@@ -5,14 +5,14 @@ const dojoNav = [
   { label: "道場トップ", href: "/" },
   { label: "稽古・伴走プログラム", href: "/programs" },
   { label: "ケース公開・資料", href: "/resources" },
-  { label: "参加方法（ご入門）", href: "/join" },
+  { label: "参加方法（入門）", href: "/join" },
   { label: "実装記録", href: "/success-stories" },
 ];
 
 const roleNav = [
-  { label: "経営・意思決定者の方", href: "/executives" },
-  { label: "DX推進・PMの方", href: "/dx-leads" },
-  { label: "現場で実装する方", href: "/operators" },
+  { label: "経営・意思決定者の方", href: "/for-you#executive" },
+  { label: "DX推進・PMの方", href: "/for-you#dx-lead" },
+  { label: "現場で実装する方", href: "/for-you#operator" },
   { label: "師範志望（Fellow）", href: "/fellows" },
 ];
 

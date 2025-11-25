@@ -35,7 +35,7 @@ export const fellows: FellowProfile[] = [
       "Yearbook 2024 に寄稿『品質改善を加速する現場コミュニケーション』",
     ],
     impactPoints: 18,
-    avatar: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=400&q=80",
+    avatar: "/images/yamamoto.webp",
     interviewLink: "/resources#blog",
     materials: [
       { label: "現場見学スライド", href: "https://example.com/materials/yamamoto-slides.pdf" },
