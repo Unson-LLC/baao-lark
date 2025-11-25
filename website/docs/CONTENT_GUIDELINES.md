@@ -4,7 +4,7 @@
 
 ## 1. トーン＆メッセージング共通原則
 
-- **道場らしさと実戦性**：語彙は「稽古」「月謝」「伴走」「師範」「門下生」。和の質感（畳・木・和紙）を意識しつつ、数字とプロセスで実装力を証明する。
+- **道場らしさと実戦性**：語彙は「稽古」「月謝」「伴随」「師範」「門下生」。和の質感（畳・木・和紙）を意識しつつ、数字とプロセスで実装力を証明する。
 - **四半期で成果**：Hero・Programs・Success Storiesのいずれでも “Quarter Impact” を繰り返し、「成果＝公開することで再現性を生む」という流れを示す。
 - **Fellows主語**：Field Director / Senior Fellow / Fellow の存在感を常に示し、自尊心とブランドを引き上げるコピー（Appointment#、Byline、Green Room等）を散りばめる。
 - **CTAは3本柱**：「無料稽古」「企業相談」「Fellow応募」。各ページでのバリエーションは増やしつつ、アンカーとフォームは `CTA_AND_FORMS.md` と同期させる。
@@ -18,10 +18,10 @@
 
 | セクション | コンテンツ要点 | 主ターゲット / 次アクション |
 |-------------|----------------|--------------------------------|
-| Hero | タグライン「流派 × 勝ち筋 × 型で四半期で成果。」＋サブコピー「毎週の稽古は無料ライブ。月謝で伴走へ。」。CTA3種と次回無料稽古カード（日時 / テーマ / 師範）。 | 全ペルソナ。CTAは Join#free-live / Join#enterprise / Join#fellow |
+| Hero | タグライン「流派 × 勝ち筋 × 型で四半期で成果。」＋サブコピー「毎週の稽古は無料ライブ。月謝で伴随へ。」。CTA3種と次回無料稽古カード（日時 / テーマ / 師範）。 | 全ペルソナ。CTAは Join#free-live / Join#enterprise / Join#fellow |
 | Free Live | ライブ概要、登壇師範紹介、参加手順、オープンチャット利用規約。ライブ後アンケートの意義を記述。 | Operators / Fellows候補。Join#free-live |
 | Sample Videos & Voices | サンプル動画埋め込み、満足度バッジ、参加者の声（アンケート引用）。 | 新規訪問者。Resources#events へ誘導 |
-| Path to Mastery | 無料→月謝→伴走→公開の4ステップをペルソナ別に説明。 | DX Leads / Operators。Programs / Persona LP へ |
+| Path to Mastery | 無料→月謝→伴随→公開の4ステップをペルソナ別に説明。 | DX Leads / Operators。Programs / Persona LP へ |
 | Program Snapshot | FREE/BASIC/ACTIVE/PRIME/BOOST/RECIPES のカード。月謝・成果物・CTAリンク。 | Operators / DX Leads |
 | FieldWorks Overview | 流派×勝ち筋×型の図、Field Director紹介、Appointment#。 | Executives / Fellows |
 | Community & Fellows | Impact Points、特典（72h先行閲覧、Green Room、案件報酬）。 | Fellows / Operators |
@@ -32,7 +32,7 @@
 
 ### 2-2. Programs & FieldWorks（/programs）
 
-1. **イントロ**：「無料稽古で空気を掴み、月謝で型を得て、伴走で成果を公開する」。Flow図を掲載。
+1. **イントロ**：「無料稽古で空気を掴み、月謝で型を得て、伴随で成果を公開する」。Flow図を掲載。
 2. **FREE**：参加手順、アンケート、オープンチャット導線。
 3. **BASIC / ACTIVE**：差分（アーカイブ、検索、Lark support、レビュー）、成果物例、FAQ。
 4. **PRIME / BOOST**：四半期での実装プロセス、返金保証、守秘レベル、Field Director一次責任の表記。
@@ -78,11 +78,11 @@
 
 #### `/dx-leads`
 - Hero：PoC止まりの課題から共感
-- ロードマップ：無料稽古→月謝→伴走→公開を具体的に記述
+- ロードマップ：無料稽古→月謝→伴随→公開を具体的に記述
 - 月謝プラン活用：BASIC/ACTIVEの教材・Larkサポート
 - 稟議テンプレ・FAQ：Resourcesへの導線
 - 成功事例：プロジェクト完遂例・現場の声
-- CTA：無料稽古登録、ロードマップ資料、伴走相談
+- CTA：無料稽古登録、ロードマップ資料、伴随相談
 
 #### `/operators`
 - Hero：残業削減・スキル習得を実感させる数値
@@ -108,8 +108,8 @@
 | シーン | コピー例 | 目的 |
 |--------|-----------|------|
 | Home Hero Lead | 「流派 × 勝ち筋 × 型で、四半期でBefore/Afterを証明する道場です。」 | USPの即時伝達 |
-| Persona Executives | 「PRIMEは、役員会に提出できるROIレポートまで伴走します。」 | 投資判断の安心感 |
-| Persona DX Leads | 「PoCで止まったままでも大丈夫。月謝と伴走で“社内合意”を四半期で作り直します。」 | 痛みの共感 |
+| Persona Executives | 「PRIMEは、役員会に提出できるROIレポートまで伴随します。」 | 投資判断の安心感 |
+| Persona DX Leads | 「PoCで止まったままでも大丈夫。月謝と伴随で“社内合意”を四半期で作り直します。」 | 痛みの共感 |
 | Persona Operators | 「無料稽古で30分、月謝で残業30時間削減。Larkでその日の疑問を解決できます。」 | 即効性の強調 |
 | Persona Fellows | 「Appointment#で肩書を証明し、Yearbookで名前が残る。Impact Pointsで貢献はすべてスコア化されます。」 | ブランド訴求 + 自尊心 |
 

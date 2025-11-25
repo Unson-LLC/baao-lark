@@ -45,7 +45,7 @@ export default function HeroSection() {
             <span className="text-dojo-green">四半期で成果を出す。</span>
           </h1>
           <p className="max-w-2xl text-base leading-relaxed text-ink font-serif opacity-100">
-            道場の稽古は、毎週の無料ライブから始まります。月謝でアーカイブと伴走を受け、四半期で成果を可視化し、ケースとして公開。和の現場知と実装知で、組織のAI活用を定着させます。
+            道場の稽古は、毎週の無料ライブから始まります。月謝でアーカイブと伴随を受け、四半期で成果を可視化し、ケースとして公開。和の現場知と実装知で、組織のAI活用を定着させます。
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">
             <a
@@ -106,11 +106,11 @@ export default function HeroSection() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-dojo-gold mt-1">◆</span>
-                  Lark上で伴走レビュー
+                  Lark上で伴随レビュー
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-dojo-gold mt-1">◆</span>
-                  伴走案件の優先紹介
+                  伴随案件の優先紹介
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-dojo-gold mt-1">◆</span>

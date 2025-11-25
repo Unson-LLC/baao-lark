@@ -42,12 +42,12 @@ const enterprisePrograms = [
     href: "/programs#prime",
   },
   {
-    name: "伴走（ばんそう）",
+    name: "伴随（ばんそう）",
     subtitle: "成果創出プロジェクト",
     description: "4〜8週でKPIを可視化し、横展開のロードマップまで提示",
     price: "個別見積",
     priceNote: "プロジェクト型（4〜8週）",
-    features: ["導入前後のKPI測定と可視化", "専任チームによる伴走支援", "他部署への横展開計画を策定"],
+    features: ["導入前後のKPI測定と可視化", "専任チームによる伴随支援", "他部署への横展開計画を策定"],
     href: "/programs#boost",
   },
   {
@@ -78,10 +78,10 @@ export default function ProgramSnapshot() {
       <div className="relative mx-auto max-w-6xl px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-serif text-3xl text-[#1D1A15] sm:text-4xl">
-            無料稽古から伴走まで。
+            無料稽古から伴随まで。
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-[#4B4135]">
-            まずは無料で道場に触れ、その後は月謝プランで学び、伴走プログラムで成果を出す。
+            まずは無料で道場に触れ、その後は月謝プランで学び、伴随プログラムで成果を出す。
           </p>
         </div>
 
@@ -159,7 +159,7 @@ export default function ProgramSnapshot() {
           </div>
         </div>
 
-        {/* 企業向け伴走支援プラン（アコーディオン） */}
+        {/* 企業向け伴随支援プラン（アコーディオン） */}
         <div className="mt-16">
           <button
             onClick={() => setEnterpriseOpen(!enterpriseOpen)}
@@ -167,7 +167,7 @@ export default function ProgramSnapshot() {
           >
             <div className="flex items-center gap-3">
               <div className="h-1 w-12 bg-dojo-gold rounded-full" />
-              <h3 className="text-xl font-bold text-[#1D1A15]">企業向け伴走支援プラン</h3>
+              <h3 className="text-xl font-bold text-[#1D1A15]">企業向け伴随支援プラン</h3>
               <span className="rounded-full bg-dojo-gold/10 px-3 py-1 text-xs font-semibold text-[#C47E3B]">
                 個別見積
               </span>

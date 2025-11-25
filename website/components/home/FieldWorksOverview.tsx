@@ -78,7 +78,7 @@ export default function FieldWorksOverview() {
               ))}
             </div>
             <div className="border-t border-[#D8CFC3] p-6 text-sm text-[#4B4135]">
-              各ケースは、守秘レベルごとに公開・要素分解・匿名化を判断。伴走支援や横展開のご相談は{" "}
+              各ケースは、守秘レベルごとに公開・要素分解・匿名化を判断。伴随支援や横展開のご相談は{" "}
               <a href="/join#enterprise" className="font-semibold text-bamboo hover:text-bamboo-light">
                 Join#enterprise
               </a>{" "}

@@ -23,7 +23,7 @@
    - フッターに `Resources#events` へのリンク。
 
 4. **Path to Mastery**
-   - 4ステップ横フロー（無料稽古 → 月謝 → 伴走 → 成果公開）。各ステップの下に対象ペルソナ、CTA。
+   - 4ステップ横フロー（無料稽古 → 月謝 → 伴随 → 成果公開）。各ステップの下に対象ペルソナ、CTA。
 
 5. **Program Snapshot**
    - カード6枚（FREE、BASIC、ACTIVE、PRIME、BOOST、RECIPES）。各カードに月謝・成果物・CTA。
@@ -57,10 +57,10 @@
 ## 2. Programs & FieldWorks（/programs）
 
 1. **Hero**
-   - Copy：`稽古で学び、伴走で成果を証明する設計`。アンカーリンク（FREE/BASIC/ACTIVE/PRIME/BOOST/RECIPES/FieldWorks）。
+   - Copy：`稽古で学び、伴随で成果を証明する設計`。アンカーリンク（FREE/BASIC/ACTIVE/PRIME/BOOST/RECIPES/FieldWorks）。
 
 2. **Overview**
-   - 4ステップのタイムライン（無料体験 → 月謝 → 伴走 → 公開）。CTA：`無料稽古に参加`。
+   - 4ステップのタイムライン（無料体験 → 月謝 → 伴随 → 公開）。CTA：`無料稽古に参加`。
 
 3. **FREE**
    - カード：内容・参加頻度・アンケート・オープンチャット導線。CTA：Join#free-live。
@@ -132,7 +132,7 @@
 ## 5. Join / Contact（/join）
 
 1. **Hero**
-   - Copy：`稽古で試し、伴走で成果へ。次の一歩を選んでください。`
+   - Copy：`稽古で試し、伴随で成果へ。次の一歩を選んでください。`
    - CTAタイル：6種フォームへのアンカー。
 
 2. **セクション #free-live**
@@ -172,11 +172,11 @@
 ### `/dx-leads`
 1. Hero：PoC止まりへの共感、CTA（無料稽古、ロードマップPDF）。
 2. 課題→解決：痛みを列挙し、各課題に対応する解決策カード。
-3. ロードマップ：無料稽古→月謝→Lark→伴走→公開のフローステップ。
+3. ロードマップ：無料稽古→月謝→Lark→伴随→公開のフローステップ。
 4. プログラム活用：BASIC/ACTIVE/PRIME/BOOSTの図解、FAQ。
 5. 稟議キット：資料DL、社内説明のポイント、Lark運用。
 6. 成功事例：2つのケースカード（PoC→横展開）。
-7. CTA：無料稽古、伴走相談、資料DL。
+7. CTA：無料稽古、伴随相談、資料DL。
 
 ### `/operators`
 1. Hero：残業削減・スキル習得を数字で提示。CTA（無料稽古、月謝相談）。

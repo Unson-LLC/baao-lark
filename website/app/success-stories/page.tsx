@@ -70,7 +70,7 @@ export default function SuccessStoriesPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3 text-sm text-[#4B4135]">
             <p className="basis-full text-left text-sm text-[#4B4135]">
-              この成功事例と同じ伴走をまずは無料稽古で体験しませんか？返金保証付きの相談なので、
+              この成功事例と同じ伴随をまずは無料稽古で体験しませんか？返金保証付きの相談なので、
               情報収集だけのご参加でも歓迎です。
             </p>
             <Link

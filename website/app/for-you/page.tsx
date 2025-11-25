@@ -12,7 +12,7 @@ const personas = [
       {
         title: "BOOST｜四半期プロジェクト",
         description: "4〜8週でKPIを可視化し、Before/Afterを測定。投資判断に必要な成果を数値で示します。",
-        cta: "成果伴走を相談",
+        cta: "成果伴随を相談",
         href: "/join#enterprise",
       },
       {
@@ -23,7 +23,7 @@ const personas = [
       },
     ],
     testimonial: {
-      quote: "四半期で役員会へ成果を示せる道筋が見えた。伴走レポートがそのまま経営会議資料になり、投資判断が進んだ。",
+      quote: "四半期で役員会へ成果を示せる道筋が見えた。伴随レポートがそのまま経営会議資料になり、投資判断が進んだ。",
       source: "製造業 事業本部長（BOOST導入企業）",
     },
   },

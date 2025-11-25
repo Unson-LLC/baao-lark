@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "BAAO",
     "AI道場",
     "生成AI",
-    "DX伴走",
+    "DX伴随",
     "月謝プラン",
     "Field Director",
     "Fellow",

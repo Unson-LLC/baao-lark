@@ -6,8 +6,8 @@ AI道場の常設サイトは、共通のトップレイヤーでブランド・
 
 | ペルソナ | 呼称 | 主な意思決定 | 主要CTA | 優先LP |
 |-----------|------|----------------|----------|---------|
-| **経営層 / 事業責任者** | Executives | 四半期で成果を証明できる伴走への投資判断 | 企業相談（PRIME/BOOST） | `/executives`
-| **DX推進リーダー / 人材開発責任者** | DX Leads | 組織内で再現可能なロードマップと導入フローの整備 | 無料稽古 → 月謝 → 伴走相談 | `/dx-leads`
+| **経営層 / 事業責任者** | Executives | 四半期で成果を証明できる伴随への投資判断 | 企業相談（PRIME/BOOST） | `/executives`
+| **DX推進リーダー / 人材開発責任者** | DX Leads | 組織内で再現可能なロードマップと導入フローの整備 | 無料稽古 → 月謝 → 伴随相談 | `/dx-leads`
 | **実務担当者 / 現場リーダー** | Operators | 業務を即改善できる学習・コミュニティ参加 | 無料稽古参加／月謝申込 | `/operators`
 | **専門家コミュニティ（Fellows / Field Director / Senior Fellow候補）** | Fellows | 自身の専門性を活かした関与とブランド露出 | Fellow応募／案件相談 | `/fellows`
 
@@ -42,8 +42,8 @@ AI道場の常設サイトは、共通のトップレイヤーでブランド・
 
 - **ゴール**：社内で再現性ある導入計画を描き、稟議を通し、現場を動かす。継続的な学習ラインを設計したい。
 - **現在の不安**：
-  - 教材・アーカイブ・伴走が揃っているか分からない
-  - 無料稽古から月謝→伴走へのステップが見えない
+  - 教材・アーカイブ・伴随が揃っているか分からない
+  - 無料稽古から月謝→伴随へのステップが見えない
   - 守秘と公開の線引きが不安（社内共有用資料が欲しい）
 - **必要情報 / 証拠**：
   - 月謝プラン（BASIC/ACTIVE）のコンテンツ差分と活用ストーリー
@@ -57,7 +57,7 @@ AI道場の常設サイトは、共通のトップレイヤーでブランド・
   1. `/` → ペルソナカード → `/dx-leads`
   2. `/dx-leads` で痛み→ロードマップ→成功事例→社内配布資料
   3. 必要に応じ `/programs`、`/resources`（Downloads, FAQ）を経由し `Join#basic` or `Join#enterprise`
-- **主要CTA**：`無料稽古で空気を掴む`（Join#free-live）、`伴走相談を予約`、`稟議テンプレをダウンロード`
+- **主要CTA**：`無料稽古で空気を掴む`（Join#free-live）、`伴随相談を予約`、`稟議テンプレをダウンロード`
 
 ---
 
@@ -115,7 +115,7 @@ AI道場の常設サイトは、共通のトップレイヤーでブランド・
 | ペルソナ | 入口 | 主要セクション | 補助ページ | 最終CTA |
 |----------|------|----------------|------------|----------|
 | Executives | Homeヒーローのショートリンク / Personaカード | /executives 内の ROI保証・Field Director紹介・ケース指標 | /programs#prime, /success-stories | Join#enterprise で企業相談 |
-| DX Leads | Home → /dx-leads | ロードマップ、稟議テンプレ、伴走プロセス | /programs, /resources（Downloads, FAQ） | Join#free-live → Join#enterprise/BASIC |
+| DX Leads | Home → /dx-leads | ロードマップ、稟議テンプレ、伴随プロセス | /programs, /resources（Downloads, FAQ） | Join#free-live → Join#enterprise/BASIC |
 | Operators | Home → /operators | Before/After、月謝プラン活用、コミュニティ紹介 | /programs（BASIC/ACTIVE）、/resources（Events） | Join#free-live → Join#basic |
 | Fellows | Home CTA → /fellows | キャリアパス、Impact Points、Field Directorメッセージ | /success-stories（Byline例）、/resources（Events/Fellow説明会） | Join#fellow / Join#fellow-assign |
 

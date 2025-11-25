@@ -14,7 +14,7 @@
 1. **Hero｜無料稽古ヒーロー**
    - (D) 背景：左半分に畳・木×現場写真のレイヤー、右半分にコピー。
    - 見出し：`流派 × 勝ち筋 × 型で四半期で成果`
-   - サブコピー：`毎週の稽古は無料ライブ。月謝でアーカイブと伴走へ。`
+   - サブコピー：`毎週の稽古は無料ライブ。月謝でアーカイブと伴随へ。`
    - CTAボタン（横並び）：`今週の稽古に参加`（Join#free-live）／`企業相談を予約`（Join#enterprise）／`師範として参画`（Community & Fellowsセクションへスクロール）
    - 右下：次回稽古の日付＋登壇師範の顔写真（小）
    - (M) CTAは縦積み。
@@ -30,7 +30,7 @@
    - ボタン：`他のダイジェストを見る`（Resources/Events#archives）。
 
 4. **Path to Mastery｜成長の道筋**
-   - (D) 横フローチャート：`無料稽古` → `月謝プラン（BASIC/ACTIVE）` → `伴走（PRIME/BOOST）` → `成果公開（Cases/Yearbook）`。
+   - (D) 横フローチャート：`無料稽古` → `月謝プラン（BASIC/ACTIVE）` → `伴随（PRIME/BOOST）` → `成果公開（Cases/Yearbook）`。
    - それぞれの下に対象ペルソナとCTAを配置。
 
 5. **Programs Snapshot**
@@ -71,11 +71,11 @@
 ## 2. Programs
 
 1. **Hero（セクションナビ）**
-   - 見出し `稽古から伴走まで、一気通貫で導くプログラム`
+   - 見出し `稽古から伴随まで、一気通貫で導くプログラム`
    - アンカーリンク：`FREE / BASIC / ACTIVE / PRIME / BOOST / RECIPES / CONSULT`。
 
 2. **Overview タブ**
-   - フローチャート（無料→月謝→伴走→公開）。
+   - フローチャート（無料→月謝→伴随→公開）。
    - CTA：`まず無料稽古に参加`。
 
 3. **FREE｜Weekly AI News**
@@ -88,7 +88,7 @@
    - CTA：Join#basic（申込フォーム選択肢でACTIVEも）。
 
 5. **PRIME / BOOST**
-   - 伴走プロセスのタイムライン（診断→設計→実装→公開）。
+   - 伴随プロセスのタイムライン（診断→設計→実装→公開）。
    - 成果メトリクスと守秘レベル図。
    - CTA：Join#enterprise。
 
@@ -97,7 +97,7 @@
    - CTA：Join#enterprise、資料DL。
 
 7. **Cross Sell**
-   - “稽古から伴走へ”の誘導。既存会員向けメッセージ。
+   - “稽古から伴随へ”の誘導。既存会員向けメッセージ。
 
 8. **FAQ / Next Steps**
    - 共通FAQとCTAバンド（Join#free-live, Join#enterprise, Join#basic）。
@@ -180,7 +180,7 @@
 ## 6. Join / Contact
 
 1. **Hero**
-   - 見出し `稽古で試し、伴走で成果へ。次の一歩を選ぶ`
+   - 見出し `稽古で試し、伴随で成果へ。次の一歩を選ぶ`
    - シンプルな説明＋CTAバンド（アンカー付き）。
 
 2. **無料稽古ライブ（#free-live）**

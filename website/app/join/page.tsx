@@ -215,7 +215,7 @@ const formDefinitions: FormDefinition[] = [
             <li>利用しているシステム／データの概要（分かる範囲で可）</li>
           </ul>
         </div>
-        <p className="text-xs text-[#4B4135]">返金保証付きの伴走でリスクはゼロ。ご相談だけでも歓迎です。</p>
+        <p className="text-xs text-[#4B4135]">返金保証付きの伴随でリスクはゼロ。ご相談だけでも歓迎です。</p>
       </div>
     ),
     renderForm: (action, headingId) =>
@@ -573,7 +573,7 @@ const formDefinitions: FormDefinition[] = [
             />
           </label>
           <label className="flex flex-col gap-2 text-sm text-[#4B4135] md:col-span-2">
-            ご質問・期待している伴走内容
+            ご質問・期待している伴随内容
             <textarea
               name="message"
               rows={4}
@@ -1068,7 +1068,7 @@ export default function ContactPage() {
         <header className="mb-10">
           <h1 className="font-serif text-4xl">お問い合わせ・各種受付</h1>
           <p className="mt-4 text-[#4B4135]">
-            BAAO 実戦AI道場へのお問い合わせ窓口です。週次稽古の登録、企業向け伴走・評議会相談、月謝プランの導入、Fellow応募、メディア取材依頼までこちらで受け付けています。送信後は担当よりメールまたはLarkでご連絡します。
+            BAAO 実戦AI道場へのお問い合わせ窓口です。週次稽古の登録、企業向け伴随・評議会相談、月謝プランの導入、Fellow応募、メディア取材依頼までこちらで受け付けています。送信後は担当よりメールまたはLarkでご連絡します。
           </p>
           <ul className="mt-4 space-y-2 text-sm text-[#4B4135]">
             <li className="flex items-start gap-2">

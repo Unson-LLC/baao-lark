@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const dojoNav = [
   { label: "道場トップ", href: "/" },
-  { label: "稽古・伴走プログラム", href: "/programs" },
+  { label: "稽古・伴随プログラム", href: "/programs" },
   { label: "ケース公開・資料", href: "/resources" },
   { label: "参加方法（入門）", href: "/join" },
   { label: "実装記録", href: "/success-stories" },
@@ -56,7 +56,7 @@ export default function Footer() {
             </div>
             <p className="text-sm leading-relaxed text-washi-light">
               和の現場知と実装知を公開し、四半期で成果を証明するコミュニティです。
-              無料稽古から月謝、伴走まで一貫した流れで支援します。
+              無料稽古から月謝、伴随まで一貫した流れで支援します。
             </p>
             <div className="space-y-2 text-sm text-washi-light border-l-2 border-dojo-gold pl-4">
               <p className="font-bold text-dojo-gold">一般社団法人ビジネスAI推進機構（BAAO）</p>
@@ -105,7 +105,7 @@ export default function Footer() {
               </p>
               <p>
                 <a href="/join#enterprise" className="inline-flex w-full items-center justify-center rounded-lg border-2 border-washi px-5 py-2.5 text-washi font-bold transition hover:bg-washi hover:text-dojo-green">
-                  評議会・伴走の相談
+                  評議会・伴随の相談
                 </a>
               </p>
               <p>

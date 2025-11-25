@@ -8,12 +8,12 @@
 |---------|----------|------|---------------------|
 | 無料稽古ライブ参加登録 | Operators / DX Leads / Fellows候補 | 週次ライブ視聴、オープンチャット招待 | Home Hero、Home Free Live、`/dx-leads`、`/operators`、Resources/Events |
 | オープンチャット参加 | 無料会員・興味層 | 継続接点 + ナーチャリング | 無料稽古サンクス、Resources（Events）、メール通知 |
-| 企業向け相談（PRIME/BOOST） | Executives / DX Leads | 四半期内の伴走相談・ROI試算 | Home CTA、`/executives`、`/dx-leads`、Programs（PRIME/BOOST）、Success Stories、Join |
+| 企業向け相談（PRIME/BOOST） | Executives / DX Leads | 四半期内の伴随相談・ROI試算 | Home CTA、`/executives`、`/dx-leads`、Programs（PRIME/BOOST）、Success Stories、Join |
 | 資料ダウンロード（FieldWorks / プラン比較） | Executives / DX Leads | 稟議資料・社内共有 | `/executives`、`/dx-leads`、Programs、Resources/Downloads |
 | 体験会・現場見学予約 | DX Leads / Fellows | コミュニティ体験・案件想起 | Home Events、Resources/Events、`/fellows` |
 | BASIC月謝プラン申込 | Operators | アーカイブとLarkを活用した定着 | `/operators`、Programs（BASIC/ACTIVE）、Join |
 | ACTIVE月謝プラン申込 | DX Leads / Operators | 上位プラン（全文検索、ドラフト閲覧） | `/dx-leads`、Programs、Join |
-| PRIME相談 | Executives | クローズドコミュニティ・役員向け伴走 | `/executives`、Programs、Success Stories、Join |
+| PRIME相談 | Executives | クローズドコミュニティ・役員向け伴随 | `/executives`、Programs、Success Stories、Join |
 | BOOST見積 | DX Leads | KPI可視化プロジェクト見積 | `/dx-leads`、Programs、Success Stories、Join |
 | RECIPES購入相談 | DX Leads | Playbook購入、横展開支援 | Programs、Resources、Persona LP
 | Fellow応募 | Fellows候補 | コミュニティ参画・案件参画 | Home CTA、`/fellows`、Communityページ、Join |

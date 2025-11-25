@@ -12,7 +12,7 @@ const ctas = [
   },
   {
     title: "四半期で成果を相談する",
-    description: "師範が24時間以内に担当宣言。評議会/伴走で成果を可視化します。",
+    description: "師範が24時間以内に担当宣言。評議会/伴随で成果を可視化します。",
     href: "/join#enterprise",
     primary: false,
   },

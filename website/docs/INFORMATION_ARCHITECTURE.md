@@ -7,7 +7,7 @@
 | 順番 | ラベル | URL | 役割 | 備考 |
 |------|--------|-----|------|------|
 | 1 | Home | `/` | 道場のUSP・社会的証明・各ペルソナの入口を提示 | HeroにCTA3種（無料稽古 / 企業相談 / Fellow応募）
-| 2 | Programs & FieldWorks | `/programs` | 無料→月謝→伴走→公開という全体像と各プログラム詳細 | FieldWorksマトリクスはページ内セクションとして配置
+| 2 | Programs & FieldWorks | `/programs` | 無料→月謝→伴随→公開という全体像と各プログラム詳細 | FieldWorksマトリクスはページ内セクションとして配置
 | 3 | Success Stories | `/success-stories` | KPI・ケースハイライト・Yearbook導線で信頼を補強 | Casesフィルタ→KPI→Yearbook→保証CTA
 | 4 | Resources | `/resources` | イベント／ダウンロード／FAQ／ブログ | オープンチャット・ニュースレターもここから誘導
 | 5 | Join / Contact | `/join` | 6種類のフォーム（無料稽古 / 企業相談 / 月謝 / Fellow応募 / 案件相談 / メディア） | クエリ `?persona=` で初期表示制御を検討
@@ -38,7 +38,7 @@
 - Hero（USP + 3CTA + 次回無料稽古）
 - 無料稽古セクション（テーマ・登壇者・オプチャ導線）
 - サンプル動画 & アンケート引用
-- Path to Mastery（無料→月謝→伴走→公開）
+- Path to Mastery（無料→月謝→伴随→公開）
 - Program snapshot（FREE/BASIC/ACTIVE/PRIME/BOOST/RECIPES）
 - FieldWorks overview + Field Director紹介
 - Community & Fellows（Impact Points / 特典）
@@ -48,7 +48,7 @@
 - CTAバンド
 
 ### Programs & FieldWorks（`/programs`）
-- Overview：無料→月謝→伴走→公開の流れ
+- Overview：無料→月謝→伴随→公開の流れ
 - プログラムごとのセクション（FREE / BASIC / ACTIVE / PRIME / BOOST / RECIPES）
 - FieldWorksマトリクスと役割（Field Director / Senior / Fellow）
 - 守秘・公開ポリシーと期待成果物
@@ -78,7 +78,7 @@
 
 ### Persona LP
 - `/executives`：失敗パターン、ROI保証、Field Director紹介、ケース証拠、返金ポリシー
-- `/dx-leads`：PoCから脱却するロードマップ、月謝/伴走活用、稟議テンプレ、成功事例
+- `/dx-leads`：PoCから脱却するロードマップ、月謝/伴随活用、稟議テンプレ、成功事例
 - `/operators`：Before/After、月謝カリキュラム、コミュニティの雰囲気、FAQ、無償サンプル
 - `/fellows`：招待コピー、Grade/Impact Points、報酬・特権、Field Director/Senior Showcase、Byline例、応募CTA
 

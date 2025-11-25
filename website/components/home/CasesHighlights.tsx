@@ -50,7 +50,7 @@ export default function CasesHighlights() {
             公開できる実装知＝再現できる品質。
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-[#4B4135]">
-            守秘レベルを設定しつつ、可能な限りケースを公開。伴走の結果はYearbookで検証可能です。
+            守秘レベルを設定しつつ、可能な限りケースを公開。伴随の結果はYearbookで検証可能です。
           </p>
         </div>
 

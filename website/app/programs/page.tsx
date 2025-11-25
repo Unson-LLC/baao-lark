@@ -81,13 +81,13 @@ const programs = [
   },
   {
     id: "boost",
-    name: "伴走（ばんそう）",
+    name: "伴随（ばんそう）",
     subtitle: "成果創出プロジェクト",
     description:
-      "4〜8週でKPIを可視化し、横展開のロードマップまで提示。専任チームが伴走し、Before/Afterを計測します。四半期後に役員会で使える成果レポートを提供します。",
+      "4〜8週でKPIを可視化し、横展開のロードマップまで提示。専任チームが伴随し、Before/Afterを計測します。四半期後に役員会で使える成果レポートを提供します。",
     bulletPoints: [
       "導入前後のKPI測定と可視化",
-      "専任チームによる伴走支援",
+      "専任チームによる伴随支援",
       "他部署への横展開計画を策定",
       "週次レビューと功績点で進捗を可視化",
     ],
@@ -97,7 +97,7 @@ const programs = [
       { label: "成果物", value: "Before/Afterレポート・横展開計画" },
       { label: "費用", value: "個別見積（要ヒアリング）" },
     ],
-    cta: { label: "伴走ヒアリングを予約", href: "/join#enterprise" },
+    cta: { label: "伴随ヒアリングを予約", href: "/join#enterprise" },
   },
   {
     id: "recipes",
@@ -128,7 +128,7 @@ const programStages: Record<
   basic: { label: "STEP 1｜修行を深める", className: "text-dojo-green border-dojo-green/30 bg-dojo-green/10" },
   active: { label: "STEP 2｜知見を引き出す", className: "text-dojo-indigo border-dojo-indigo/30 bg-dojo-indigo/10" },
   prime: { label: "STEP 3｜経営コミュニティ", className: "text-[#B35A3F] border-[#B35A3F]/30 bg-[#B35A3F]/10" },
-  boost: { label: "STEP 4｜四半期伴走", className: "text-[#6B4A3B] border-[#6B4A3B]/30 bg-[#6B4A3B]/10" },
+  boost: { label: "STEP 4｜四半期伴随", className: "text-[#6B4A3B] border-[#6B4A3B]/30 bg-[#6B4A3B]/10" },
   recipes: { label: "STEP 5｜秘伝書で横展開", className: "text-[#9B7A4F] border-[#9B7A4F]/30 bg-[#9B7A4F]/10" },
 };
 
@@ -143,13 +143,13 @@ export default function ProgramsPage() {
             </span>
             <h1 className="font-serif text-4xl">稽古と伴随の道順</h1>
             <p className="text-[#4B4135]">
-              無料の週次稽古で空気を感じ、月謝プランで実装手順を身につけ、必要に応じて伴走・評議会で四半期の成果へつなげます。道場のプログラムは、段階ごとに必要な知見とサポートを受け取れる設計です。
+              無料の週次稽古で空気を感じ、月謝プランで実装手順を身につけ、必要に応じて伴随・評議会で四半期の成果へつなげます。道場のプログラムは、段階ごとに必要な知見とサポートを受け取れる設計です。
             </p>
             <div className="grid gap-3 text-sm text-[#4B4135] sm:grid-cols-3">
               {[
                 { title: "STEP 0", body: "無料稽古とオープンチャットで空気を掴む" },
                 { title: "STEP 1-2", body: "月謝でアーカイブと検索権を得て実装力を磨く" },
-                { title: "STEP 3+", body: "評議会・伴走・秘伝書で四半期の成果と横展開" },
+                { title: "STEP 3+", body: "評議会・伴随・秘伝書で四半期の成果と横展開" },
               ].map((item) => (
                 <div key={item.title} className="rounded-2xl border border-[#D8CFC3] bg-[#F9F6F0] p-3">
                   <p className="text-xs font-semibold uppercase tracking-wide text-bamboo">{item.title}</p>
@@ -173,7 +173,7 @@ export default function ProgramsPage() {
               <ul className="mt-3 space-y-2 text-white/90">
                 <li>・週次稽古：60分で最新ケースを分解</li>
                 <li>・月謝プラン：アーカイブ＆検索で常設の学び場</li>
-                <li>・伴走/評議会：四半期でBefore/Afterを証明</li>
+                <li>・伴随/評議会：四半期でBefore/Afterを証明</li>
               </ul>
             </div>
           </div>
@@ -236,7 +236,7 @@ export default function ProgramsPage() {
         </div>
 
         <section className="mt-12 rounded-3xl border border-[#D8CFC3] bg-white p-6 shadow-sm text-sm text-[#4B4135]">
-          <h2 className="font-serif text-2xl text-[#1D1A15]">伴走プロジェクトの目安（8週）</h2>
+          <h2 className="font-serif text-2xl text-[#1D1A15]">伴随プロジェクトの目安（8週）</h2>
           <div className="mt-4 grid gap-4 md:grid-cols-4">
             <div className="rounded-2xl bg-[#F9F6F0] p-4">
               <p className="text-xs font-semibold tracking-wide text-bamboo">第0週（導入）</p>
@@ -251,7 +251,7 @@ export default function ProgramsPage() {
             <div className="rounded-2xl bg-[#F9F6F0] p-4">
               <p className="text-xs font-semibold tracking-wide text-bamboo">第4週（実装）</p>
               <p className="mt-1 font-semibold text-[#1D1A15]">実装</p>
-              <p className="mt-1 leading-relaxed">伴走チームが実装・トレーニングを実施。功績点で進捗と貢献を可視化。</p>
+              <p className="mt-1 leading-relaxed">伴随チームが実装・トレーニングを実施。功績点で進捗と貢献を可視化。</p>
             </div>
             <div className="rounded-2xl bg-[#F9F6F0] p-4">
               <p className="text-xs font-semibold tracking-wide text-bamboo">第8週（横展開）</p>
@@ -263,7 +263,7 @@ export default function ProgramsPage() {
             <div className="rounded-2xl border border-[#D8CFC3] bg-[#F9F6F0] p-4">
               <p className="text-xs font-semibold uppercase tracking-wide text-bamboo">成果事例</p>
               <p className="mt-2 text-sm leading-relaxed">
-                製造業の検査AI案件では、8週の伴走で工数削減 1,200時間／年・不良率 38%→19% を達成。初年度コスト 480万円に対し削減効果は 1,350万円、投資回収期間は 4.3ヶ月でした。
+                製造業の検査AI案件では、8週の伴随で工数削減 1,200時間／年・不良率 38%→19% を達成。初年度コスト 480万円に対し削減効果は 1,350万円、投資回収期間は 4.3ヶ月でした。
               </p>
             </div>
             <div className="rounded-2xl border border-[#D8CFC3] bg-[#F9F6F0] p-4">
@@ -280,7 +280,7 @@ export default function ProgramsPage() {
         <section className="mt-12 rounded-3xl border border-dashed border-bamboo/60 bg-white p-6 text-sm text-[#4B4135]">
           <h2 className="font-serif text-2xl text-[#1D1A15]">おすすめの進め方</h2>
           <p className="mt-3">
-            まずは週次稽古で空気を感じ、月謝プランで実装スキルを磨き、必要に応じて評議会・伴走で四半期の成果づくりへ。各段階の申し込み先は以下をご利用ください。
+            まずは週次稽古で空気を感じ、月謝プランで実装スキルを磨き、必要に応じて評議会・伴随で四半期の成果づくりへ。各段階の申し込み先は以下をご利用ください。
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
             <a

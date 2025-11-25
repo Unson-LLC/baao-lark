@@ -5,7 +5,7 @@ import SuccessStoriesPage from "@/app/success-stories/page";
 describe("SuccessStoriesPage", () => {
   it("includes bridge copy guiding readers before CTA", () => {
     render(<SuccessStoriesPage />);
-    expect(screen.getByText(/この成功事例と同じ伴走をまずは無料稽古で体験しませんか/)).toBeInTheDocument();
+    expect(screen.getByText(/この成功事例と同じ伴随をまずは無料稽古で体験しませんか/)).toBeInTheDocument();
   });
 
   it("provides a real link for the公開ガイドラインPDF button", () => {

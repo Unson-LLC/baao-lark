@@ -46,7 +46,7 @@ const articles = [
   },
   {
     title: "AI道場の学習体系と成長の仕組み",
-    description: "無料稽古から伴走支援まで、段階的に学ぶ",
+    description: "無料稽古から伴随支援まで、段階的に学ぶ",
     link: "#",
     isPlaceholder: true,
   },
@@ -61,7 +61,7 @@ const materials = [
   },
   {
     title: "Yearbook 2025",
-    description: "2025年の伴走案件の成果をまとめた年次レポート",
+    description: "2025年の伴随案件の成果をまとめた年次レポート",
     status: "準備中",
     icon: "📊",
   },

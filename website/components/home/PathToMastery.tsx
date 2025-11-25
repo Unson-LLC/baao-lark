@@ -13,9 +13,9 @@ const steps = [
   },
   {
     number: "3",
-    title: "伴走で成果を出す",
+    title: "伴随で成果を出す",
     description: "専任チームと共に四半期で成果を可視化",
-    cta: { label: "成果伴走を相談", href: "/join#enterprise" },
+    cta: { label: "成果伴随を相談", href: "/join#enterprise" },
   },
 ];
 
