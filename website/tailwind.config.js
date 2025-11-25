@@ -59,6 +59,10 @@ module.exports = {
           DEFAULT: '#1D1A15',
           light: '#4B4135',
           dark: '#1A1A1A',
+        },
+        vermillion: {
+          DEFAULT: '#E74C3C', // 朱色
+          dark: '#C0392B', // 暗い朱色
         }
       },
       fontFamily: {

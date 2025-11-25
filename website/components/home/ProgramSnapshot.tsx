@@ -42,7 +42,7 @@ const enterprisePrograms = [
     href: "/programs#prime",
   },
   {
-    name: "伴随（ばんそう）",
+    name: "伴随（はんずい）",
     subtitle: "成果創出プロジェクト",
     description: "4〜8週でKPIを可視化し、横展開のロードマップまで提示",
     price: "個別見積",

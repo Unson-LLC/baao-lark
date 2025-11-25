@@ -5,7 +5,7 @@ const dojoNav = [
   { label: "道場トップ", href: "/" },
   { label: "稽古・伴随プログラム", href: "/programs" },
   { label: "ケース公開・資料", href: "/resources" },
-  { label: "参加方法（入門）", href: "/join" },
+  { label: "お問い合わせ", href: "/join" },
   { label: "実装記録", href: "/success-stories" },
 ];
 
@@ -13,7 +13,7 @@ const roleNav = [
   { label: "経営・意思決定者の方", href: "/for-you#executive" },
   { label: "DX推進・PMの方", href: "/for-you#dx-lead" },
   { label: "現場で実装する方", href: "/for-you#operator" },
-  { label: "師範志望（Fellow）", href: "/fellows" },
+  { label: "師範志望（Fellow）", href: "/community" },
 ];
 
 const metaLinks = [
@@ -114,17 +114,27 @@ export default function Footer() {
                 </a>
               </p>
             </div>
-            <p className="mt-8 text-sm font-semibold tracking-wide text-dojo-gold border-b border-dojo-gold/30 pb-2">道場便り</p>
-            <p className="mt-3 text-xs text-washi-light leading-relaxed">
-              月に二度、公開ケース・稽古予定・評議会の記録をお届けします。
-            </p>
-            <a
-              href="/resources#newsletter"
-              className="mt-3 inline-flex items-center rounded-lg border-2 border-dojo-gold px-4 py-2 text-xs font-bold text-dojo-gold transition hover:bg-dojo-gold hover:text-dojo-green"
-            >
-              ニュースレターに登録
-            </a>
           </div>
+        </div>
+
+        {/* 最新情報・オープンチャット */}
+        <div className="mt-12 rounded-2xl border-2 border-dojo-gold/40 bg-dojo-green-dark/50 p-6 text-center">
+          <p className="text-sm font-semibold tracking-wide text-dojo-gold">
+            最新アップデート・イベント情報を受け取る
+          </p>
+          <p className="mt-2 text-xs text-washi-light leading-relaxed">
+            公開ケース・稽古予定・評議会の記録を定期配信します。
+            <br />
+            LINEオープンチャットに参加すると、すべての情報がリアルタイムで届きます。
+          </p>
+          <a
+            href="https://line.me/ti/g2/Mb4gQI-33HfsA6V4gv_uFScufGZZIuqrp7q0_w?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center justify-center rounded-lg border-2 border-dojo-gold px-6 py-2.5 text-sm font-bold text-dojo-gold transition hover:bg-dojo-gold hover:text-dojo-green shadow-lg"
+          >
+            オープンチャットに参加する
+          </a>
         </div>
 
         <div className="mt-12 flex flex-col gap-4 border-t-2 border-dojo-gold/30 pt-8 text-xs text-washi-light md:flex-row md:items-center md:justify-between">

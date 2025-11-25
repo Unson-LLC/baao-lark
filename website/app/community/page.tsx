@@ -193,6 +193,9 @@ export default function CommunityPage() {
               </div>
             ))}
           </div>
+          <p className="mt-6 text-center text-sm text-[#4B4135]">
+            その他、製造・医療・公共・金融など各業界の専門家が師範として参画しています。
+          </p>
         </div>
 
         {/* 応募CTA */}

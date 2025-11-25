@@ -8,7 +8,7 @@ const primaryNav = [
   { label: "稽古・伴随", href: "/programs" },
   { label: "実装記録", href: "/success-stories" },
   { label: "イベント・資料", href: "/resources" },
-  { label: "参加方法", href: "/join" },
+  { label: "お問い合わせ", href: "/join" },
   { label: "FAQ", href: "/resources/faq" },
 ];
 

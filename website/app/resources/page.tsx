@@ -100,220 +100,194 @@ const featuredNotes = [
   },
 ];
 
-const upcomingReports = [
-  {
-    title: "Yearbook 2025",
-    summary: "2025年に伴随した案件48本から、ROI算出と横展開の実績を記録。",
-    eta: "2025年4月公開予定",
-    format: "冊子 / PDF",
-    image: "/images/bamboo2.png",
-  },
-  {
-    title: "RECIPES #VIS-09",
-    summary: "製造業でVision AIを段階導入するための手順と費用感を詳細に記載。",
-    eta: "2025年2月ドラフト",
-    format: "PDF + 実装スクリプト",
-    image: "/images/cases/washi.png",
-  },
-  {
-    title: "秘伝書｜自治体DXハンドブック",
-    summary: "自治体での生成AI活用をPoC→横展開まで導くチェックリスト付き手順書。",
-    eta: "2025年3月公開予定",
-    format: "PDF + Larkテンプレート",
-    image: "/images/programs/washi.png",
-  },
-];
-
 export default function ResourcesPage() {
   return (
-    <div className="bg-[#F9F6F0] min-h-screen">
-      <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
-        <div className="grid gap-8 rounded-3xl border border-[#D8CFC3] bg-white/90 p-8 shadow-sm lg:grid-cols-[1.15fr_0.85fr]">
-          <div className="space-y-4">
-            <span className="text-sm font-semibold tracking-wide text-bamboo">
-              稽古と記録のアーカイブ
-            </span>
-            <h1 className="font-serif text-4xl font-bold text-[#1D1A15] sm:text-5xl">
-              イベント・資料のご案内
-            </h1>
-            <p className="text-lg leading-relaxed text-[#4B4135]">
-              無料の週次稽古、現場見学、評議会議、秘伝書やYearbookなど。AI道場の学びと記録をこのページに集約しました。
-            </p>
-            <div className="grid gap-3 text-sm text-[#4B4135] sm:grid-cols-3">
-              {[
-                { title: "稽古", body: "週次ライブ・見学・評議会での実地学習" },
-                { title: "資料", body: "未公開ケース・Yearbook・秘伝書を順次公開" },
-                { title: "アーカイブ", body: "月謝で稽古アーカイブとノートをいつでも閲覧" },
-              ].map((item) => (
-                <div key={item.title} className="rounded-2xl border border-[#D8CFC3] bg-[#F9F6F0] p-3">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-bamboo">{item.title}</p>
-                  <p className="mt-2 leading-relaxed">{item.body}</p>
-                </div>
-              ))}
+    <main className="min-h-screen bg-[#F9F6F0] text-[#1D1A15]">
+      <div className="mx-auto max-w-4xl px-4 py-16 md:px-6">
+        {/* ヘッダーセクション */}
+        <header className="mb-12 rounded-3xl border border-[#D8CFC3] bg-white/90 p-8 shadow-sm">
+          <span className="text-sm font-semibold tracking-wide text-bamboo">
+            イベント・資料
+          </span>
+          <h1 className="mt-2 font-serif text-4xl">イベント・資料</h1>
+          <p className="mt-4 text-[#4B4135]">
+            週次稽古の予定、公開ケース、実装手順書（RECIPES）、年次レポート（Yearbook）まで、道場で生まれた知見を一箇所に集約しています。
+          </p>
+          <div className="mt-6 grid gap-3 text-sm text-[#4B4135] sm:grid-cols-3">
+            <div className="rounded-2xl border border-[#D8CFC3] bg-[#F9F6F0] p-3">
+              <p className="text-xs font-semibold uppercase tracking-wide text-bamboo">稽古</p>
+              <p className="mt-2 leading-relaxed">毎週の無料稽古と月謝プラン向けアーカイブ</p>
+            </div>
+            <div className="rounded-2xl border border-[#D8CFC3] bg-[#F9F6F0] p-3">
+              <p className="text-xs font-semibold uppercase tracking-wide text-bamboo">資料</p>
+              <p className="mt-2 leading-relaxed">RECIPES・Yearbook・ケーススタディ</p>
+            </div>
+            <div className="rounded-2xl border border-[#D8CFC3] bg-[#F9F6F0] p-3">
+              <p className="text-xs font-semibold uppercase tracking-wide text-bamboo">イベント</p>
+              <p className="mt-2 leading-relaxed">現場見学・評議会・ワークショップ</p>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-2xl">
-            <Image
-              src="/images/study.png"
-              alt="資料と稽古の雰囲気"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1024px) 40vw, 90vw"
-            />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#1D1A15]/80 via-[#1D1A15]/30 to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 p-6 text-sm text-white space-y-2">
-              <p className="font-serif text-lg">記録があるから実装が広がる</p>
-              <ul className="space-y-1 text-white/90">
-                <li>・稽古ノートと動画は月謝で全文検索</li>
-                <li>・Yearbookと秘伝書で横展開の証跡を確保</li>
-                <li>・評議会で未公開ケースを現場見学</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        </header>
 
-        <div className="mt-16 grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-          {/* イベント情報 */}
-          <div>
-            <div className="flex flex-wrap items-end justify-between gap-3">
-              <div>
-                <h2 className="font-serif text-3xl text-[#1D1A15]">
-                  今月の稽古・現場見学・イベント
-                </h2>
-                <p className="mt-2 text-lg leading-relaxed text-[#4B4135]">
-                  無料ライブに加え、現場見学や評議会の予定もここでご案内します。
-                </p>
-              </div>
-              <div className="text-xs text-[#4B4135] rounded-full border border-[#D8CFC3] px-3 py-1">
-                稽古アーカイブは月謝プランで検索可能
-              </div>
-            </div>
-            <div className="mt-8 grid gap-4">
-              {events.map((event) => (
-                <div
-                  key={event.title}
-                  className={`rounded-3xl border border-[#D8CFC3] bg-white/90 p-5 shadow-sm ${event.isPlaceholder ? 'opacity-60' : ''}`}
-                >
-                  <div className="flex items-center justify-between text-xs text-[#4B4135]">
-                    <span className={`rounded-full px-3 py-1 font-semibold ${event.isPlaceholder ? 'bg-[#D8CFC3]/20 text-[#4B4135]' : 'bg-bamboo/10 text-bamboo'}`}>
-                      {event.tag}
-                    </span>
-                    <span>{event.date}</span>
+        {/* イベント一覧 */}
+        <section className="mb-10">
+          <h2 className="mb-6 font-serif text-2xl text-[#1D1A15]">
+            イベント一覧
+          </h2>
+          <div className="space-y-4">
+            {events.map((event) => (
+              <div
+                key={event.title}
+                className="rounded-3xl border border-[#D8CFC3] bg-white p-6 shadow-sm"
+              >
+                <div className="flex flex-wrap items-start justify-between gap-4">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-3">
+                      <h3 className="font-semibold text-[#1D1A15]">{event.title}</h3>
+                      <span className={`rounded-full px-3 py-1 text-xs font-semibold ${
+                        event.isPlaceholder
+                          ? "bg-[#4B4135]/10 text-[#4B4135]"
+                          : "bg-bamboo/10 text-bamboo"
+                      }`}>
+                        {event.tag}
+                      </span>
+                    </div>
+                    <div className="mt-3 space-y-1 text-sm text-[#4B4135]">
+                      <p>📅 {event.date}</p>
+                      <p>📍 {event.location}</p>
+                    </div>
                   </div>
-                  <h3 className="mt-3 font-semibold text-[#1D1A15]">{event.title}</h3>
-                  <p className="mt-2 text-sm text-[#4B4135]">{event.location}</p>
-                  {!event.isPlaceholder && event.link && (
+                  {event.link && (
                     <a
                       href={event.link}
-                      className="mt-4 inline-flex items-center text-sm font-semibold text-bamboo hover:text-bamboo-light"
+                      className="inline-flex items-center rounded-full bg-vermillion px-5 py-2 text-sm font-semibold text-[#1D1A15] transition hover:bg-vermillion-dark"
                     >
-                      申し込む →
+                      参加する
                     </a>
                   )}
                 </div>
-              ))}
-            </div>
-          </div>
-
-          {/* コラム・ブログ */}
-          <div className="rounded-3xl border border-[#D8CFC3] bg-[#FDFBF6] p-6 shadow-sm">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-bamboo">
-              コラム & 更新情報
-            </h3>
-            <ul className="mt-4 space-y-4 text-sm text-[#4B4135]">
-              {articles.map((article) => (
-                <li key={article.title} className="rounded-2xl border border-[#D8CFC3] bg-white/80 p-4 opacity-75">
-                  <div className="font-semibold text-[#1D1A15]">
-                    {article.title}
-                  </div>
-                  <p className="mt-1 text-xs text-[#4B4135]">{article.description}</p>
-                  <p className="mt-2 text-xs text-[#4B4135]">準備中</p>
-                </li>
-              ))}
-            </ul>
-            <p className="mt-4 text-sm text-[#4B4135]">
-              ケーススタディやコラムを順次公開予定です。
-            </p>
-          </div>
-        </div>
-
-        {/* 記事・ノート */}
-        <section className="mt-16 space-y-6">
-          <div className="flex flex-wrap items-end justify-between gap-3">
-            <div>
-              <h2 className="font-serif text-3xl text-[#1D1A15]">
-                記事・稽古ノート
-              </h2>
-              <p className="mt-2 text-lg leading-relaxed text-[#4B4135]">
-                稽古ノートや現場見学レポート、評議会議の記録などを順次公開予定です。
-              </p>
-            </div>
-            <div className="text-xs text-[#4B4135] rounded-full border border-[#D8CFC3] px-3 py-1">
-              公開前はコミュニティ内で先行共有
-            </div>
-          </div>
-          <div className="grid gap-6 md:grid-cols-3">
-            {featuredNotes.map((note) => (
-              <article key={note.title} className="relative overflow-hidden rounded-3xl border border-[#D8CFC3] bg-[#1D1A15] text-white shadow-sm">
-                <div className="relative h-48 w-full">
-                  <Image src={note.image} alt={note.title} fill className="object-cover" sizes="(min-width: 768px) 30vw, 90vw" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1D1A15]/80 via-[#1D1A15]/20 to-transparent" />
-                  <span className="absolute left-4 top-4 rounded-full bg-white/80 px-3 py-1 text-xs font-semibold text-[#1D1A15]">
-                    {note.tag}
-                  </span>
-                </div>
-                <div className="space-y-3 p-5">
-                  <p className="text-xs text-white/80">{note.author}</p>
-                  <h3 className="font-serif text-xl leading-snug">{note.title}</h3>
-                  <p className="text-sm text-white/80">{note.description}</p>
-                  <p className="text-xs font-semibold text-bamboo">{note.status}</p>
-                </div>
-              </article>
+              </div>
             ))}
           </div>
         </section>
 
-        {/* レポート・ダウンロード */}
-        <section className="mt-16 rounded-3xl border border-[#D8CFC3] bg-white p-6 shadow-sm">
-          <div className="flex flex-wrap items-end justify-between gap-3">
-            <div>
-              <h2 className="font-serif text-3xl text-[#1D1A15]">レポート / ダウンロード</h2>
-              <p className="mt-2 text-sm text-[#4B4135]">
-                Yearbookや秘伝書などの資料は完成次第こちらに並びます。現在準備中のラインナップをご紹介します。
-              </p>
-            </div>
-            <span className="rounded-full bg-bamboo/10 px-3 py-1 text-xs font-semibold text-bamboo">
-              順次公開
-            </span>
-          </div>
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
-            {upcomingReports.map((report) => (
-              <div key={report.title} className="overflow-hidden rounded-3xl border border-[#D8CFC3] bg-[#FDFBF6] shadow-sm">
-                <div className="relative h-36">
-                  <Image src={report.image} alt={report.title} fill className="object-cover" sizes="(min-width: 768px) 25vw, 90vw" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1D1A15]/60 via-transparent to-transparent" />
-                  <p className="absolute bottom-3 left-3 text-xs text-white/90">{report.eta}</p>
-                </div>
-                <div className="space-y-2 p-5 text-sm text-[#4B4135]">
-                  <h3 className="font-semibold text-[#1D1A15]">{report.title}</h3>
-                  <p>{report.summary}</p>
-                  <p className="text-xs font-semibold text-bamboo">{report.format}</p>
+        {/* 注目の稽古ノート */}
+        <section className="mb-10">
+          <h2 className="mb-6 font-serif text-2xl text-[#1D1A15]">
+            注目の稽古ノート
+          </h2>
+          <div className="space-y-4">
+            {featuredNotes.map((note) => (
+              <div
+                key={note.title}
+                className="overflow-hidden rounded-3xl border border-[#D8CFC3] bg-white shadow-sm"
+              >
+                <div className="grid md:grid-cols-[200px_1fr] gap-6">
+                  <div className="relative h-48 md:h-auto bg-[#1D1A15]/5">
+                    <Image
+                      src={note.image}
+                      alt={note.title}
+                      fill
+                      sizes="200px"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6 md:py-6 md:pr-6 md:pl-0">
+                    <div className="flex items-center gap-3 mb-2">
+                      <span className="rounded-full bg-bamboo/10 px-3 py-1 text-xs font-semibold text-bamboo">
+                        {note.tag}
+                      </span>
+                      <span className="text-xs text-[#4B4135]">{note.status}</span>
+                    </div>
+                    <h3 className="font-serif text-lg font-semibold text-[#1D1A15]">
+                      {note.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-[#4B4135] leading-relaxed">
+                      {note.description}
+                    </p>
+                    <p className="mt-3 text-xs text-[#4B4135]">{note.author}</p>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
+        </section>
+
+        {/* 資料・ダウンロード */}
+        <section className="mb-10">
+          <h2 className="mb-6 font-serif text-2xl text-[#1D1A15]">
+            資料・ダウンロード
+          </h2>
+          <div className="grid gap-6 md:grid-cols-3">
             {materials.map((material) => (
-              <div key={material.title} className="rounded-3xl border border-dashed border-[#D8CFC3] bg-white p-5 text-sm text-[#4B4135]">
-                <p className="text-3xl">{material.icon}</p>
-                <h4 className="mt-3 font-semibold text-[#1D1A15]">{material.title}</h4>
-                <p className="mt-2">{material.description}</p>
-                <p className="mt-3 text-xs font-semibold text-bamboo">{material.status}</p>
+              <div
+                key={material.title}
+                className="rounded-3xl border border-[#D8CFC3] bg-white p-6 shadow-sm"
+              >
+                <div className="text-4xl mb-4">{material.icon}</div>
+                <h3 className="font-semibold text-[#1D1A15]">{material.title}</h3>
+                <p className="mt-2 text-sm text-[#4B4135] leading-relaxed">
+                  {material.description}
+                </p>
+                <div className="mt-4">
+                  <span className="rounded-full bg-[#F9F6F0] px-3 py-1 text-xs font-semibold text-[#4B4135]">
+                    {material.status}
+                  </span>
+                </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* 公開記事（ブログ） */}
+        <section className="mb-10">
+          <h2 className="mb-6 font-serif text-2xl text-[#1D1A15]">
+            公開記事
+          </h2>
+          <div className="space-y-4">
+            {articles.map((article) => (
+              <div
+                key={article.title}
+                className="rounded-3xl border border-[#D8CFC3] bg-white p-6 shadow-sm"
+              >
+                <h3 className="font-semibold text-[#1D1A15]">{article.title}</h3>
+                <p className="mt-2 text-sm text-[#4B4135]">{article.description}</p>
+                {article.isPlaceholder && (
+                  <span className="mt-3 inline-block text-xs text-[#4B4135]">
+                    近日公開
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ニュースレター登録 */}
+        <section id="newsletter" className="rounded-3xl border-2 border-bamboo bg-white p-8 text-center shadow-lg">
+          <h3 className="font-serif text-2xl font-bold text-[#1D1A15]">
+            道場便り（ニュースレター）
+          </h3>
+          <p className="mt-3 text-sm text-[#4B4135]">
+            月に二度、公開ケース・稽古予定・評議会の記録をお届けします。
+            <br />
+            無料稽古の参加者には自動で配信されます。
+          </p>
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
+            <a
+              href="/join#free-live"
+              className="inline-flex items-center justify-center rounded-full bg-vermillion px-6 py-3 text-sm font-semibold text-[#1D1A15] transition hover:bg-vermillion-dark shadow-lg"
+            >
+              無料稽古に登録する
+            </a>
+            <a
+              href="/join#basic"
+              className="inline-flex items-center justify-center rounded-full border border-bamboo px-6 py-3 text-sm font-semibold text-bamboo transition hover:bg-bamboo/10"
+            >
+              月謝プランを見る
+            </a>
           </div>
         </section>
       </div>
-    </div>
+    </main>
   );
 }

@@ -81,7 +81,7 @@ const programs = [
   },
   {
     id: "boost",
-    name: "伴随（ばんそう）",
+    name: "伴随（はんずい）",
     subtitle: "成果創出プロジェクト",
     description:
       "4〜8週でKPIを可視化し、横展開のロードマップまで提示。専任チームが伴随し、Before/Afterを計測します。四半期後に役員会で使える成果レポートを提供します。",

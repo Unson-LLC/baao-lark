@@ -1065,25 +1065,28 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-[#F9F6F0] text-[#1D1A15]">
       <div className="mx-auto max-w-4xl px-4 py-16 md:px-6">
-        <header className="mb-10">
-          <h1 className="font-serif text-4xl">お問い合わせ・各種受付</h1>
+        <header className="mb-12 rounded-3xl border border-[#D8CFC3] bg-white/90 p-8 shadow-sm">
+          <span className="text-sm font-semibold tracking-wide text-bamboo">
+            お問い合わせ
+          </span>
+          <h1 className="mt-2 font-serif text-4xl">お問い合わせ・各種受付</h1>
           <p className="mt-4 text-[#4B4135]">
             BAAO 実戦AI道場へのお問い合わせ窓口です。週次稽古の登録、企業向け伴随・評議会相談、月謝プランの導入、Fellow応募、メディア取材依頼までこちらで受け付けています。送信後は担当よりメールまたはLarkでご連絡します。
           </p>
-          <ul className="mt-4 space-y-2 text-sm text-[#4B4135]">
-            <li className="flex items-start gap-2">
-              <span className="mt-1 h-1.5 w-1.5 rounded-full bg-[#2F4C6E]" />
-              <span>無料稽古：登録直後に自動返信メール＋LINEオープンチャット案内をお送りします。</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="mt-1 h-1.5 w-1.5 rounded-full bg-[#2F4C6E]" />
-              <span>企業向け相談：24時間以内に Field Director が担当宣言。3営業日以内にヒアリング日程をご案内します。</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="mt-1 h-1.5 w-1.5 rounded-full bg-[#2F4C6E]" />
-              <span>Fellow応募：3営業日以内に面談調整の連絡。Impact Points 仮付与とコミュニティガイドを共有します。</span>
-            </li>
-          </ul>
+          <div className="mt-6 grid gap-3 text-sm text-[#4B4135] sm:grid-cols-3">
+            <div className="rounded-2xl border border-[#D8CFC3] bg-[#F9F6F0] p-3">
+              <p className="text-xs font-semibold uppercase tracking-wide text-bamboo">無料稽古</p>
+              <p className="mt-2 leading-relaxed">登録直後に自動返信メール＋LINEオープンチャット案内</p>
+            </div>
+            <div className="rounded-2xl border border-[#D8CFC3] bg-[#F9F6F0] p-3">
+              <p className="text-xs font-semibold uppercase tracking-wide text-bamboo">企業向け</p>
+              <p className="mt-2 leading-relaxed">24時間以内にField Director担当宣言</p>
+            </div>
+            <div className="rounded-2xl border border-[#D8CFC3] bg-[#F9F6F0] p-3">
+              <p className="text-xs font-semibold uppercase tracking-wide text-bamboo">Fellow</p>
+              <p className="mt-2 leading-relaxed">3営業日以内に面談調整の連絡</p>
+            </div>
+          </div>
         </header>
 
         <nav
